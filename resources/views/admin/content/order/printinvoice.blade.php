@@ -125,7 +125,7 @@
                     <br>
                     <strong>
                        {{App\Models\Basicinfo::first()->address}}
-                        <br>যে কোনো প্রয়োজনে কল করুন: {{App\Models\Basicinfo::first()->phone_one}}
+                        <br>Call for any assistance: {{App\Models\Basicinfo::first()->phone_one}}
                     </strong>
                 </td>
                 <td style="width: 30%;text-align:right">

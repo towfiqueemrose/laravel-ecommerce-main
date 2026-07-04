@@ -9,8 +9,8 @@
         <div class="pt-5 pb-5" style="margin-bottom:5px">
             <div class="card py-3 mt-sm-3">
                 <div class="card-body text-center">
-                    <h2 class="h4 pb-3" style="color:green">আপনার অর্ডারটি সফলভাবে সম্পন্ন হয়েছে আমাদের কল সেন্টার থেকে ফোন করে আপনার অর্ডারটি কনফার্ম করা হবে</h2>
-                    <a class="btn btn-primary mt-3" href="{{url('/')}}">প্রোডাক্ট বাছাই করুন</a>
+                    <h2 class="h4 pb-3" style="color:green">Your order has been placed successfully. Our call center will call you to confirm your order.</h2>
+                    <a class="btn btn-primary mt-3" href="{{url('/')}}">Browse Products</a>
                 </div>
             </div>
         </div>

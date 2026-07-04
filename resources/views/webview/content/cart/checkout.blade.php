@@ -11,8 +11,8 @@
             <div class="pt-5">
                 <div class="card py-3 mt-sm-3" style="min-height: 309px;">
                     <div class="card-body text-center">
-                        <h2 class="h4 pb-3">কোন প্রোডাক্ট নেই</h2>
-                        <a class="btn btn-primary mt-3" href="{{ url('/') }}">প্রোডাক্ট বাছাই করুন</a>
+                        <h2 class="h4 pb-3">No products found</h2>
+                        <a class="btn btn-primary mt-3" href="{{ url('/') }}">Browse Products</a>
                     </div>
                 </div>
             </div>
@@ -22,8 +22,8 @@
             <div class="pt-5">
                 <div class="card py-3 mt-sm-3" style="min-height: 309px;">
                     <div class="card-body text-center">
-                        <h2 class="h4 pb-3">কোন প্রোডাক্ট নেই</h2>
-                        <a class="btn btn-primary mt-3" href="{{ url('/') }}">প্রোডাক্ট বাছাই করুন</a>
+                        <h2 class="h4 pb-3">No products found</h2>
+                        <a class="btn btn-primary mt-3" href="{{ url('/') }}">Browse Products</a>
                     </div>
                 </div>
             </div>
@@ -37,15 +37,15 @@
                         <aside class="card mb-4">
                             <article class="card-body">
                                 <header class="mb-4">
-                                    <h4 class="card-title" style="font-size: 18px; font-weight: 600; color: #333;">অর্ডার করতে নিচের ফর্মটি পূরণ করুন</h4>
+                                    <h4 class="card-title" style="font-size: 18px; font-weight: 600; color: #333;">Fill out the form below to place your order</h4>
                                 </header>
                                 <form action="{{ url('press/order') }}" method="POST"
                                     class="from-prevent-multiple-submits">
                                     @csrf
                                     <div class="row">
                                         <div class="form-group col-sm-12">
-                                            <label>আপনার নাম </label>
-                                            <input type="text" id="customerName" name="customerName" @if(Auth::id()) value="{{Auth::guard('web')->user()->name}}" @else @endif    placeholder="আপনার নাম লিখুন"
+                                            <label>Your Name</label>
+                                            <input type="text" id="customerName" name="customerName" @if(Auth::id()) value="{{Auth::guard('web')->user()->name}}" @else @endif    placeholder="Enter your name"
                                                 required class="form-control">
                                         </div>
                                         @if(Auth::id())
@@ -54,14 +54,14 @@
 
                                         @endif
                                         <div class="form-group col-sm-12">
-                                            <label>আপনার ঠিকানা </label>
+                                            <label>Your Address</label>
                                             <input type="text" id="customerAddress" name="customerAddress"
-                                                placeholder="আপনার ঠিকানা লিখুন" required class="form-control">
+                                                placeholder="Enter your address" required class="form-control">
                                         </div>
                                         <div class="form-group col-sm-12">
-                                            <label>আপনার মোবাইল </label>
+                                            <label>Your Mobile</label>
                                             <input type="text" minlength="11" maxlength="11" pattern="[0-1]{2}[0-9]{6}[0-9]{3}" id="customerPhone" @if(Auth::id()) value="{{Auth::guard('web')->user()->phone}}" @else @endif  name="customerPhone" required
-                                                class="form-control" placeholder="আপনার মোবাইল লিখুন">
+                                                class="form-control" placeholder="Enter your mobile number">
                                         </div>
                                         <textarea id="ordersubtotalprice" name="subTotal" cols="10" rows="5" hidden>{{ Cart::subtotalFloat() }}</textarea>
                                         <div class="form-group col-sm-12">
@@ -69,13 +69,13 @@
                                             <select id="deliveryCharge" name="deliveryCharge" class="form-control"
                                                 onchange="setdeliverychargr()">
                                                 @if (isset($product->inside_dhaka) && isset($product->outside_dhaka))
-                                                    <option value="{{ $product->inside_dhaka }}">ঢাকার ভিতর
+                                                    <option value="{{ $product->inside_dhaka }}">Inside Dhaka
                                                         ({{ $product->inside_dhaka }}) </option>
-                                                    <option value="{{ $product->outside_dhaka }}">ঢাকার বাহির
+                                                    <option value="{{ $product->outside_dhaka }}">Outside Dhaka
                                                         ({{ $product->outside_dhaka }})</option>
                                                 @else
-                                                    <option value="{{App\Models\Basicinfo::first()->inside_dhaka_charge}}">ঢাকার ভিতর ({{App\Models\Basicinfo::first()->inside_dhaka_charge}}) </option>
-                                                    <option value="{{App\Models\Basicinfo::first()->outside_dhaka_charge}}">ঢাকার বাহির ({{App\Models\Basicinfo::first()->outside_dhaka_charge}})</option>
+                                                    <option value="{{App\Models\Basicinfo::first()->inside_dhaka_charge}}">Inside Dhaka ({{App\Models\Basicinfo::first()->inside_dhaka_charge}}) </option>
+                                                    <option value="{{App\Models\Basicinfo::first()->outside_dhaka_charge}}">Outside Dhaka ({{App\Models\Basicinfo::first()->outside_dhaka_charge}})</option>
                                                 @endif
 
                                             </select>
@@ -85,7 +85,7 @@
                                         <div class="col-12 text-center">
                                             <button type="submit" id="orderConfirm"
                                                 class="from-prevent-multiple-submits btn-block">
-                                                <i class="spinner fa fa-spinner fa-spin"></i> অর্ডার কনফার্ম করুন
+                                                <i class="spinner fa fa-spinner fa-spin"></i> Confirm Order
                                             </button>
                                         </div>
                                     </div>
@@ -99,7 +99,7 @@
 
                             <article class="card-body">
                                 <header class="mb-4">
-                                    <h4 class="card-title" style="font-size: 16px;">আপনার অর্ডার</h4>
+                                    <h4 class="card-title" style="font-size: 16px;">Your Order</h4>
                                 </header>
                                 <div class="row">
                                     <table class="table border-bottom">

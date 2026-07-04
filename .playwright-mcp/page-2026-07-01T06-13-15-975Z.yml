@@ -1,0 +1,219 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e2]:
+    - status [ref=f1e4]:
+      - generic [ref=f1e5]: Loading...
+    - navigation [ref=f1e7]:
+      - link "Bagdoom" [ref=f1e8] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/admin/dashboard
+        - heading "Bagdoom" [level=3] [ref=f1e9]
+      - generic [ref=f1e13]:
+        - heading "Super Admin" [level=6] [ref=f1e14]
+        - text: Admin
+      - generic [ref=f1e15]:
+        - link " Dashboard" [ref=f1e16] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/admin/dashboard
+          - generic [ref=f1e17]: 
+          - text: Dashboard
+        - link " Admins " [ref=f1e19] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f1e20]: 
+          - text: Admins 
+        - link " Users " [ref=f1e22] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f1e23]: 
+          - text: Users 
+        - link " Menu & Brand " [ref=f1e25] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f1e26]: 
+          - text: Menu & Brand 
+        - link " Slider & Banner " [ref=f1e28] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f1e29]: 
+          - text: Slider & Banner 
+        - link " Attributes " [ref=f1e31] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f1e32]: 
+          - text: Attributes 
+        - link " Products" [ref=f1e33] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/admin/products
+          - generic [ref=f1e34]: 
+          - text: Products
+        - link " Order Panel" [ref=f1e35] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/order/dashboard
+          - generic [ref=f1e36]: 
+          - text: Order Panel
+        - link " Pages " [ref=f1e38] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f1e39]: 
+          - text: Pages 
+        - link " Menu Pages " [ref=f1e41] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f1e42]: 
+          - text: Menu Pages 
+        - link " Web Settings " [ref=f1e44] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f1e45]: 
+          - text: Web Settings 
+        - link " Get Support" [ref=f1e46] [cursor=pointer]:
+          - /url: https://m.me/official.elitedesign
+          - generic [ref=f1e47]: 
+          - text: Get Support
+    - generic [ref=f1e48]:
+      - navigation [ref=f1e49]:
+        - text: 
+        - link "" [ref=f1e50] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f1e51]: 
+        - searchbox "Search" [ref=f1e53]
+        - generic [ref=f1e54]:
+          - link " Message " [ref=f1e56] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=f1e57]: 
+            - generic [ref=f1e58]: Message
+            - text: 
+          - link " Notificatin " [ref=f1e60] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=f1e61]: 
+            - generic [ref=f1e62]: Notificatin
+            - text: 
+          - link "Super Admin " [ref=f1e64] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=f1e65]: Super Admin
+            - text: 
+      - generic [ref=f1e67]:
+        - generic [ref=f1e69]:
+          - heading "Website Basic Information Update" [level=2] [ref=f1e70]
+          - generic [ref=f1e72]:
+            - generic [ref=f1e73]:
+              - generic [ref=f1e74]:
+                - textbox "Website Name Site Slogan Email address Inside Dhaka Charge Contact Info Facebook Twitter Google RSS Penterest Linkedin Youtube" [ref=f1e75]:
+                  - /placeholder: Type here...
+                  - text: Ecommerce
+                - generic: Website Name
+              - generic [ref=f1e76]:
+                - textbox "Type here..." [ref=f1e77]
+                - generic: Site Slogan
+              - generic [ref=f1e78]:
+                - textbox "Meta Description Meta Tag Office Address Facebook Pixel Google Analytics Marquee Text Chatbox Script" [ref=f1e79]:
+                  - /placeholder: Meta Description
+                - generic: Meta Description
+              - generic [ref=f1e80]:
+                - textbox "Meta Tag" [ref=f1e81]
+                - generic: Meta Tag
+              - generic [ref=f1e82]:
+                - textbox "name@example.com" [ref=f1e83]: support@ayebazar.com
+                - generic: Email address
+              - generic [ref=f1e84]:
+                - textbox "Phone One Phone Two App Download link Copyright Text 1 USD TO BDT Outside Dhaka Charge Inside Dhaka Delivery Time Outside Dhaka Delivery Time Refund Rules" [ref=f1e85]:
+                  - /placeholder: Phone One
+                  - text: "+8809648156710"
+                - generic: Phone One
+              - generic [ref=f1e86]:
+                - textbox "Phone Two" [ref=f1e87]: "+8809648156710"
+                - generic: Phone Two
+              - generic [ref=f1e88]:
+                - textbox "Office Address" [ref=f1e89]: A.H. Tower (5th Floor), H# G-71, Alokar Mor, Ghoramara Rajshahi, 6100
+                - generic: Office Address
+              - generic [ref=f1e90]:
+                - textbox "App link here" [ref=f1e91]
+                - generic: App Download link
+              - generic [ref=f1e92]:
+                - textbox "Copyright Text" [ref=f1e93]
+                - generic: Copyright Text
+            - generic [ref=f1e94]:
+              - generic [ref=f1e95]:
+                - textbox "Phone Two" [ref=f1e96]
+                - generic: 1 USD TO BDT
+              - button "Choose File" [ref=f1e98]
+              - heading "LOGO :" [level=4] [ref=f1e100]
+              - button "Choose File" [ref=f1e102]
+              - heading "Favicon :" [level=4] [ref=f1e104]
+              - button "Choose File" [ref=f1e106]
+              - heading "OG Images :" [level=4] [ref=f1e108]
+              - button "Update" [ref=f1e110] [cursor=pointer]
+        - generic [ref=f1e112]:
+          - heading "Shipping Information Update" [level=2] [ref=f1e113]
+          - generic [ref=f1e115]:
+            - generic [ref=f1e116]:
+              - generic [ref=f1e117]:
+                - textbox "Inside Dhaka Charge" [ref=f1e118]: "80"
+                - generic: Inside Dhaka Charge
+              - generic [ref=f1e119]:
+                - textbox "Outside Dhaka Charge" [ref=f1e120]: "130"
+                - generic: Outside Dhaka Charge
+              - generic [ref=f1e121]:
+                - textbox "Inside Dhaka Delivery Time" [ref=f1e122]
+                - generic: Inside Dhaka Delivery Time
+              - generic [ref=f1e123]:
+                - textbox "Outside Dhaka Delivery Time" [ref=f1e124]
+                - generic: Outside Dhaka Delivery Time
+            - generic [ref=f1e125]:
+              - generic [ref=f1e126]:
+                - textbox "Contact Info" [ref=f1e127]
+                - generic: Contact Info
+              - generic [ref=f1e128]:
+                - textbox "Refund Rules" [ref=f1e129]
+                - generic: Refund Rules
+              - combobox ".form-select-lg example" [ref=f1e131]:
+                - option "ON"
+                - option "OFF" [selected]
+              - button "Update" [ref=f1e133] [cursor=pointer]
+        - generic [ref=f1e135]:
+          - heading "Pixel & Analytics" [level=2] [ref=f1e136]
+          - generic [ref=f1e138]:
+            - generic [ref=f1e140]:
+              - textbox "Facebook Pixel" [ref=f1e141]
+              - generic: Facebook Pixel
+            - generic [ref=f1e143]:
+              - textbox "Google Analytics" [ref=f1e144]
+              - generic: Google Analytics
+            - generic [ref=f1e146]:
+              - textbox "Marquee Text" [ref=f1e147]
+              - generic: Marquee Text
+            - generic [ref=f1e149]:
+              - textbox "Chatbox Script" [ref=f1e150]
+              - generic: Chatbox Script
+            - button "Update" [ref=f1e152] [cursor=pointer]
+        - generic [ref=f1e154]:
+          - heading "Social Links Update" [level=2] [ref=f1e155]
+          - generic [ref=f1e157]:
+            - generic [ref=f1e158]:
+              - generic [ref=f1e159]:
+                - textbox "https://www.facebook.com/" [ref=f1e160]
+                - generic: Facebook
+              - generic [ref=f1e161]:
+                - textbox "https://www.twitter.com/" [ref=f1e162]
+                - generic: Twitter
+              - generic [ref=f1e163]:
+                - textbox "https://google.com" [ref=f1e164]
+                - generic: Google
+              - generic [ref=f1e165]:
+                - textbox "https://www.rss.org/" [ref=f1e166]
+                - generic: RSS
+            - generic [ref=f1e167]:
+              - generic [ref=f1e168]:
+                - textbox "https://www.pinterest.com/" [ref=f1e169]
+                - generic: Penterest
+              - generic [ref=f1e170]:
+                - textbox "https://www.linkedin.com/" [ref=f1e171]
+                - generic: Linkedin
+              - generic [ref=f1e172]:
+                - textbox "https://www.Youtube.com/" [ref=f1e173]
+                - generic: Youtube
+              - button "Update" [ref=f1e175] [cursor=pointer]
+      - generic [ref=f1e178]:
+        - generic [ref=f1e179]:
+          - text: ©
+          - link "Bagdoom" [ref=f1e180] [cursor=pointer]:
+            - /url: "#"
+          - text: ", All Right Reserved."
+        - generic [ref=f1e181]:
+          - text: Designed By
+          - link "TIC Limited" [ref=f1e182] [cursor=pointer]:
+            - /url: https://tic.com.bd
+    - link "" [ref=f1e183] [cursor=pointer]:
+      - /url: "#"
+      - generic [ref=f1e184]: 
+  - generic [ref=f1e185]:
+    - button "×" [ref=f1e187] [cursor=pointer]
+    - generic [ref=f1e188]: Info updated successfully

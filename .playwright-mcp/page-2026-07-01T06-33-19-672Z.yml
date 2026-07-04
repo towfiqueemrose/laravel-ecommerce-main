@@ -1,0 +1,119 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e5]:
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Sign In" [ref=e9] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/login
+        - listitem [ref=e10]:
+          - link "|" [ref=e11] [cursor=pointer]:
+            - /url: javascript:void(0);
+        - listitem [ref=e12]:
+          - link "Sign Up" [ref=e13] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/register
+      - list [ref=e15]:
+        - listitem [ref=e16]:
+          - link "Have any question? Call Us +88+8809648156710" [ref=e17] [cursor=pointer]:
+            - /url: tel:+88+8809648156710
+            - img [ref=e18]: 
+            - text: Have any question? Call Us +88+8809648156710
+    - generic [ref=e24]:
+      - link [ref=e27] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000
+      - generic [ref=e28]:
+        - generic:
+          - generic:
+            - generic:
+              - textbox "Search here..." [ref=e29]
+              - button "" [ref=e30] [cursor=pointer]
+      - generic [ref=e31]:
+        - link "Cart 0" [ref=e33] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e34]:
+            - generic [ref=e35]:
+              - img [ref=e36]: 
+              - generic [ref=e38]: Cart
+            - generic [ref=e39]: "0"
+        - link [ref=e42] [cursor=pointer]:
+          - /url: tel:+8809648156710
+          - img [ref=e43]: 
+        - text: 
+    - text: 
+  - text: 
+  - generic [ref=e45]:
+    - generic [ref=e48]:
+      - generic [ref=e51]:
+        - img [ref=e52]: 
+        - text: Categories
+      - list [ref=e57]:
+        - listitem [ref=e58]:
+          - link "Home" [ref=e59] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000
+        - listitem [ref=e60]:
+          - link "Combo Offer" [ref=e61] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/combo-offer
+        - listitem [ref=e62]:
+          - link "News Feed" [ref=e63] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000
+        - listitem [ref=e64]:
+          - link "Order Track" [ref=e65] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/track-order
+    - navigation [ref=e70]:
+      - list
+  - contentinfo [ref=e72]:
+    - generic [ref=e74]:
+      - generic [ref=e75]:
+        - generic [ref=e76]:
+          - heading "Contact Us" [level=4] [ref=e78]
+          - list [ref=e80]:
+            - listitem [ref=e81]:
+              - text: "Address:"
+              - generic [ref=e82]: A.H. Tower (5th Floor), H# G-71, Alokar Mor, Ghoramara Rajshahi, 6100
+        - generic [ref=e83]:
+          - heading "Informations" [level=4] [ref=e85]
+          - list [ref=e87]:
+            - listitem [ref=e88]:
+              - link "About us" [ref=e89] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/about_us
+            - listitem [ref=e90]:
+              - link "Contact Us" [ref=e91] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/contact_us
+            - listitem [ref=e92]:
+              - link "Terms & Conditions" [ref=e93] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/terms_codition
+            - listitem [ref=e94]:
+              - link "FAQ" [ref=e95] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/faq
+        - generic [ref=e96]:
+          - heading "My Account" [level=4] [ref=e98]
+          - list [ref=e100]:
+            - listitem [ref=e101]:
+              - link "Login" [ref=e102] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e103]:
+              - link "Order History" [ref=e104] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/track-order
+            - listitem [ref=e105]:
+              - link "Company" [ref=e106] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/company
+        - generic [ref=e107]:
+          - heading "Why Choose Us" [level=4] [ref=e109]
+          - list [ref=e111]:
+            - listitem [ref=e112]:
+              - link "Help Center" [ref=e113] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/help_center
+            - listitem [ref=e114]:
+              - link "Customer Service" [ref=e115] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/customer_service
+            - listitem [ref=e116]:
+              - link "Shopping Guide" [ref=e117] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/shipping_guide
+      - paragraph [ref=e120]:
+        - text: © |
+        - 'link "Website Designed by: TIC Limited" [ref=e121] [cursor=pointer]':
+          - /url: https://tic.com.bd
+  - text:    
+  - link [ref=e122] [cursor=pointer]:
+    - /url: https://wa.me/+8809648156710?text=I%20am%20interested
+    - img [ref=e123]
+  - text: 

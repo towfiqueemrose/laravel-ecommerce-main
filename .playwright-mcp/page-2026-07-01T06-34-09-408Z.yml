@@ -1,0 +1,119 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - generic [ref=f1e5]:
+      - list [ref=f1e7]:
+        - listitem [ref=f1e8]:
+          - link "Sign In" [ref=f1e9] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/login
+        - listitem [ref=f1e10]:
+          - link "|" [ref=f1e11] [cursor=pointer]:
+            - /url: javascript:void(0);
+        - listitem [ref=f1e12]:
+          - link "Sign Up" [ref=f1e13] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/register
+      - list [ref=f1e15]:
+        - listitem [ref=f1e16]:
+          - link "Have any question? Call Us +88+8809648156710" [ref=f1e17] [cursor=pointer]:
+            - /url: tel:+88+8809648156710
+            - img [ref=f1e18]: 
+            - text: Have any question? Call Us +88+8809648156710
+    - generic [ref=f1e24]:
+      - link [ref=f1e27] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000
+      - generic [ref=f1e28]:
+        - generic:
+          - generic:
+            - generic:
+              - textbox "Search here..." [ref=f1e29]
+              - button "" [ref=f1e30] [cursor=pointer]
+      - generic [ref=f1e31]:
+        - link "Cart 0" [ref=f1e33] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f1e34]:
+            - generic [ref=f1e35]:
+              - img [ref=f1e36]: 
+              - generic [ref=f1e38]: Cart
+            - generic [ref=f1e39]: "0"
+        - link [ref=f1e42] [cursor=pointer]:
+          - /url: tel:+8809648156710
+          - img [ref=f1e43]: 
+        - text: 
+    - text: 
+  - text: 
+  - generic [ref=f1e45]:
+    - generic [ref=f1e48]:
+      - generic [ref=f1e51]:
+        - img [ref=f1e52]: 
+        - text: Categories
+      - list [ref=f1e57]:
+        - listitem [ref=f1e58]:
+          - link "Home" [ref=f1e59] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000
+        - listitem [ref=f1e60]:
+          - link "Combo Offer" [ref=f1e61] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/combo-offer
+        - listitem [ref=f1e62]:
+          - link "News Feed" [ref=f1e63] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000
+        - listitem [ref=f1e64]:
+          - link "Order Track" [ref=f1e65] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/track-order
+    - navigation [ref=f1e70]:
+      - list
+  - contentinfo [ref=f1e72]:
+    - generic [ref=f1e74]:
+      - generic [ref=f1e75]:
+        - generic [ref=f1e76]:
+          - heading "Contact Us" [level=4] [ref=f1e78]
+          - list [ref=f1e80]:
+            - listitem [ref=f1e81]:
+              - text: "Address:"
+              - generic [ref=f1e82]: A.H. Tower (5th Floor), H# G-71, Alokar Mor, Ghoramara Rajshahi, 6100
+        - generic [ref=f1e83]:
+          - heading "Informations" [level=4] [ref=f1e85]
+          - list [ref=f1e87]:
+            - listitem [ref=f1e88]:
+              - link "About us" [ref=f1e89] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/about_us
+            - listitem [ref=f1e90]:
+              - link "Contact Us" [ref=f1e91] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/contact_us
+            - listitem [ref=f1e92]:
+              - link "Terms & Conditions" [ref=f1e93] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/terms_codition
+            - listitem [ref=f1e94]:
+              - link "FAQ" [ref=f1e95] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/faq
+        - generic [ref=f1e96]:
+          - heading "My Account" [level=4] [ref=f1e98]
+          - list [ref=f1e100]:
+            - listitem [ref=f1e101]:
+              - link "Login" [ref=f1e102] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f1e103]:
+              - link "Order History" [ref=f1e104] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/track-order
+            - listitem [ref=f1e105]:
+              - link "Company" [ref=f1e106] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/company
+        - generic [ref=f1e107]:
+          - heading "Why Choose Us" [level=4] [ref=f1e109]
+          - list [ref=f1e111]:
+            - listitem [ref=f1e112]:
+              - link "Help Center" [ref=f1e113] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/help_center
+            - listitem [ref=f1e114]:
+              - link "Customer Service" [ref=f1e115] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/customer_service
+            - listitem [ref=f1e116]:
+              - link "Shopping Guide" [ref=f1e117] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/shipping_guide
+      - paragraph [ref=f1e120]:
+        - text: © |
+        - 'link "Website Designed by: TIC Limited" [ref=f1e121] [cursor=pointer]':
+          - /url: https://tic.com.bd
+  - text:    
+  - link [ref=f1e122] [cursor=pointer]:
+    - /url: https://wa.me/+8809648156710?text=I%20am%20interested
+    - img [ref=f1e123]
+  - text: 

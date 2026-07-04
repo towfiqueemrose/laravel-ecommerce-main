@@ -1,0 +1,6 @@
+[     247ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://127.0.0.1:8000/admin/login:0
+[     421ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8000/public/backend/img/favicon.ico:0
+[    8233ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8000/public/backend/img/user.jpg:0
+[    8500ms] [WARNING] Unrecognized feature: 'web-share'. @ http://127.0.0.1:8000/admin/dashboard:389
+[    8674ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8000/public/backend/img/user.jpg:0
+[   10091ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:8000/public/backendimg/favicon.ico:0

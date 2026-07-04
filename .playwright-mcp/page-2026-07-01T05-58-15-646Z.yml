@@ -1,0 +1,138 @@
+- generic [ref=f1e2]:
+  - status [ref=f1e4]:
+    - generic [ref=f1e5]: Loading...
+  - navigation [ref=f1e7]:
+    - link "Bagdoom" [ref=f1e8] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000/admin/dashboard
+      - heading "Bagdoom" [level=3] [ref=f1e9]
+    - generic [ref=f1e13]:
+      - heading "Super Admin" [level=6] [ref=f1e14]
+      - text: Admin
+    - generic [ref=f1e15]:
+      - link " Dashboard" [ref=f1e16] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/admin/dashboard
+        - generic [ref=f1e17]: 
+        - text: Dashboard
+      - link " Admins " [ref=f1e19] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f1e20]: 
+        - text: Admins 
+      - link " Users " [ref=f1e22] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f1e23]: 
+        - text: Users 
+      - link " Menu & Brand " [ref=f1e25] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f1e26]: 
+        - text: Menu & Brand 
+      - link " Slider & Banner " [ref=f1e28] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f1e29]: 
+        - text: Slider & Banner 
+      - link " Attributes " [ref=f1e31] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f1e32]: 
+        - text: Attributes 
+      - link " Products" [ref=f1e33] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/admin/products
+        - generic [ref=f1e34]: 
+        - text: Products
+      - link " Order Panel" [ref=f1e35] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/order/dashboard
+        - generic [ref=f1e36]: 
+        - text: Order Panel
+      - link " Pages " [ref=f1e38] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f1e39]: 
+        - text: Pages 
+      - link " Menu Pages " [ref=f1e41] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f1e42]: 
+        - text: Menu Pages 
+      - link " Web Settings " [ref=f1e44] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f1e45]: 
+        - text: Web Settings 
+      - link " Get Support" [ref=f1e46] [cursor=pointer]:
+        - /url: https://m.me/official.elitedesign
+        - generic [ref=f1e47]: 
+        - text: Get Support
+  - generic [ref=f1e48]:
+    - navigation [ref=f1e49]:
+      - text: 
+      - link "" [ref=f1e50] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f1e51]: 
+      - searchbox "Search" [ref=f1e53]
+      - generic [ref=f1e54]:
+        - link " Message " [ref=f1e56] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f1e57]: 
+          - generic [ref=f1e58]: Message
+          - text: 
+        - link " Notificatin " [ref=f1e60] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f1e61]: 
+          - generic [ref=f1e62]: Notificatin
+          - text: 
+        - link "Super Admin " [ref=f1e64] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f1e65]: Super Admin
+          - text: 
+    - generic [ref=f1e67]:
+      - generic [ref=f1e69]:
+        - heading "Admins List" [level=6] [ref=f1e71]
+        - link "+ Create Admin" [ref=f1e73] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/admin/admins/create
+      - generic [ref=f1e77]:
+        - generic [ref=f1e79]:
+          - text: Show
+          - combobox "Show entries" [ref=f1e80]:
+            - option "10" [selected]
+            - option "25"
+            - option "50"
+            - option "100"
+          - text: entries
+        - generic [ref=f1e82]:
+          - text: "Search:"
+          - searchbox "Search:" [ref=f1e83]
+        - table [ref=f1e84]:
+          - rowgroup [ref=f1e85]:
+            - 'row "SL: activate to sort column descending Admin: activate to sort column ascending Email: activate to sort column ascending Roles: activate to sort column ascending Action: activate to sort column ascending" [ref=f1e86]':
+              - 'columnheader "SL: activate to sort column descending" [ref=f1e87] [cursor=pointer]': SL
+              - 'columnheader "Admin: activate to sort column ascending" [ref=f1e88] [cursor=pointer]': Admin
+              - 'columnheader "Email: activate to sort column ascending" [ref=f1e89] [cursor=pointer]': Email
+              - 'columnheader "Roles: activate to sort column ascending" [ref=f1e90] [cursor=pointer]': Roles
+              - 'columnheader "Action: activate to sort column ascending" [ref=f1e91] [cursor=pointer]': Action
+          - rowgroup [ref=f1e92]:
+            - row "1 Super Admin admin@admin.com superadmin  " [ref=f1e93]:
+              - cell "1" [ref=f1e94]
+              - cell "Super Admin" [ref=f1e95]
+              - cell "admin@admin.com" [ref=f1e96]
+              - cell "superadmin" [ref=f1e97]:
+                - generic [ref=f1e98]: superadmin
+              - cell " " [ref=f1e99]:
+                - link "" [ref=f1e100] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/admin/admins/1/edit
+                  - generic [ref=f1e101]: 
+                - link "" [ref=f1e102] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/admin/admins/1
+                  - generic [ref=f1e103]: 
+        - status [ref=f1e104]: Showing 1 to 1 of 1 entries
+        - generic [ref=f1e105]:
+          - generic [ref=f1e106]: Previous
+          - generic [ref=f1e108] [cursor=pointer]: "1"
+          - generic [ref=f1e109]: Next
+    - generic [ref=f1e112]:
+      - generic [ref=f1e113]:
+        - text: ©
+        - link "Bagdoom" [ref=f1e114] [cursor=pointer]:
+          - /url: "#"
+        - text: ", All Right Reserved."
+      - generic [ref=f1e115]:
+        - text: Designed By
+        - link "TIC Limited" [ref=f1e116] [cursor=pointer]:
+          - /url: https://tic.com.bd
+  - link "" [ref=f1e117] [cursor=pointer]:
+    - /url: "#"
+    - generic [ref=f1e118]: 

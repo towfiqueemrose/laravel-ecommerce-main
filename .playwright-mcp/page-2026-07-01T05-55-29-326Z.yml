@@ -1,0 +1,143 @@
+- generic [ref=f10e2]:
+  - status [ref=f10e4]:
+    - generic [ref=f10e5]: Loading...
+  - navigation [ref=f10e7]:
+    - link "Bagdoom" [ref=f10e8] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000/admin/dashboard
+      - heading "Bagdoom" [level=3] [ref=f10e9]
+    - generic [ref=f10e13]:
+      - heading "Super Admin" [level=6] [ref=f10e14]
+      - text: Admin
+    - generic [ref=f10e15]:
+      - link " Dashboard" [ref=f10e16] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/admin/dashboard
+        - generic [ref=f10e17]: 
+        - text: Dashboard
+      - link " Admins " [ref=f10e19] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f10e20]: 
+        - text: Admins 
+      - link " Users " [ref=f10e22] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f10e23]: 
+        - text: Users 
+      - link " Menu & Brand " [ref=f10e25] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f10e26]: 
+        - text: Menu & Brand 
+      - link " Slider & Banner " [ref=f10e28] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f10e29]: 
+        - text: Slider & Banner 
+      - link " Attributes " [ref=f10e31] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f10e32]: 
+        - text: Attributes 
+      - link " Products" [ref=f10e33] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/admin/products
+        - generic [ref=f10e34]: 
+        - text: Products
+      - link " Order Panel" [ref=f10e35] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/order/dashboard
+        - generic [ref=f10e36]: 
+        - text: Order Panel
+      - link " Pages " [ref=f10e38] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f10e39]: 
+        - text: Pages 
+      - link " Menu Pages " [ref=f10e41] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f10e42]: 
+        - text: Menu Pages 
+      - link " Web Settings " [ref=f10e44] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f10e45]: 
+        - text: Web Settings 
+      - link " Get Support" [ref=f10e46] [cursor=pointer]:
+        - /url: https://m.me/official.elitedesign
+        - generic [ref=f10e47]: 
+        - text: Get Support
+  - generic [ref=f10e48]:
+    - navigation [ref=f10e49]:
+      - text: 
+      - link "" [ref=f10e50] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f10e51]: 
+      - searchbox "Search" [ref=f10e53]
+      - generic [ref=f10e54]:
+        - link " Message " [ref=f10e56] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f10e57]: 
+          - generic [ref=f10e58]: Message
+          - text: 
+        - link " Notificatin " [ref=f10e60] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f10e61]: 
+          - generic [ref=f10e62]: Notificatin
+          - text: 
+        - link "Super Admin " [ref=f10e64] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f10e65]: Super Admin
+          - text: 
+    - generic [ref=f10e67]:
+      - generic [ref=f10e70]:
+        - generic [ref=f10e71]:
+          - paragraph [ref=f10e72]: Total Orders
+          - heading "0" [level=2] [ref=f10e73]
+        - generic [ref=f10e74]: ↑ 12%
+      - generic [ref=f10e77]:
+        - generic [ref=f10e78]:
+          - paragraph [ref=f10e79]: My Orders
+          - heading "0" [level=2] [ref=f10e80]
+        - generic [ref=f10e81]: ↑ 8%
+      - generic [ref=f10e84]:
+        - generic [ref=f10e85]:
+          - paragraph [ref=f10e86]: Processing
+          - heading "0" [level=2] [ref=f10e87]
+        - generic [ref=f10e88]: ↑ 5%
+      - generic [ref=f10e91]:
+        - generic [ref=f10e92]:
+          - paragraph [ref=f10e93]: Pending
+          - heading "0" [level=2] [ref=f10e94]
+        - generic [ref=f10e95]: ↓ 3%
+    - generic [ref=f10e97]:
+      - generic [ref=f10e100]:
+        - heading "Sales Overview" [level=3] [ref=f10e101]
+        - combobox [ref=f10e102]:
+          - option "Last 7 days" [selected]
+          - option "This Month"
+          - option "This Year"
+      - generic [ref=f10e106]:
+        - heading "Recent Orders" [level=3] [ref=f10e108]
+        - paragraph [ref=f10e110]: No orders yet
+        - link "View All Orders →" [ref=f10e111] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/order/dashboard
+    - generic [ref=f10e113]:
+      - link "+ New Product Add a product to inventory" [ref=f10e115] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/admin/products/create
+        - generic [ref=f10e116]: +
+        - heading "New Product" [level=4] [ref=f10e117]
+        - paragraph [ref=f10e118]: Add a product to inventory
+      - link "📋 View Orders Manage pending orders" [ref=f10e120] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/order/dashboard
+        - generic [ref=f10e121]: 📋
+        - heading "View Orders" [level=4] [ref=f10e122]
+        - paragraph [ref=f10e123]: Manage pending orders
+      - link "👥 Manage Admins Roles & permissions" [ref=f10e125] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/admin/admins
+        - generic [ref=f10e126]: 👥
+        - heading "Manage Admins" [level=4] [ref=f10e127]
+        - paragraph [ref=f10e128]: Roles & permissions
+    - generic [ref=f10e131]:
+      - generic [ref=f10e132]:
+        - text: ©
+        - link "Bagdoom" [ref=f10e133] [cursor=pointer]:
+          - /url: "#"
+        - text: ", All Right Reserved."
+      - generic [ref=f10e134]:
+        - text: Designed By
+        - link "TIC Limited" [ref=f10e135] [cursor=pointer]:
+          - /url: https://tic.com.bd
+  - link "" [ref=f10e136] [cursor=pointer]:
+    - /url: "#"
+    - generic [ref=f10e137]: 

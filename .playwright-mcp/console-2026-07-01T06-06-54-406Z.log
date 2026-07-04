@@ -1,0 +1,3 @@
+[    2985ms] [ERROR] Not signed in with the identity provider. @ https://www.magnific.com/free-photos-vectors/ecommerce-logo:0
+[    4521ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token. @ https://accounts.google.com/gsi/client:87
+[   15701ms] [ERROR] Not signed in with the identity provider. @ https://www.magnific.com/free-photos-vectors/ecommerce-logo:0

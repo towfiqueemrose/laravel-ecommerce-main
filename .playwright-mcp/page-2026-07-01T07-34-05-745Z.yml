@@ -1,0 +1,129 @@
+- generic [ref=f3e2]:
+  - status [ref=f3e4]:
+    - generic [ref=f3e5]: Loading...
+  - navigation [ref=f3e7]:
+    - link "logo" [ref=f3e8] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000/admin/dashboard
+      - heading "logo" [level=3] [ref=f3e9]:
+        - img "logo" [ref=f3e10]
+    - generic [ref=f3e14]:
+      - heading "TIC Limited (Super Admin)" [level=6] [ref=f3e15]
+      - text: Admin
+    - generic [ref=f3e16]:
+      - link " Dashboard" [ref=f3e17] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/admin/dashboard
+        - generic [ref=f3e18]: 
+        - text: Dashboard
+      - link " Admins " [ref=f3e20] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f3e21]: 
+        - text: Admins 
+      - link " Users " [ref=f3e23] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f3e24]: 
+        - text: Users 
+      - link " Menu & Brand " [ref=f3e26] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f3e27]: 
+        - text: Menu & Brand 
+      - link " Slider & Banner " [ref=f3e29] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f3e30]: 
+        - text: Slider & Banner 
+      - link " Attributes " [ref=f3e32] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f3e33]: 
+        - text: Attributes 
+      - link " Products" [ref=f3e34] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/admin/products
+        - generic [ref=f3e35]: 
+        - text: Products
+      - link " Order Panel" [ref=f3e36] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/order/dashboard
+        - generic [ref=f3e37]: 
+        - text: Order Panel
+      - link " Pages " [ref=f3e39] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f3e40]: 
+        - text: Pages 
+      - link " Menu Pages " [ref=f3e42] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f3e43]: 
+        - text: Menu Pages 
+      - link " Web Settings " [ref=f3e45] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f3e46]: 
+        - text: Web Settings 
+      - link " Get Support" [ref=f3e47] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f3e48]: 
+        - text: Get Support
+  - generic [ref=f3e49]:
+    - navigation [ref=f3e50]:
+      - text: 
+      - link "" [ref=f3e51] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f3e52]: 
+      - searchbox "Search" [ref=f3e54]
+      - generic [ref=f3e55]:
+        - link " Message " [ref=f3e57] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f3e58]: 
+          - generic [ref=f3e59]: Message
+          - text: 
+        - link " Notificatin " [ref=f3e61] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f3e62]: 
+          - generic [ref=f3e63]: Notificatin
+          - text: 
+        - link "TIC Limited (Super Admin) " [ref=f3e65] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f3e66]: TIC Limited (Super Admin)
+          - text: 
+    - generic [ref=f3e68]:
+      - generic [ref=f3e70]:
+        - heading "Products List" [level=6] [ref=f3e72]
+        - generic [ref=f3e74] [cursor=pointer]: + Create New Product
+      - generic [ref=f3e78]:
+        - generic [ref=f3e80]:
+          - text: Show
+          - combobox "Show entries" [ref=f3e81]:
+            - option "10" [selected]
+            - option "25"
+            - option "50"
+            - option "100"
+          - text: entries
+        - generic [ref=f3e83]:
+          - text: "Search:"
+          - searchbox "Search:" [ref=f3e84]
+        - generic [ref=f3e85]: Processing...
+        - table [ref=f3e86]:
+          - rowgroup [ref=f3e87]:
+            - row "SL Image Name SKU Sale Price Discount Combo Featured Promotion Status Action" [ref=f3e88]:
+              - columnheader "SL" [ref=f3e89] [cursor=pointer]
+              - columnheader "Image" [ref=f3e90] [cursor=pointer]
+              - columnheader "Name" [ref=f3e91] [cursor=pointer]
+              - columnheader "SKU" [ref=f3e92] [cursor=pointer]
+              - columnheader "Sale Price" [ref=f3e93] [cursor=pointer]
+              - columnheader "Discount" [ref=f3e94] [cursor=pointer]
+              - columnheader "Combo" [ref=f3e95] [cursor=pointer]
+              - columnheader "Featured" [ref=f3e96] [cursor=pointer]
+              - columnheader "Promotion" [ref=f3e97] [cursor=pointer]
+              - columnheader "Status" [ref=f3e98] [cursor=pointer]
+              - columnheader "Action" [ref=f3e99]
+          - rowgroup
+        - status
+      - text:                                    
+    - generic [ref=f3e102]:
+      - generic [ref=f3e103]:
+        - text: ©
+        - link "Bagdoom" [ref=f3e104] [cursor=pointer]:
+          - /url: "#"
+        - text: ", All Right Reserved."
+      - generic [ref=f3e105]:
+        - text: Designed By
+        - link "TIC Limited" [ref=f3e106] [cursor=pointer]:
+          - /url: https://tic.com.bd
+  - link "" [ref=f3e107] [cursor=pointer]:
+    - /url: "#"
+    - generic [ref=f3e108]: 

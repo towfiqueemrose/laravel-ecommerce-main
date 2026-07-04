@@ -1,0 +1,162 @@
+- generic [ref=f1e2]:
+  - navigation [ref=f1e4]:
+    - link "Bagdoom" [ref=f1e5] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000/admin/dashboard
+      - heading "Bagdoom" [level=3] [ref=f1e6]
+    - generic [ref=f1e10]:
+      - heading "Super Admin" [level=6] [ref=f1e11]
+      - text: Admin
+    - generic [ref=f1e12]:
+      - link " Dashboard" [ref=f1e13] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/admin/dashboard
+        - generic [ref=f1e14]: 
+        - text: Dashboard
+      - link " Admins " [ref=f1e16] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f1e17]: 
+        - text: Admins 
+      - link " Users " [ref=f1e19] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f1e20]: 
+        - text: Users 
+      - link " Menu & Brand " [ref=f1e22] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f1e23]: 
+        - text: Menu & Brand 
+      - link " Slider & Banner " [ref=f1e25] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f1e26]: 
+        - text: Slider & Banner 
+      - link " Attributes " [ref=f1e28] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f1e29]: 
+        - text: Attributes 
+      - link " Products" [ref=f1e30] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/admin/products
+        - generic [ref=f1e31]: 
+        - text: Products
+      - link " Order Panel" [ref=f1e32] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/order/dashboard
+        - generic [ref=f1e33]: 
+        - text: Order Panel
+      - link " Pages " [ref=f1e35] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f1e36]: 
+        - text: Pages 
+      - link " Menu Pages " [ref=f1e38] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f1e39]: 
+        - text: Menu Pages 
+      - link " Web Settings " [ref=f1e41] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f1e42]: 
+        - text: Web Settings 
+      - link " Get Support" [ref=f1e43] [cursor=pointer]:
+        - /url: https://m.me/official.elitedesign
+        - generic [ref=f1e44]: 
+        - text: Get Support
+  - generic [ref=f1e45]:
+    - navigation [ref=f1e46]:
+      - link "" [ref=f1e47] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/admin/dashboard
+        - heading "" [level=2] [ref=f1e48]:
+          - generic [ref=f1e49]: 
+      - link "" [ref=f1e50] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f1e51]: 
+      - searchbox "Search" [ref=f1e53]
+      - generic [ref=f1e54]:
+        - link " " [ref=f1e56] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f1e57]: 
+          - text: 
+        - link " " [ref=f1e59] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f1e60]: 
+          - text: 
+        - link "" [ref=f1e62] [cursor=pointer]:
+          - /url: "#"
+    - generic [ref=f1e64]:
+      - generic [ref=f1e66]:
+        - generic [ref=f1e67]: 
+        - generic [ref=f1e68]:
+          - paragraph [ref=f1e69]: All Oders
+          - heading "0" [level=6] [ref=f1e70]
+      - generic [ref=f1e72]:
+        - generic [ref=f1e73]: 
+        - generic [ref=f1e74]:
+          - paragraph [ref=f1e75]: My Orders
+          - heading "0" [level=6] [ref=f1e76]
+      - generic [ref=f1e78]:
+        - generic [ref=f1e79]: 
+        - generic [ref=f1e80]:
+          - paragraph [ref=f1e81]: Processing
+          - heading "0" [level=6] [ref=f1e82]
+      - generic [ref=f1e84]:
+        - generic [ref=f1e85]: 
+        - generic [ref=f1e86]:
+          - paragraph [ref=f1e87]: Pending Oders
+          - heading "0" [level=6] [ref=f1e88]
+    - generic [ref=f1e90]:
+      - generic [ref=f1e92]:
+        - generic [ref=f1e93]: 
+        - generic [ref=f1e94]:
+          - paragraph [ref=f1e95]: All Oders
+          - heading "0" [level=6] [ref=f1e96]
+      - generic [ref=f1e98]:
+        - generic [ref=f1e99]: 
+        - generic [ref=f1e100]:
+          - paragraph [ref=f1e101]: My Orders
+          - heading "0" [level=6] [ref=f1e102]
+      - generic [ref=f1e104]:
+        - generic [ref=f1e105]: 
+        - generic [ref=f1e106]:
+          - paragraph [ref=f1e107]: Processing
+          - heading "0" [level=6] [ref=f1e108]
+      - generic [ref=f1e110]:
+        - generic [ref=f1e111]: 
+        - generic [ref=f1e112]:
+          - paragraph [ref=f1e113]: Pending Oders
+          - heading "0" [level=6] [ref=f1e114]
+    - generic [ref=f1e116]:
+      - generic [ref=f1e118]:
+        - heading "How to Customize Website" [level=6] [ref=f1e120]
+        - iframe [ref=f1e121]:
+          - generic "YouTube Video Player" [ref=f2e3]:
+            - alert [ref=f2e4]:
+              - generic [ref=f2e5]:
+                - generic [ref=f2e6]:
+                  - img
+                - generic [ref=f2e7]:
+                  - generic [ref=f2e8]: Video unavailable
+                  - generic [ref=f2e9]: This video is unavailable
+              - link "Visit YouTube to search for more videos" [ref=f2e10] [cursor=pointer]:
+                - /url: https://www.youtube.com
+                - img
+      - generic [ref=f1e123]:
+        - heading "How to Oparate This Website" [level=6] [ref=f1e125]
+        - iframe [ref=f1e126]:
+          - generic "YouTube Video Player" [ref=f3e3]:
+            - alert [ref=f3e4]:
+              - generic [ref=f3e5]:
+                - generic [ref=f3e6]:
+                  - img
+                - generic [ref=f3e7]:
+                  - generic [ref=f3e8]: Video unavailable
+                  - generic [ref=f3e9]: This video is unavailable
+              - link "Visit YouTube to search for more videos" [ref=f3e10] [cursor=pointer]:
+                - /url: https://www.youtube.com
+                - img
+    - generic [ref=f1e129]:
+      - generic [ref=f1e130]:
+        - text: ©
+        - link "Bagdoom" [ref=f1e131] [cursor=pointer]:
+          - /url: "#"
+        - text: ", All Right Reserved."
+      - generic [ref=f1e132]:
+        - text: Designed By
+        - link "TIC Limited" [ref=f1e133] [cursor=pointer]:
+          - /url: https://tic.com.bd
+  - link "" [ref=f1e134] [cursor=pointer]:
+    - /url: "#"
+    - generic [ref=f1e135]: 

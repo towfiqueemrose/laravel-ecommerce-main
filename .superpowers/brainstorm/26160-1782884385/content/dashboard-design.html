@@ -1,0 +1,158 @@
+<h2>Dashboard Redesign — Modern Professional Look</h2>
+<p class="subtitle">Fixing the duplicate rows, dated visuals, and placeholder content</p>
+
+<div class="section">
+  <h3>Current Problems</h3>
+  <div class="pros-cons">
+    <div class="cons">
+      <ul>
+        <li><strong>Duplicate stat rows</strong> — same 4 cards shown twice</li>
+        <li><strong>No visual hierarchy</strong> — all cards identical, dark green background</li>
+        <li><strong>Generic YouTube videos</strong> — no real dashboard value</li>
+        <li><strong>No data charts</strong> — missing sales trends, order analytics</li>
+        <li><strong>Broken CSS variables</strong> — <code>--primary: #0000</code> (transparent)</li>
+        <li><strong>Inline color:red</strong> all over headings and DataTables</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Proposed Dashboard Layout</h3>
+  
+  <div class="mockup">
+    <div class="mockup-header">Dashboard Redesign — Mockup</div>
+    <div class="mockup-body" style="padding: 16px;">
+      
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px;">
+        <div style="background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 12px; padding: 20px; color: white;">
+          <div style="display: flex; justify-content: space-between;">
+            <div>
+              <p style="margin:0;opacity:.8;font-size:13px;">Total Orders</p>
+              <h2 style="margin:4px 0 0;font-size:28px;color:white!important;">1,248</h2>
+            </div>
+            <div style="background:rgba(255,255,255,.2);width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;">📦</div>
+          </div>
+          <p style="margin:8px 0 0;font-size:12px;opacity:.7;">↑ 12% from last month</p>
+        </div>
+        <div style="background: linear-gradient(135deg, #f093fb, #f5576c); border-radius: 12px; padding: 20px; color: white;">
+          <div style="display: flex; justify-content: space-between;">
+            <div>
+              <p style="margin:0;opacity:.8;font-size:13px;">Revenue</p>
+              <h2 style="margin:4px 0 0;font-size:28px;color:white!important;">৳84,250</h2>
+            </div>
+            <div style="background:rgba(255,255,255,.2);width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;">💰</div>
+          </div>
+          <p style="margin:8px 0 0;font-size:12px;opacity:.7;">↑ 8% from last month</p>
+        </div>
+        <div style="background: linear-gradient(135deg, #4facfe, #00f2fe); border-radius: 12px; padding: 20px; color: white;">
+          <div style="display: flex; justify-content: space-between;">
+            <div>
+              <p style="margin:0;opacity:.8;font-size:13px;">Processing</p>
+              <h2 style="margin:4px 0 0;font-size:28px;color:white!important;">342</h2>
+            </div>
+            <div style="background:rgba(255,255,255,.2);width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;">⏳</div>
+          </div>
+          <p style="margin:8px 0 0;font-size:12px;opacity:.7;">↑ 5% from last month</p>
+        </div>
+        <div style="background: linear-gradient(135deg, #a18cd1, #fbc2eb); border-radius: 12px; padding: 20px; color: white;">
+          <div style="display: flex; justify-content: space-between;">
+            <div>
+              <p style="margin:0;opacity:.8;font-size:13px;">Pending</p>
+              <h2 style="margin:4px 0 0;font-size:28px;color:white!important;">127</h2>
+            </div>
+            <div style="background:rgba(255,255,255,.2);width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;">⏰</div>
+          </div>
+          <p style="margin:8px 0 0;font-size:12px;opacity:.7;">↓ 3% from last month</p>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 16px; margin-bottom: 24px;">
+        <div style="background:white;border-radius:12px;padding:20px;box-shadow:0 1px 3px rgba(0,0,0,.08);">
+          <h3 style="margin:0 0 16px;font-size:16px;color:#333!important;">Sales Overview</h3>
+          <div style="background:#f0f0f0;height:200px;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#999;">Chart Area (using existing Chart.js)</div>
+        </div>
+        <div style="background:white;border-radius:12px;padding:20px;box-shadow:0 1px 3px rgba(0,0,0,.08);">
+          <h3 style="margin:0 0 16px;font-size:16px;color:#333!important;">Recent Orders</h3>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #eee;"><span>#12345</span><span style="color:#667eea;">৳1,200</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #eee;"><span>#12346</span><span style="color:#667eea;">৳850</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #eee;"><span>#12347</span><span style="color:#667eea;">৳2,400</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
+        <div style="background:white;border-radius:12px;padding:20px;box-shadow:0 1px 3px rgba(0,0,0,.08);text-align:center;">
+          <div style="font-size:32px;margin-bottom:8px;">➕</div>
+          <h4 style="margin:0;font-size:14px;color:#333!important;">New Product</h4>
+          <p style="margin:4px 0 0;font-size:12px;color:#999;">Add a product to inventory</p>
+        </div>
+        <div style="background:white;border-radius:12px;padding:20px;box-shadow:0 1px 3px rgba(0,0,0,.08);text-align:center;">
+          <div style="font-size:32px;margin-bottom:8px;">📋</div>
+          <h4 style="margin:0;font-size:14px;color:#333!important;">View Orders</h4>
+          <p style="margin:4px 0 0;font-size:12px;color:#999;">Manage pending orders</p>
+        </div>
+        <div style="background:white;border-radius:12px;padding:20px;box-shadow:0 1px 3px rgba(0,0,0,.08);text-align:center;">
+          <div style="font-size:32px;margin-bottom:8px;">📊</div>
+          <h4 style="margin:0;font-size:14px;color:#333!important;">Reports</h4>
+          <p style="margin:4px 0 0;font-size:12px;color:#999;">View analytics reports</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Files That Will Change</h3>
+  <table style="width:100%;border-collapse:collapse;">
+    <tr style="border-bottom:1px solid #eee;">
+      <th style="text-align:left;padding:8px;">File</th>
+      <th style="text-align:left;padding:8px;">Changes</th>
+    </tr>
+    <tr style="border-bottom:1px solid #eee;">
+      <td style="padding:8px;"><code>style.css</code></td>
+      <td style="padding:8px;">Fix CSS variables, modern color palette, card styles, typography</td>
+    </tr>
+    <tr style="border-bottom:1px solid #eee;">
+      <td style="padding:8px;"><code>maincontent.blade.php</code></td>
+      <td style="padding:8px;">Remove duplicate row, gradient stat cards, chart + recent orders, quick actions</td>
+    </tr>
+    <tr style="border-bottom:1px solid #eee;">
+      <td style="padding:8px;"><code>header.blade.php</code></td>
+      <td style="padding:8px;">Clean up dropdowns, modern nav styling</td>
+    </tr>
+    <tr style="border-bottom:1px solid #eee;">
+      <td style="padding:8px;"><code>sidebar.blade.php</code></td>
+      <td style="padding:8px;">Consistent hover/active states, icon styling</td>
+    </tr>
+    <tr style="border-bottom:1px solid #eee;">
+      <td style="padding:8px;"><code>master.blade.php</code></td>
+      <td style="padding:8px;">Remove broken inline styles, clean up</td>
+    </tr>
+  </table>
+</div>
+
+<div class="section">
+  <h3>Key Design Principles</h3>
+  <ul>
+    <li><strong>Gradient stat cards</strong> — each card unique color for quick visual scanning</li>
+    <li><strong>White content cards</strong> — clean, with subtle shadows for depth</li>
+    <li><strong>Real data</strong> — replace YouTube with sales chart (Chart.js already included) + latest orders</li>
+    <li><strong>Quick actions</strong> — useful shortcuts to common tasks</li>
+    <li><strong>Consistent typography</strong> — no more &lt;h2 style="color:red"&gt;</li>
+    <li><strong>Mobile responsive</strong> — maintains Bootstrap 5 grid</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h3>Color Palette</h3>
+  <div style="display:flex;gap:12px;flex-wrap:wrap;">
+    <div style="width:48px;height:48px;border-radius:8px;background:linear-gradient(135deg,#667eea,#764ba2);" title="Purple - Orders"></div>
+    <div style="width:48px;height:48px;border-radius:8px;background:linear-gradient(135deg,#f093fb,#f5576c);" title="Pink - Revenue"></div>
+    <div style="width:48px;height:48px;border-radius:8px;background:linear-gradient(135deg,#4facfe,#00f2fe);" title="Blue - Processing"></div>
+    <div style="width:48px;height:48px;border-radius:8px;background:linear-gradient(135deg,#a18cd1,#fbc2eb);" title="Lavender - Pending"></div>
+    <div style="width:48px;height:48px;border-radius:8px;background:#fff;border:2px solid #ddd;" title="White - Cards"></div>
+    <div style="width:48px;height:48px;border-radius:8px;background:#1a1a2e;" title="Dark - Sidebar"></div>
+  </div>
+</div>

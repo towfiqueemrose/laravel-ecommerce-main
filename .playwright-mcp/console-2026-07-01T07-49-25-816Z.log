@@ -1,0 +1,10 @@
+[     208ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:8000/public/backend/img/user.jpg:0
+[     515ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:8000/admin/public/images/product/image/17320593444196inbound8694749153865713144.jpg:0
+[     599ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:8000/admin/public/images/product/default.jpg:0
+[     682ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:8000/admin/public/images/product/image/171925137615693.png:0
+[     766ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:8000/admin/public/images/product/image/171925128922912.png:0
+[     843ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:8000/admin/public/images/product/image/171925117943861.png:0
+[     919ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:8000/admin/public/images/product/image/171925101507121.png:0
+[     995ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:8000/admin/public/images/product/image/17192505531204J6ZaZprJvEkT0sUePVvmRK7My8F.png:0
+[    1069ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:8000/admin/public/images/product/image/17192508426238bo.png:0
+[    1147ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:8000/admin/public/images/product/image/17192499438143three.png:0

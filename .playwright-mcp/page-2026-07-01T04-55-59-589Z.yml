@@ -1,0 +1,153 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - text: 
+    - generic [ref=e6]:
+      - generic [ref=e8]:
+        - button [ref=e9] [cursor=pointer]:
+          - img [ref=e10]
+        - link [ref=e11] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000
+      - text: 
+      - generic [ref=e12]:
+        - link [ref=e14] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e17]: 
+        - text: 
+        - link [ref=e19] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e20]: 
+    - generic:
+      - generic:
+        - img [ref=e23] [cursor=pointer]: 
+        - generic [ref=e25]:
+          - link [ref=e26] [cursor=pointer]:
+            - /url: ""
+          - link "Categories" [ref=e27] [cursor=pointer]:
+            - /url: "#"
+      - list:
+        - listitem:
+          - link "Men's Clothing & Fashion." [ref=e28] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/products/category/mens-clothing-fashion
+            - text: Men's Clothing & Fashion.
+            - img [ref=e29]: +
+        - listitem:
+          - link "Women's Clothing & Fashion." [ref=e31] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/products/category/womens-clothing-fashion
+            - text: Women's Clothing & Fashion.
+            - img [ref=e32]: +
+        - listitem:
+          - link "Smart Phone & Accessorise" [ref=e34] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/products/category/smart-phone-accessorise
+            - text: Smart Phone & Accessorise
+            - img [ref=e35]: +
+        - listitem:
+          - link "Computer & Accessorise" [ref=e37] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/products/category/computer-accessorise
+        - listitem:
+          - link "TV & Home Appliance" [ref=e38] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/products/category/tv-home-appliance
+        - listitem:
+          - link "DSLR & CCTV Camera" [ref=e39] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/products/category/dslr-cctv-camera
+        - listitem:
+          - link "Automobile & Motorcycle" [ref=e40] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/products/category/automobile-motorcycle
+        - listitem:
+          - link "Kids & Toy" [ref=e41] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/products/category/kids-toy
+        - listitem:
+          - link "Home Decoration" [ref=e42] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/products/category/home-decoration
+  - text: 
+  - generic [ref=e47]:
+    - heading "কোন প্রোডাক্ট নেই" [level=2] [ref=e48]
+    - link "প্রোডাক্ট বাছাই করুন" [ref=e49] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000
+  - contentinfo [ref=e50]:
+    - generic [ref=e52]:
+      - generic [ref=e53]:
+        - generic [ref=e54]:
+          - heading "Contact Us" [level=4] [ref=e56]
+          - list [ref=e58]:
+            - listitem [ref=e59]:
+              - text: "Address:"
+              - generic [ref=e60]: A.H. Tower (5th Floor), H# G-71, Alokar Mor, Ghoramara Rajshahi, 6100
+        - generic [ref=e61]:
+          - heading "Informations" [level=4] [ref=e63]
+          - list [ref=e65]:
+            - listitem [ref=e66]:
+              - link "About us" [ref=e67] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/about_us
+            - listitem [ref=e68]:
+              - link "Contact Us" [ref=e69] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/contact_us
+            - listitem [ref=e70]:
+              - link "Terms & Conditions" [ref=e71] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/terms_codition
+            - listitem [ref=e72]:
+              - link "FAQ" [ref=e73] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/faq
+        - generic [ref=e74]:
+          - heading "My Account" [level=4] [ref=e76]
+          - list [ref=e78]:
+            - listitem [ref=e79]:
+              - link "Login" [ref=e80] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e81]:
+              - link "Order History" [ref=e82] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/track-order
+            - listitem [ref=e83]:
+              - link "Company" [ref=e84] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/company
+        - generic [ref=e85]:
+          - heading "Why Choose Us" [level=4] [ref=e87]
+          - list [ref=e89]:
+            - listitem [ref=e90]:
+              - link "Help Center" [ref=e91] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/help_center
+            - listitem [ref=e92]:
+              - link "Customer Service" [ref=e93] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/customer_service
+            - listitem [ref=e94]:
+              - link "Shopping Guide" [ref=e95] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/shipping_guide
+      - generic [ref=e97]:
+        - paragraph [ref=e99]:
+          - text: © All rights reserved by Daraz |
+          - 'link "Website Designed by: TIC Limited" [ref=e100] [cursor=pointer]':
+            - /url: https://tic.com.bd
+        - list [ref=e101]:
+          - listitem [ref=e102]:
+            - link "Terms & Conditions" [ref=e103] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/venture/terms_codition
+          - listitem [ref=e104]:
+            - link "About Us" [ref=e105] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/venture/about_us
+          - listitem [ref=e106]:
+            - link "Contact Us" [ref=e107] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/venture/contact_us
+  - list [ref=e112]:
+    - listitem [ref=e113]:
+      - link "Category" [ref=e114] [cursor=pointer]:
+        - /url: javascript:void(0);
+        - img [ref=e115]: 
+        - generic [ref=e117]: Category
+    - listitem [ref=e118]:
+      - link "Home" [ref=e119] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000
+        - img [ref=e120]: 
+        - generic [ref=e122]: Home
+    - listitem [ref=e123]:
+      - link "Cart" [ref=e124] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/checkout
+        - img [ref=e125]: 
+        - generic [ref=e127]: Cart
+    - listitem [ref=e128]:
+      - link "Account" [ref=e129] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/login
+        - img [ref=e130]: 
+        - generic [ref=e132]: Account
+  - link [ref=e133] [cursor=pointer]:
+    - /url: https://wa.me/+8809648156710?text=I%20am%20interested
+    - img [ref=e134]
+  - text: 

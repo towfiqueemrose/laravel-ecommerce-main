@@ -1,0 +1,604 @@
+- generic [ref=e2]:
+  - navigation [ref=e7]:
+    - link "logo" [ref=e8] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000/admin/dashboard
+      - heading "logo" [level=3] [ref=e9]:
+        - img "logo" [ref=e10]
+    - generic [ref=e14]:
+      - heading "TIC Limited (Super Admin)" [level=6] [ref=e15]
+      - text: Admin
+    - generic [ref=e16]:
+      - link " Dashboard" [ref=e17] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/admin/dashboard
+        - generic [ref=e18]: 
+        - text: Dashboard
+      - link " Admins " [ref=e20] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e21]: 
+        - text: Admins 
+      - link " Users " [ref=e23] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e24]: 
+        - text: Users 
+      - link " Menu & Brand " [ref=e26] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e27]: 
+        - text: Menu & Brand 
+      - link " Slider & Banner " [ref=e29] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e30]: 
+        - text: Slider & Banner 
+      - link " Attributes " [ref=e32] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e33]: 
+        - text: Attributes 
+      - link " Products" [ref=e34] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/admin/products
+        - generic [ref=e35]: 
+        - text: Products
+      - link " Order Panel" [ref=e36] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/order/dashboard
+        - generic [ref=e37]: 
+        - text: Order Panel
+      - link " Pages " [ref=e39] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e40]: 
+        - text: Pages 
+      - link " Menu Pages " [ref=e42] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e43]: 
+        - text: Menu Pages 
+      - link " Web Settings " [ref=e45] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e46]: 
+        - text: Web Settings 
+      - link " Get Support" [ref=e47] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e48]: 
+        - text: Get Support
+  - generic [ref=e49]:
+    - navigation [ref=e50]:
+      - link "" [ref=e51] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/admin/dashboard
+        - heading "" [level=2] [ref=e52]:
+          - generic [ref=e53]: 
+      - link "" [ref=e54] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e55]: 
+      - searchbox "Search" [ref=e57]
+      - generic [ref=e58]:
+        - link " " [ref=e60] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e61]: 
+          - text: 
+        - link " " [ref=e63] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e64]: 
+          - text: 
+        - link "" [ref=e66] [cursor=pointer]:
+          - /url: "#"
+    - generic [ref=e68]:
+      - generic [ref=e70]:
+        - heading "Products List" [level=6] [ref=e72]
+        - generic [ref=e74] [cursor=pointer]: + Create New Product
+      - generic [ref=e78]:
+        - generic [ref=e80]:
+          - text: Show
+          - combobox "Show entries" [ref=e81]:
+            - option "10" [selected]
+            - option "25"
+            - option "50"
+            - option "100"
+          - text: entries
+        - generic [ref=e83]:
+          - text: "Search:"
+          - searchbox "Search:" [ref=e84]
+        - table [ref=e86]:
+          - rowgroup [ref=e87]:
+            - 'row "SL: activate to sort column ascending Image: activate to sort column ascending Name: activate to sort column ascending SKU: activate to sort column ascending Sale Price: activate to sort column ascending Discount: activate to sort column ascending Combo: activate to sort column ascending Featured: activate to sort column ascending Promotion: activate to sort column ascending Status: activate to sort column ascending Action" [ref=e109]':
+              - 'columnheader "SL: activate to sort column ascending" [ref=e110] [cursor=pointer]': SL
+              - 'columnheader "Image: activate to sort column ascending" [ref=e111] [cursor=pointer]': Image
+              - 'columnheader "Name: activate to sort column ascending" [ref=e112] [cursor=pointer]': Name
+              - 'columnheader "SKU: activate to sort column ascending" [ref=e113] [cursor=pointer]': SKU
+              - 'columnheader "Sale Price: activate to sort column ascending" [ref=e114] [cursor=pointer]': Sale Price
+              - 'columnheader "Discount: activate to sort column ascending" [ref=e115] [cursor=pointer]': Discount
+              - 'columnheader "Combo: activate to sort column ascending" [ref=e116] [cursor=pointer]': Combo
+              - 'columnheader "Featured: activate to sort column ascending" [ref=e117] [cursor=pointer]': Featured
+              - 'columnheader "Promotion: activate to sort column ascending" [ref=e118] [cursor=pointer]': Promotion
+              - 'columnheader "Status: activate to sort column ascending" [ref=e119] [cursor=pointer]': Status
+              - columnheader "Action" [ref=e99]
+          - rowgroup [ref=e120]:
+            - row "223 No Image Maruf BNL000222 1200.00 33 Active Active Active Active  " [ref=e121]:
+              - cell "223" [ref=e122]
+              - cell "No Image" [ref=e123]:
+                - img "No Image" [ref=e124]
+              - cell "Maruf" [ref=e125]
+              - cell "BNL000222" [ref=e126]
+              - cell "1200.00" [ref=e127]
+              - cell "33" [ref=e128]
+              - cell "Active" [ref=e129]:
+                - button "Active" [ref=e130] [cursor=pointer]
+              - cell "Active" [ref=e131]:
+                - button "Active" [ref=e132] [cursor=pointer]
+              - cell "Active" [ref=e133]:
+                - button "Active" [ref=e134] [cursor=pointer]
+              - cell "Active" [ref=e135]:
+                - button "Active" [ref=e136] [cursor=pointer]
+              - cell " " [ref=e137]:
+                - link "" [ref=e138] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e139]: 
+                - link "" [ref=e140] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e141]: 
+            - row "221 No Image abcd BNL000213 120.00 33 Active Active Active Inactive  " [ref=e142]:
+              - cell "221" [ref=e143]
+              - cell "No Image" [ref=e144]:
+                - img "No Image" [ref=e145]
+              - cell "abcd" [ref=e146]
+              - cell "BNL000213" [ref=e147]
+              - cell "120.00" [ref=e148]
+              - cell "33" [ref=e149]
+              - cell "Active" [ref=e150]:
+                - button "Active" [ref=e151] [cursor=pointer]
+              - cell "Active" [ref=e152]:
+                - button "Active" [ref=e153] [cursor=pointer]
+              - cell "Active" [ref=e154]:
+                - button "Active" [ref=e155] [cursor=pointer]
+              - cell "Inactive" [ref=e156]:
+                - button "Inactive" [ref=e157] [cursor=pointer]
+              - cell " " [ref=e158]:
+                - link "" [ref=e159] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e160]: 
+                - link "" [ref=e161] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e162]: 
+            - row "211 No Image Exclusive Full Sle ev e Check Formal and Casual Shirt for Men BNL000211 444.00 95 Active Active Active Active  " [ref=e163]:
+              - cell "211" [ref=e164]
+              - cell "No Image" [ref=e165]:
+                - img "No Image" [ref=e166]
+              - cell "Exclusive Full Sle ev e Check Formal and Casual Shirt for Men" [ref=e167]
+              - cell "BNL000211" [ref=e168]
+              - cell "444.00" [ref=e169]
+              - cell "95" [ref=e170]
+              - cell "Active" [ref=e171]:
+                - button "Active" [ref=e172] [cursor=pointer]
+              - cell "Active" [ref=e173]:
+                - button "Active" [ref=e174] [cursor=pointer]
+              - cell "Active" [ref=e175]:
+                - button "Active" [ref=e176] [cursor=pointer]
+              - cell "Active" [ref=e177]:
+                - button "Active" [ref=e178] [cursor=pointer]
+              - cell " " [ref=e179]:
+                - link "" [ref=e180] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e181]: 
+                - link "" [ref=e182] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e183]: 
+            - row "210 No Image Exclusive Ful l Sleeve Check Formal and Casual Shirt for Men BNL000210 400.00 95 Active Active Active Active  " [ref=e184]:
+              - cell "210" [ref=e185]
+              - cell "No Image" [ref=e186]:
+                - img "No Image" [ref=e187]
+              - cell "Exclusive Ful l Sleeve Check Formal and Casual Shirt for Men" [ref=e188]
+              - cell "BNL000210" [ref=e189]
+              - cell "400.00" [ref=e190]
+              - cell "95" [ref=e191]
+              - cell "Active" [ref=e192]:
+                - button "Active" [ref=e193] [cursor=pointer]
+              - cell "Active" [ref=e194]:
+                - button "Active" [ref=e195] [cursor=pointer]
+              - cell "Active" [ref=e196]:
+                - button "Active" [ref=e197] [cursor=pointer]
+              - cell "Active" [ref=e198]:
+                - button "Active" [ref=e199] [cursor=pointer]
+              - cell " " [ref=e200]:
+                - link "" [ref=e201] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e202]: 
+                - link "" [ref=e203] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e204]: 
+            - row "209 No Image Casual Polo S hirt F or Men Best Quality BNL000209 222.00 98 Active Active Active Active  " [ref=e205]:
+              - cell "209" [ref=e206]
+              - cell "No Image" [ref=e207]:
+                - img "No Image" [ref=e208]
+              - cell "Casual Polo S hirt F or Men Best Quality" [ref=e209]
+              - cell "BNL000209" [ref=e210]
+              - cell "222.00" [ref=e211]
+              - cell "98" [ref=e212]
+              - cell "Active" [ref=e213]:
+                - button "Active" [ref=e214] [cursor=pointer]
+              - cell "Active" [ref=e215]:
+                - button "Active" [ref=e216] [cursor=pointer]
+              - cell "Active" [ref=e217]:
+                - button "Active" [ref=e218] [cursor=pointer]
+              - cell "Active" [ref=e219]:
+                - button "Active" [ref=e220] [cursor=pointer]
+              - cell " " [ref=e221]:
+                - link "" [ref=e222] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e223]: 
+                - link "" [ref=e224] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e225]: 
+            - row "208 No Image Dhupian Saree + Punjabi (Couple set) BNL000207 500.00 94 Active Active Active Active  " [ref=e226]:
+              - cell "208" [ref=e227]
+              - cell "No Image" [ref=e228]:
+                - img "No Image" [ref=e229]
+              - cell "Dhupian Saree + Punjabi (Couple set)" [ref=e230]
+              - cell "BNL000207" [ref=e231]
+              - cell "500.00" [ref=e232]
+              - cell "94" [ref=e233]
+              - cell "Active" [ref=e234]:
+                - button "Active" [ref=e235] [cursor=pointer]
+              - cell "Active" [ref=e236]:
+                - button "Active" [ref=e237] [cursor=pointer]
+              - cell "Active" [ref=e238]:
+                - button "Active" [ref=e239] [cursor=pointer]
+              - cell "Active" [ref=e240]:
+                - button "Active" [ref=e241] [cursor=pointer]
+              - cell " " [ref=e242]:
+                - link "" [ref=e243] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e244]: 
+                - link "" [ref=e245] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e246]: 
+            - row "207 No Image Dhupian Saree + Punjabi (Couple set) BNL000207 500.00 94 Active Active Active Active  " [ref=e247]:
+              - cell "207" [ref=e248]
+              - cell "No Image" [ref=e249]:
+                - img "No Image" [ref=e250]
+              - cell "Dhupian Saree + Punjabi (Couple set)" [ref=e251]
+              - cell "BNL000207" [ref=e252]
+              - cell "500.00" [ref=e253]
+              - cell "94" [ref=e254]
+              - cell "Active" [ref=e255]:
+                - button "Active" [ref=e256] [cursor=pointer]
+              - cell "Active" [ref=e257]:
+                - button "Active" [ref=e258] [cursor=pointer]
+              - cell "Active" [ref=e259]:
+                - button "Active" [ref=e260] [cursor=pointer]
+              - cell "Active" [ref=e261]:
+                - button "Active" [ref=e262] [cursor=pointer]
+              - cell " " [ref=e263]:
+                - link "" [ref=e264] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e265]: 
+                - link "" [ref=e266] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e267]: 
+            - row "206 No Image Dubai Borka for women BNL000206 1100.00 92 Active Active Active Active  " [ref=e268]:
+              - cell "206" [ref=e269]
+              - cell "No Image" [ref=e270]:
+                - img "No Image" [ref=e271]
+              - cell "Dubai Borka for women" [ref=e272]
+              - cell "BNL000206" [ref=e273]
+              - cell "1100.00" [ref=e274]
+              - cell "92" [ref=e275]
+              - cell "Active" [ref=e276]:
+                - button "Active" [ref=e277] [cursor=pointer]
+              - cell "Active" [ref=e278]:
+                - button "Active" [ref=e279] [cursor=pointer]
+              - cell "Active" [ref=e280]:
+                - button "Active" [ref=e281] [cursor=pointer]
+              - cell "Active" [ref=e282]:
+                - button "Active" [ref=e283] [cursor=pointer]
+              - cell " " [ref=e284]:
+                - link "" [ref=e285] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e286]: 
+                - link "" [ref=e287] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e288]: 
+            - row "205 No Image China Print Gown 3 PCS BNL000205 100.00 90 Active Active Active Active  " [ref=e289]:
+              - cell "205" [ref=e290]
+              - cell "No Image" [ref=e291]:
+                - img "No Image" [ref=e292]
+              - cell "China Print Gown 3 PCS" [ref=e293]
+              - cell "BNL000205" [ref=e294]
+              - cell "100.00" [ref=e295]
+              - cell "90" [ref=e296]
+              - cell "Active" [ref=e297]:
+                - button "Active" [ref=e298] [cursor=pointer]
+              - cell "Active" [ref=e299]:
+                - button "Active" [ref=e300] [cursor=pointer]
+              - cell "Active" [ref=e301]:
+                - button "Active" [ref=e302] [cursor=pointer]
+              - cell "Active" [ref=e303]:
+                - button "Active" [ref=e304] [cursor=pointer]
+              - cell " " [ref=e305]:
+                - link "" [ref=e306] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e307]: 
+                - link "" [ref=e308] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e309]: 
+            - row "204 No Image Readymade Nayra Cut 3 Pcs BNL000204 1000.00 -100 Active Active Active Active  " [ref=e310]:
+              - cell "204" [ref=e311]
+              - cell "No Image" [ref=e312]:
+                - img "No Image" [ref=e313]
+              - cell "Readymade Nayra Cut 3 Pcs" [ref=e314]
+              - cell "BNL000204" [ref=e315]
+              - cell "1000.00" [ref=e316]
+              - cell "-100" [ref=e317]
+              - cell "Active" [ref=e318]:
+                - button "Active" [ref=e319] [cursor=pointer]
+              - cell "Active" [ref=e320]:
+                - button "Active" [ref=e321] [cursor=pointer]
+              - cell "Active" [ref=e322]:
+                - button "Active" [ref=e323] [cursor=pointer]
+              - cell "Active" [ref=e324]:
+                - button "Active" [ref=e325] [cursor=pointer]
+              - cell " " [ref=e326]:
+                - link "" [ref=e327] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e328]: 
+                - link "" [ref=e329] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e330]: 
+        - status [ref=e331]: Showing 1 to 10 of 14 entries
+        - generic [ref=e332]:
+          - generic [ref=e333]: Previous
+          - generic [ref=e334]:
+            - generic [ref=e335] [cursor=pointer]: "1"
+            - generic [ref=e336] [cursor=pointer]: "2"
+          - generic [ref=e337] [cursor=pointer]: Next
+      - dialog [active] [ref=e338]:
+        - generic [ref=e339]:
+          - generic [ref=e340]:
+            - heading "Create New Product" [level=5] [ref=e341]
+            - button "Close" [ref=e342] [cursor=pointer]
+          - generic [ref=e344]:
+            - generic [ref=e345]:
+              - generic [ref=e346]:
+                - heading "General" [level=5] [ref=e347]
+                - generic [ref=e348]:
+                  - generic [ref=e349]: Product Name *
+                  - textbox "Product Name * Product Name *" [ref=e350]
+                - generic [ref=e351]:
+                  - generic [ref=e353]:
+                    - generic [ref=e354]: Sale Price *
+                    - spinbutton "Sale Price * Regular Price * Discount (%) Youtube Embade Code Size * Weights * Regular Price * Discount (%) Youtube Embade Code Size * Weights *" [ref=e355]
+                  - generic [ref=e357]:
+                    - generic [ref=e358]: Regular Price *
+                    - spinbutton "Product Short Description * Colour * Sale Price * Product Short Description * Colour *" [ref=e359]
+                - generic [ref=e360]:
+                  - generic [ref=e362]:
+                    - generic [ref=e363]: Discount (%)
+                    - spinbutton [ref=e364]
+                  - generic [ref=e366]:
+                    - generic [ref=e367]: Brand Name
+                    - combobox [ref=e368]:
+                      - option "Select Brands" [selected]
+                      - option "Xiaomi Redmi"
+                      - option "Samsung"
+                      - option "Realme"
+                      - option "New"
+                - generic [ref=e369]:
+                  - generic [ref=e371]:
+                    - generic [ref=e372]: Categories *
+                    - combobox [ref=e373]:
+                      - option "Select Category" [selected]
+                      - option "Men's Clothing & Fashion."
+                      - option "Women's Clothing & Fashion."
+                      - option "Smart Phone & Accessorise"
+                      - option "Computer & Accessorise"
+                      - option "TV & Home Appliance"
+                      - option "DSLR & CCTV Camera"
+                      - option "Automobile & Motorcycle"
+                      - option "Kids & Toy"
+                      - option "Home Decoration"
+                  - generic [ref=e375]:
+                    - generic [ref=e376]: Sub Category *
+                    - combobox [ref=e377]:
+                      - option "Select Sub-Category" [selected]
+                - generic [ref=e378]:
+                  - generic [ref=e379]: Product Short Description *
+                  - textbox [ref=e380]
+                - generic [ref=e381]:
+                  - generic [ref=e382]: Product Description *
+                  - generic [ref=e383]:
+                    - toolbar [ref=e384]:
+                      - button "Style" [ref=e387] [cursor=pointer]:
+                        - generic [ref=e388]: 
+                      - generic [ref=e389]:
+                        - button "Bold (CTRL+B)" [ref=e390] [cursor=pointer]:
+                          - generic [ref=e391]: 
+                        - button "Underline (CTRL+U)" [ref=e392] [cursor=pointer]:
+                          - generic [ref=e393]: 
+                        - button "Remove Font Style (CTRL+\\)" [ref=e394] [cursor=pointer]:
+                          - generic [ref=e395]: 
+                      - generic [ref=e397]:
+                        - button "Font Family" [ref=e398] [cursor=pointer]: Open Sans
+                        - text: 
+                      - generic [ref=e400]:
+                        - button "Recent Color" [ref=e401] [cursor=pointer]:
+                          - generic [ref=e402]: 
+                        - button "More Color" [ref=e403] [cursor=pointer]
+                      - generic [ref=e404]:
+                        - button "Unordered list (CTRL+SHIFT+NUM7)" [ref=e405] [cursor=pointer]:
+                          - generic [ref=e406]: 
+                        - button "Ordered list (CTRL+SHIFT+NUM8)" [ref=e407] [cursor=pointer]:
+                          - generic [ref=e408]: 
+                        - generic [ref=e409]:
+                          - button "Paragraph" [ref=e410] [cursor=pointer]:
+                            - generic [ref=e411]: 
+                          - text:      
+                      - button "Table" [ref=e414] [cursor=pointer]:
+                        - generic [ref=e415]: 
+                      - generic [ref=e416]:
+                        - button "Link (CTRL+K)" [ref=e417] [cursor=pointer]:
+                          - generic [ref=e418]: 
+                        - button "Picture" [ref=e419] [cursor=pointer]:
+                          - generic [ref=e420]: 
+                        - button "Video" [ref=e421] [cursor=pointer]:
+                          - generic [ref=e422]: 
+                      - generic [ref=e423]:
+                        - button "Full Screen" [ref=e424] [cursor=pointer]:
+                          - generic [ref=e425]: 
+                        - button "Code View" [ref=e426] [cursor=pointer]:
+                          - generic [ref=e427]: 
+                        - button "Help" [ref=e428] [cursor=pointer]:
+                          - generic [ref=e429]: 
+                    - textbox [ref=e431]:
+                      - paragraph [ref=e432]
+                    - status
+                    - status [ref=e433]:
+                      - generic "Resize" [ref=e434]
+                    - text:              
+              - generic [ref=e438]:
+                - heading "Product Images" [level=5] [ref=e439]
+                - generic [ref=e440]:
+                  - generic [ref=e442]:
+                    - generic [ref=e443]: Youtube Embade Code
+                    - textbox [ref=e444]
+                  - generic [ref=e446]:
+                    - generic [ref=e447]: Product Image *
+                    - generic [ref=e448] [cursor=pointer]: Choose Image
+                    - img [ref=e451]
+                  - generic [ref=e453]:
+                    - generic [ref=e454]: Product Slider image
+                    - generic [ref=e455] [cursor=pointer]: Choose Slider Images
+                - generic [ref=e456]:
+                  - generic [ref=e458]:
+                    - generic [ref=e459]: Colour *
+                    - checkbox [ref=e460]
+                    - text: Black
+                    - checkbox [ref=e461]
+                    - text: Blue
+                    - checkbox [ref=e462]
+                    - text: White
+                    - checkbox [ref=e463]
+                    - text: Maroon
+                    - checkbox [ref=e464]
+                    - text: Pink
+                    - checkbox [ref=e465]
+                    - text: Green
+                    - checkbox [ref=e466]
+                    - text: Magenta
+                    - checkbox [ref=e467]
+                    - text: Yellow
+                    - checkbox [ref=e468]
+                    - text: Red
+                    - checkbox [ref=e469]
+                    - text: Bangi
+                    - checkbox [ref=e470]
+                    - text: Aqua
+                    - checkbox [ref=e471]
+                    - text: Misty
+                    - checkbox [ref=e472]
+                    - text: Gold
+                    - checkbox [ref=e473]
+                    - text: Tiya
+                    - checkbox [ref=e474]
+                    - text: Olive
+                    - checkbox [ref=e475]
+                    - text: Purple
+                    - checkbox [ref=e476]
+                    - text: Ash
+                    - checkbox [ref=e477]
+                    - text: Light Ash
+                    - checkbox [ref=e478]
+                    - text: Dark Ash
+                    - checkbox [ref=e479]
+                    - text: Light Yellow
+                    - checkbox [ref=e480]
+                    - text: Deep Yellow
+                    - checkbox [ref=e481]
+                    - text: Light Green
+                    - checkbox [ref=e482]
+                    - text: Light Pink
+                    - checkbox [ref=e483]
+                    - text: Deep Green
+                    - checkbox [ref=e484]
+                    - text: Onion
+                    - checkbox [ref=e485]
+                    - text: Peach
+                    - checkbox [ref=e486]
+                    - text: Velvet
+                    - checkbox [ref=e487]
+                    - text: Paste
+                    - checkbox [ref=e488]
+                    - text: Biscuit
+                    - checkbox [ref=e489]
+                    - text: Orrange
+                    - checkbox [ref=e490]
+                    - text: Sea Green
+                    - checkbox [ref=e491]
+                    - text: Camel
+                    - checkbox [ref=e492]
+                    - text: Brown
+                    - checkbox [ref=e493]
+                    - text: Midnight Black
+                    - checkbox [ref=e494]
+                    - text: Sky Blue
+                    - checkbox [ref=e495]
+                    - text: Polar Silver
+                    - checkbox [ref=e496]
+                    - text: Onyx Gray
+                    - checkbox [ref=e497]
+                    - text: Mint Green
+                    - checkbox [ref=e498]
+                    - text: Ice Blue
+                    - checkbox [ref=e499]
+                    - text: Sunrise Gold
+                    - checkbox [ref=e500]
+                    - text: Orange
+                    - checkbox [ref=e501]
+                    - text: Silver
+                  - generic [ref=e503]:
+                    - generic [ref=e504]: Size *
+                    - checkbox [ref=e505]
+                    - text: Free Size
+                    - checkbox [ref=e506]
+                    - text: M
+                    - checkbox [ref=e507]
+                    - text: L
+                    - checkbox [ref=e508]
+                    - text: XL
+                    - checkbox [ref=e509]
+                    - text: XXL
+                    - checkbox [ref=e510]
+                    - text: "38"
+                    - checkbox [ref=e511]
+                    - text: "40"
+                    - checkbox [ref=e512]
+                    - text: "42"
+                    - checkbox [ref=e513]
+                    - text: "44"
+                    - checkbox [ref=e514]
+                    - text: "46"
+                    - checkbox [ref=e515]
+                    - text: "48"
+                    - checkbox [ref=e516]
+                    - text: S
+                    - checkbox [ref=e517]
+                    - text: 5-8 Years
+                    - checkbox [ref=e518]
+                    - text: 8-12 Years
+                  - generic [ref=e520]:
+                    - generic [ref=e521]: Weights *
+                    - checkbox [ref=e522]
+                    - text: .5 kg
+                    - checkbox [ref=e523]
+                    - text: 1kg
+                    - checkbox [ref=e524]
+                    - text: 200 Gram
+            - generic [ref=e526]:
+              - button "Close" [ref=e527] [cursor=pointer]
+              - button "Save" [ref=e528] [cursor=pointer]
+    - generic [ref=e102]:
+      - generic [ref=e103]:
+        - text: ©
+        - link "Bagdoom" [ref=e104] [cursor=pointer]:
+          - /url: "#"
+        - text: ", All Right Reserved."
+      - generic [ref=e105]:
+        - text: Designed By
+        - link "TIC Limited" [ref=e106] [cursor=pointer]:
+          - /url: https://tic.com.bd
+  - link "" [ref=e107] [cursor=pointer]:
+    - /url: "#"
+    - generic [ref=e108]: 

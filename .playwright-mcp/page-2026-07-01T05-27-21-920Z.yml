@@ -1,0 +1,23 @@
+- generic [ref=e2]:
+  - status [ref=e4]:
+    - generic [ref=e5]: Loading...
+  - generic [ref=e9]:
+    - link "Bagdoom" [ref=e11] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000
+      - heading "Bagdoom" [level=2] [ref=e12]
+    - paragraph [ref=e13]: Welcome to Bagdoom
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - textbox "Email address" [ref=e16]:
+          - /placeholder: name@ayebazar.com
+        - generic: Email address
+      - generic [ref=e17]:
+        - textbox "Password" [ref=e18]
+        - generic: Password
+      - generic [ref=e19]:
+        - generic [ref=e20]:
+          - checkbox "Remember me" [ref=e21]
+          - generic [ref=e22]: Remember me
+        - link "Forgot Password" [ref=e23] [cursor=pointer]:
+          - /url: ""
+      - button "Sign In" [ref=e24] [cursor=pointer]

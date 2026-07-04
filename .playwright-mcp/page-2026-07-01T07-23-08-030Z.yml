@@ -1,0 +1,1120 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e5]:
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Sign In" [ref=e9] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/login
+        - listitem [ref=e10]:
+          - link "|" [ref=e11] [cursor=pointer]:
+            - /url: javascript:void(0);
+        - listitem [ref=e12]:
+          - link "Sign Up" [ref=e13] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/register
+      - list [ref=e15]:
+        - listitem [ref=e16]:
+          - link "Have any question? Call Us +88+8809648156710" [ref=e17] [cursor=pointer]:
+            - /url: tel:+88+8809648156710
+            - img [ref=e18]: 
+            - text: Have any question? Call Us +88+8809648156710
+    - generic [ref=e22]: আমাদের এই ওয়েবসাইট এর ডেমো এর মধ্যে কিছু কিছু অপশন কাজ করবে না, ডেমো মুড চালু থাকার কারনে।আমাদের সাথে থাকার জন্য আপনাকে ধন্যবাদ।মনে রাখবেন এলিট ডিজাইন ছাড়া আমাদের অন্য কোন কোম্পানি নেই, এলিট ডিজাইন ছাড়া অন্য কোন পেইজ থেকে আমাদের কোন ডিজাইন কিনে প্রতারিত হলে এর জন্য আমরা কোনভাবেই দায়ি নয়।
+    - generic [ref=e25]:
+      - link [ref=e28] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000
+      - generic [ref=e29]:
+        - generic:
+          - generic:
+            - generic:
+              - textbox "Search here..." [ref=e30]
+              - button "" [ref=e31] [cursor=pointer]
+      - generic [ref=e32]:
+        - link "Cart 0" [ref=e34] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e35]:
+            - generic [ref=e36]:
+              - img [ref=e37]: 
+              - generic [ref=e39]: Cart
+            - generic [ref=e40]: "0"
+        - link [ref=e43] [cursor=pointer]:
+          - /url: tel:+8809648156710
+          - img [ref=e44]: 
+        - text: 
+    - text:  + + +
+  - text: 
+  - generic [ref=e46]:
+    - generic [ref=e49]:
+      - generic [ref=e52]:
+        - img [ref=e53]: 
+        - text: Categories
+      - list [ref=e58]:
+        - listitem [ref=e59]:
+          - link "Home" [ref=e60] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000
+        - listitem [ref=e61]:
+          - link "Combo Offer" [ref=e62] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/combo-offer
+        - listitem [ref=e63]:
+          - link "News Feed" [ref=e64] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000
+        - listitem [ref=e65]:
+          - link "Order Track" [ref=e66] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/track-order
+    - generic [ref=e68]:
+      - navigation [ref=e71]:
+        - list [ref=e72]:
+          - listitem [ref=e73]:
+            - link "Men's Clothing & Fashion. Men's Clothing & Fashion." [ref=e74] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/products/category/mens-clothing-fashion
+              - img "Men's Clothing & Fashion." [ref=e75]
+              - text: Men's Clothing & Fashion.
+          - listitem [ref=e76]:
+            - link "Women's Clothing & Fashion. Women's Clothing & Fashion." [ref=e77] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/products/category/womens-clothing-fashion
+              - img "Women's Clothing & Fashion." [ref=e78]
+              - text: Women's Clothing & Fashion.
+          - listitem [ref=e79]:
+            - link "Smart Phone & Accessorise Smart Phone & Accessorise" [ref=e80] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/products/category/smart-phone-accessorise
+              - img "Smart Phone & Accessorise" [ref=e81]
+              - text: Smart Phone & Accessorise
+          - listitem [ref=e82]:
+            - link "Computer & Accessorise Computer & Accessorise" [ref=e83] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/products/category/computer-accessorise
+              - img "Computer & Accessorise" [ref=e84]
+              - text: Computer & Accessorise
+          - listitem [ref=e85]:
+            - link "TV & Home Appliance TV & Home Appliance" [ref=e86] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/products/category/tv-home-appliance
+              - img "TV & Home Appliance" [ref=e87]
+              - text: TV & Home Appliance
+          - listitem [ref=e88]:
+            - link "DSLR & CCTV Camera DSLR & CCTV Camera" [ref=e89] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/products/category/dslr-cctv-camera
+              - img "DSLR & CCTV Camera" [ref=e90]
+              - text: DSLR & CCTV Camera
+          - listitem [ref=e91]:
+            - link "Automobile & Motorcycle Automobile & Motorcycle" [ref=e92] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/products/category/automobile-motorcycle
+              - img "Automobile & Motorcycle" [ref=e93]
+              - text: Automobile & Motorcycle
+          - listitem [ref=e94]:
+            - link "Kids & Toy Kids & Toy" [ref=e95] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/products/category/kids-toy
+              - img "Kids & Toy" [ref=e96]
+              - text: Kids & Toy
+          - listitem [ref=e97]:
+            - link "Home Decoration Home Decoration" [ref=e98] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/products/category/home-decoration
+              - img "Home Decoration" [ref=e99]
+              - text: Home Decoration
+      - generic [ref=e104]:
+        - img "slider3" [ref=e107]
+        - img "slider3" [ref=e110]
+        - img "slider3" [ref=e113]
+        - img "slider3" [ref=e116]
+        - img "slider3" [ref=e119]
+        - img "slider3" [ref=e122]
+    - generic [ref=e126]:
+      - generic [ref=e128]:
+        - link "Women's Clothing & Fashion." [ref=e131] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/category/womens-clothing-fashion
+          - generic [ref=e132]:
+            - img [ref=e134]
+            - paragraph [ref=e135]: Women's Clothing & Fashion.
+        - link "Smart Phone & Accessorise" [ref=e138] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/category/smart-phone-accessorise
+          - generic [ref=e139]:
+            - img [ref=e141]
+            - paragraph [ref=e142]: Smart Phone & Accessorise
+        - link "Computer & Accessorise" [ref=e145] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/category/computer-accessorise
+          - generic [ref=e146]:
+            - img [ref=e148]
+            - paragraph [ref=e149]: Computer & Accessorise
+        - link "TV & Home Appliance" [ref=e152] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/category/tv-home-appliance
+          - generic [ref=e153]:
+            - img [ref=e155]
+            - paragraph [ref=e156]: TV & Home Appliance
+        - link "DSLR & CCTV Camera" [ref=e159] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/category/dslr-cctv-camera
+          - generic [ref=e160]:
+            - img [ref=e162]
+            - paragraph [ref=e163]: DSLR & CCTV Camera
+        - link "Automobile & Motorcycle" [ref=e166] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/category/automobile-motorcycle
+          - generic [ref=e167]:
+            - img [ref=e169]
+            - paragraph [ref=e170]: Automobile & Motorcycle
+        - link "Kids & Toy" [ref=e173] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/category/kids-toy
+          - generic [ref=e174]:
+            - img [ref=e176]
+            - paragraph [ref=e177]: Kids & Toy
+        - link "Home Decoration" [ref=e180] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/category/home-decoration
+          - generic [ref=e181]:
+            - img [ref=e183]
+            - paragraph [ref=e184]: Home Decoration
+        - link "Men's Clothing & Fashion." [ref=e187] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/category/mens-clothing-fashion
+          - generic [ref=e188]:
+            - img [ref=e190]
+            - paragraph [ref=e191]: Men's Clothing & Fashion.
+        - link "Women's Clothing & Fashion." [ref=e194] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/category/womens-clothing-fashion
+          - generic [ref=e195]:
+            - img [ref=e197]
+            - paragraph [ref=e198]: Women's Clothing & Fashion.
+        - link "Smart Phone & Accessorise" [ref=e201] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/category/smart-phone-accessorise
+          - generic [ref=e202]:
+            - img [ref=e204]
+            - paragraph [ref=e205]: Smart Phone & Accessorise
+        - link "Computer & Accessorise" [ref=e208] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/category/computer-accessorise
+          - generic [ref=e209]:
+            - img [ref=e211]
+            - paragraph [ref=e212]: Computer & Accessorise
+        - link "TV & Home Appliance" [ref=e215] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/category/tv-home-appliance
+          - generic [ref=e216]:
+            - img [ref=e218]
+            - paragraph [ref=e219]: TV & Home Appliance
+        - link "DSLR & CCTV Camera" [ref=e222] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/category/dslr-cctv-camera
+          - generic [ref=e223]:
+            - img [ref=e225]
+            - paragraph [ref=e226]: DSLR & CCTV Camera
+        - link "Automobile & Motorcycle" [ref=e229] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/category/automobile-motorcycle
+          - generic [ref=e230]:
+            - img [ref=e232]
+            - paragraph [ref=e233]: Automobile & Motorcycle
+        - link "Kids & Toy" [ref=e236] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/category/kids-toy
+          - generic [ref=e237]:
+            - img [ref=e239]
+            - paragraph [ref=e240]: Kids & Toy
+        - link "Home Decoration" [ref=e243] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/category/home-decoration
+          - generic [ref=e244]:
+            - img [ref=e246]
+            - paragraph [ref=e247]: Home Decoration
+        - link "Men's Clothing & Fashion." [ref=e250] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/category/mens-clothing-fashion
+          - generic [ref=e251]:
+            - img [ref=e253]
+            - paragraph [ref=e254]: Men's Clothing & Fashion.
+        - link "Women's Clothing & Fashion." [ref=e257] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/category/womens-clothing-fashion
+          - generic [ref=e258]:
+            - img [ref=e260]
+            - paragraph [ref=e261]: Women's Clothing & Fashion.
+        - link "Smart Phone & Accessorise" [ref=e264] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/category/smart-phone-accessorise
+          - generic [ref=e265]:
+            - img [ref=e267]
+            - paragraph [ref=e268]: Smart Phone & Accessorise
+        - link "Computer & Accessorise" [ref=e271] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/category/computer-accessorise
+          - generic [ref=e272]:
+            - img [ref=e274]
+            - paragraph [ref=e275]: Computer & Accessorise
+        - link "TV & Home Appliance" [ref=e278] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/category/tv-home-appliance
+          - generic [ref=e279]:
+            - img [ref=e281]
+            - paragraph [ref=e282]: TV & Home Appliance
+        - link "DSLR & CCTV Camera" [ref=e285] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/category/dslr-cctv-camera
+          - generic [ref=e286]:
+            - img [ref=e288]
+            - paragraph [ref=e289]: DSLR & CCTV Camera
+        - link "Automobile & Motorcycle" [ref=e292] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/category/automobile-motorcycle
+          - generic [ref=e293]:
+            - img [ref=e295]
+            - paragraph [ref=e296]: Automobile & Motorcycle
+        - link "Kids & Toy" [ref=e299] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/category/kids-toy
+          - generic [ref=e300]:
+            - img [ref=e302]
+            - paragraph [ref=e303]: Kids & Toy
+      - generic:
+        - button "Previous" [ref=e304] [cursor=pointer]: ‹
+        - button "Next" [ref=e305] [cursor=pointer]: ›
+    - generic [ref=e307]:
+      - generic [ref=e308]:
+        - heading "Featured Products" [level=4] [ref=e310]
+        - link "VIEW ALL" [ref=e311] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/featured/products
+      - generic [ref=e313]:
+        - generic [ref=e315]:
+          - generic [ref=e321]:
+            - generic [ref=e323]:
+              - link "Dubai Borka for women" [ref=e325] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/dubai-borka-for-women
+                - img "Dubai Borka for women" [ref=e326]
+              - paragraph [ref=e329]: "-92%"
+            - generic [ref=e330]:
+              - generic [ref=e331]:
+                - heading "Dubai Borka for womens" [level=2] [ref=e333]:
+                  - link "Dubai Borka for womens" [ref=e334] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/dubai-borka-for-women
+                - generic [ref=e335]: ৳1100
+              - button "অর্ডার করুন" [ref=e337] [cursor=pointer]
+          - generic [ref=e343]:
+            - generic [ref=e345]:
+              - link "China Print Gown 3 PCS" [ref=e347] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/china-print-gown-3-pcs
+                - img "China Print Gown 3 PCS" [ref=e348]
+              - paragraph [ref=e351]: "-90%"
+            - generic [ref=e352]:
+              - generic [ref=e353]:
+                - heading "China Print Gown 3 PCSs" [level=2] [ref=e355]:
+                  - link "China Print Gown 3 PCSs" [ref=e356] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/china-print-gown-3-pcs
+                - generic [ref=e357]: ৳100
+              - button "অর্ডার করুন" [ref=e359] [cursor=pointer]
+          - generic [ref=e365]:
+            - generic [ref=e367]:
+              - link "Readymade Nayra Cut 3 Pcs" [ref=e369] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/readymade-nayra-cut-3-pcs
+                - img "Readymade Nayra Cut 3 Pcs" [ref=e370]
+              - paragraph [ref=e373]: "--100%"
+            - generic [ref=e374]:
+              - generic [ref=e375]:
+                - heading "Readymade Nayra Cut 3 Pcss" [level=2] [ref=e377]:
+                  - link "Readymade Nayra Cut 3 Pcss" [ref=e378] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/readymade-nayra-cut-3-pcs
+                - generic [ref=e379]: ৳1000
+              - button "অর্ডার করুন" [ref=e381] [cursor=pointer]
+          - generic [ref=e387]:
+            - generic [ref=e389]:
+              - link "Dhupian Saree + Punjabi (Couple set)" [ref=e391] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set
+                - img "Dhupian Saree + Punjabi (Couple set)" [ref=e392]
+              - paragraph [ref=e395]: "-50%"
+            - generic [ref=e396]:
+              - generic [ref=e397]:
+                - heading "Dhupian Saree + Punjabi (Couple set)s" [level=2] [ref=e399]:
+                  - link "Dhupian Saree + Punjabi (Couple set)s" [ref=e400] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set
+                - generic [ref=e401]: ৳500
+              - button "অর্ডার করুন" [ref=e403] [cursor=pointer]
+          - generic [ref=e409]:
+            - generic [ref=e411]:
+              - link "Premium Half Sleeve p olo Shirt for Men" [ref=e413] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/premium-half-sleeve-p-olo-shirt-for-men-1
+                - img "Premium Half Sleeve p olo Shirt for Men" [ref=e414]
+              - paragraph [ref=e417]: "-60%"
+            - generic [ref=e418]:
+              - generic [ref=e419]:
+                - heading "Premium Half Sleeve p olo Shirt for Mens" [level=2] [ref=e421]:
+                  - link "Premium Half Sleeve p olo Shirt for Mens" [ref=e422] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/premium-half-sleeve-p-olo-shirt-for-men-1
+                - generic [ref=e423]: ৳400
+              - button "অর্ডার করুন" [ref=e425] [cursor=pointer]
+          - generic [ref=e431]:
+            - generic [ref=e433]:
+              - link "Premium Half Sleeve p olo Shirt for Men" [ref=e435] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/premium-half-sleeve-p-olo-shirt-for-men
+                - img "Premium Half Sleeve p olo Shirt for Men" [ref=e436]
+              - paragraph [ref=e439]: "-70%"
+            - generic [ref=e440]:
+              - generic [ref=e441]:
+                - heading "Premium Half Sleeve p olo Shirt for Mens" [level=2] [ref=e443]:
+                  - link "Premium Half Sleeve p olo Shirt for Mens" [ref=e444] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/premium-half-sleeve-p-olo-shirt-for-men
+                - generic [ref=e445]: ৳300
+              - button "অর্ডার করুন" [ref=e447] [cursor=pointer]
+          - generic [ref=e453]:
+            - generic [ref=e455]:
+              - link "Premium Half Sleeve polo Shirt for Men" [ref=e457] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/premium-half-sleeve-polo-shirt-for-men
+                - img "Premium Half Sleeve polo Shirt for Men" [ref=e458]
+              - paragraph [ref=e461]: "-55%"
+            - generic [ref=e462]:
+              - generic [ref=e463]:
+                - heading "Premium Half Sleeve polo Shirt for Mens" [level=2] [ref=e465]:
+                  - link "Premium Half Sleeve polo Shirt for Mens" [ref=e466] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/premium-half-sleeve-polo-shirt-for-men
+                - generic [ref=e467]: ৳450
+              - button "অর্ডার করুন" [ref=e469] [cursor=pointer]
+          - generic [ref=e475]:
+            - generic [ref=e477]:
+              - link "Maruf" [ref=e479] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/maruf
+                - img "Maruf" [ref=e480]
+              - paragraph [ref=e483]: "-33%"
+            - generic [ref=e484]:
+              - generic [ref=e485]:
+                - heading "Marufs" [level=2] [ref=e487]:
+                  - link "Marufs" [ref=e488] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/maruf
+                - generic [ref=e489]: ৳1200
+              - button "অর্ডার করুন" [ref=e491] [cursor=pointer]
+          - generic [ref=e497]:
+            - generic [ref=e499]:
+              - link "Exclusive Full Sle ev e Check Formal and Casual Shirt for Men" [ref=e501] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/exclusive-full-sle-ev-e-check-formal-and-casual-shirt-for-men
+                - img "Exclusive Full Sle ev e Check Formal and Casual Shirt for Men" [ref=e502]
+              - paragraph [ref=e505]: "-95%"
+            - generic [ref=e506]:
+              - generic [ref=e507]:
+                - heading "Exclusive Full Sle ev e Check Formal and Casual Shirt for Mens" [level=2] [ref=e509]:
+                  - link "Exclusive Full Sle ev e Check Formal and Casual Shirt for Mens" [ref=e510] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/exclusive-full-sle-ev-e-check-formal-and-casual-shirt-for-men
+                - generic [ref=e511]: ৳444
+              - button "অর্ডার করুন" [ref=e513] [cursor=pointer]
+          - generic [ref=e519]:
+            - generic [ref=e521]:
+              - link "Exclusive Ful l Sleeve Check Formal and Casual Shirt for Men" [ref=e523] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/exclusive-ful-l-sleeve-check-formal-and-casual-shirt-for-men
+                - img "Exclusive Ful l Sleeve Check Formal and Casual Shirt for Men" [ref=e524]
+              - paragraph [ref=e527]: "-95%"
+            - generic [ref=e528]:
+              - generic [ref=e529]:
+                - heading "Exclusive Ful l Sleeve Check Formal and Casual Shirt for Mens" [level=2] [ref=e531]:
+                  - link "Exclusive Ful l Sleeve Check Formal and Casual Shirt for Mens" [ref=e532] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/exclusive-ful-l-sleeve-check-formal-and-casual-shirt-for-men
+                - generic [ref=e533]: ৳400
+              - button "অর্ডার করুন" [ref=e535] [cursor=pointer]
+          - generic [ref=e541]:
+            - generic [ref=e543]:
+              - link "Casual Polo S hirt F or Men Best Quality" [ref=e545] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/casual-polo-s-hirt-f-or-men-best-quality
+                - img "Casual Polo S hirt F or Men Best Quality" [ref=e546]
+              - paragraph [ref=e549]: "-98%"
+            - generic [ref=e550]:
+              - generic [ref=e551]:
+                - heading "Casual Polo S hirt F or Men Best Qualitys" [level=2] [ref=e553]:
+                  - link "Casual Polo S hirt F or Men Best Qualitys" [ref=e554] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/casual-polo-s-hirt-f-or-men-best-quality
+                - generic [ref=e555]: ৳222
+              - button "অর্ডার করুন" [ref=e557] [cursor=pointer]
+          - generic [ref=e563]:
+            - generic [ref=e565]:
+              - link "Dhupian Saree + Punjabi (Couple set)" [ref=e567] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set-2
+                - img "Dhupian Saree + Punjabi (Couple set)" [ref=e568]
+              - paragraph [ref=e571]: "-94%"
+            - generic [ref=e572]:
+              - generic [ref=e573]:
+                - heading "Dhupian Saree + Punjabi (Couple set)s" [level=2] [ref=e575]:
+                  - link "Dhupian Saree + Punjabi (Couple set)s" [ref=e576] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set-2
+                - generic [ref=e577]: ৳500
+              - button "অর্ডার করুন" [ref=e579] [cursor=pointer]
+          - generic [ref=e585]:
+            - generic [ref=e587]:
+              - link "Dhupian Saree + Punjabi (Couple set)" [ref=e589] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set-1
+                - img "Dhupian Saree + Punjabi (Couple set)" [ref=e590]
+              - paragraph [ref=e593]: "-94%"
+            - generic [ref=e594]:
+              - generic [ref=e595]:
+                - heading "Dhupian Saree + Punjabi (Couple set)s" [level=2] [ref=e597]:
+                  - link "Dhupian Saree + Punjabi (Couple set)s" [ref=e598] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set-1
+                - generic [ref=e599]: ৳500
+              - button "অর্ডার করুন" [ref=e601] [cursor=pointer]
+          - generic [ref=e607]:
+            - generic [ref=e609]:
+              - link "Dubai Borka for women" [ref=e611] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/dubai-borka-for-women
+                - img "Dubai Borka for women" [ref=e612]
+              - paragraph [ref=e615]: "-92%"
+            - generic [ref=e616]:
+              - generic [ref=e617]:
+                - heading "Dubai Borka for womens" [level=2] [ref=e619]:
+                  - link "Dubai Borka for womens" [ref=e620] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/dubai-borka-for-women
+                - generic [ref=e621]: ৳1100
+              - button "অর্ডার করুন" [ref=e623] [cursor=pointer]
+          - generic [ref=e629]:
+            - generic [ref=e631]:
+              - link "China Print Gown 3 PCS" [ref=e633] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/china-print-gown-3-pcs
+                - img "China Print Gown 3 PCS" [ref=e634]
+              - paragraph [ref=e637]: "-90%"
+            - generic [ref=e638]:
+              - generic [ref=e639]:
+                - heading "China Print Gown 3 PCSs" [level=2] [ref=e641]:
+                  - link "China Print Gown 3 PCSs" [ref=e642] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/china-print-gown-3-pcs
+                - generic [ref=e643]: ৳100
+              - button "অর্ডার করুন" [ref=e645] [cursor=pointer]
+          - generic [ref=e651]:
+            - generic [ref=e653]:
+              - link "Readymade Nayra Cut 3 Pcs" [ref=e655] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/readymade-nayra-cut-3-pcs
+                - img "Readymade Nayra Cut 3 Pcs" [ref=e656]
+              - paragraph [ref=e659]: "--100%"
+            - generic [ref=e660]:
+              - generic [ref=e661]:
+                - heading "Readymade Nayra Cut 3 Pcss" [level=2] [ref=e663]:
+                  - link "Readymade Nayra Cut 3 Pcss" [ref=e664] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/readymade-nayra-cut-3-pcs
+                - generic [ref=e665]: ৳1000
+              - button "অর্ডার করুন" [ref=e667] [cursor=pointer]
+          - generic [ref=e673]:
+            - generic [ref=e675]:
+              - link "Dhupian Saree + Punjabi (Couple set)" [ref=e677] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set
+                - img "Dhupian Saree + Punjabi (Couple set)" [ref=e678]
+              - paragraph [ref=e681]: "-50%"
+            - generic [ref=e682]:
+              - generic [ref=e683]:
+                - heading "Dhupian Saree + Punjabi (Couple set)s" [level=2] [ref=e685]:
+                  - link "Dhupian Saree + Punjabi (Couple set)s" [ref=e686] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set
+                - generic [ref=e687]: ৳500
+              - button "অর্ডার করুন" [ref=e689] [cursor=pointer]
+          - generic [ref=e695]:
+            - generic [ref=e697]:
+              - link "Premium Half Sleeve p olo Shirt for Men" [ref=e699] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/premium-half-sleeve-p-olo-shirt-for-men-1
+                - img "Premium Half Sleeve p olo Shirt for Men" [ref=e700]
+              - paragraph [ref=e703]: "-60%"
+            - generic [ref=e704]:
+              - generic [ref=e705]:
+                - heading "Premium Half Sleeve p olo Shirt for Mens" [level=2] [ref=e707]:
+                  - link "Premium Half Sleeve p olo Shirt for Mens" [ref=e708] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/premium-half-sleeve-p-olo-shirt-for-men-1
+                - generic [ref=e709]: ৳400
+              - button "অর্ডার করুন" [ref=e711] [cursor=pointer]
+          - generic [ref=e717]:
+            - generic [ref=e719]:
+              - link "Premium Half Sleeve p olo Shirt for Men" [ref=e721] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/premium-half-sleeve-p-olo-shirt-for-men
+                - img "Premium Half Sleeve p olo Shirt for Men" [ref=e722]
+              - paragraph [ref=e725]: "-70%"
+            - generic [ref=e726]:
+              - generic [ref=e727]:
+                - heading "Premium Half Sleeve p olo Shirt for Mens" [level=2] [ref=e729]:
+                  - link "Premium Half Sleeve p olo Shirt for Mens" [ref=e730] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/premium-half-sleeve-p-olo-shirt-for-men
+                - generic [ref=e731]: ৳300
+              - button "অর্ডার করুন" [ref=e733] [cursor=pointer]
+          - generic [ref=e739]:
+            - generic [ref=e741]:
+              - link "Premium Half Sleeve polo Shirt for Men" [ref=e743] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/premium-half-sleeve-polo-shirt-for-men
+                - img "Premium Half Sleeve polo Shirt for Men" [ref=e744]
+              - paragraph [ref=e747]: "-55%"
+            - generic [ref=e748]:
+              - generic [ref=e749]:
+                - heading "Premium Half Sleeve polo Shirt for Mens" [level=2] [ref=e751]:
+                  - link "Premium Half Sleeve polo Shirt for Mens" [ref=e752] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/premium-half-sleeve-polo-shirt-for-men
+                - generic [ref=e753]: ৳450
+              - button "অর্ডার করুন" [ref=e755] [cursor=pointer]
+          - generic [ref=e761]:
+            - generic [ref=e763]:
+              - link "Maruf" [ref=e765] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/maruf
+                - img "Maruf" [ref=e766]
+              - paragraph [ref=e769]: "-33%"
+            - generic [ref=e770]:
+              - generic [ref=e771]:
+                - heading "Marufs" [level=2] [ref=e773]:
+                  - link "Marufs" [ref=e774] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/maruf
+                - generic [ref=e775]: ৳1200
+              - button "অর্ডার করুন" [ref=e777] [cursor=pointer]
+          - generic [ref=e783]:
+            - generic [ref=e785]:
+              - link "Exclusive Full Sle ev e Check Formal and Casual Shirt for Men" [ref=e787] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/exclusive-full-sle-ev-e-check-formal-and-casual-shirt-for-men
+                - img "Exclusive Full Sle ev e Check Formal and Casual Shirt for Men" [ref=e788]
+              - paragraph [ref=e791]: "-95%"
+            - generic [ref=e792]:
+              - generic [ref=e793]:
+                - heading "Exclusive Full Sle ev e Check Formal and Casual Shirt for Mens" [level=2] [ref=e795]:
+                  - link "Exclusive Full Sle ev e Check Formal and Casual Shirt for Mens" [ref=e796] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/exclusive-full-sle-ev-e-check-formal-and-casual-shirt-for-men
+                - generic [ref=e797]: ৳444
+              - button "অর্ডার করুন" [ref=e799] [cursor=pointer]
+          - generic [ref=e805]:
+            - generic [ref=e807]:
+              - link "Exclusive Ful l Sleeve Check Formal and Casual Shirt for Men" [ref=e809] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/exclusive-ful-l-sleeve-check-formal-and-casual-shirt-for-men
+                - img "Exclusive Ful l Sleeve Check Formal and Casual Shirt for Men" [ref=e810]
+              - paragraph [ref=e813]: "-95%"
+            - generic [ref=e814]:
+              - generic [ref=e815]:
+                - heading "Exclusive Ful l Sleeve Check Formal and Casual Shirt for Mens" [level=2] [ref=e817]:
+                  - link "Exclusive Ful l Sleeve Check Formal and Casual Shirt for Mens" [ref=e818] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/exclusive-ful-l-sleeve-check-formal-and-casual-shirt-for-men
+                - generic [ref=e819]: ৳400
+              - button "অর্ডার করুন" [ref=e821] [cursor=pointer]
+          - generic [ref=e827]:
+            - generic [ref=e829]:
+              - link "Casual Polo S hirt F or Men Best Quality" [ref=e831] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/casual-polo-s-hirt-f-or-men-best-quality
+                - img "Casual Polo S hirt F or Men Best Quality" [ref=e832]
+              - paragraph [ref=e835]: "-98%"
+            - generic [ref=e836]:
+              - generic [ref=e837]:
+                - heading "Casual Polo S hirt F or Men Best Qualitys" [level=2] [ref=e839]:
+                  - link "Casual Polo S hirt F or Men Best Qualitys" [ref=e840] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/casual-polo-s-hirt-f-or-men-best-quality
+                - generic [ref=e841]: ৳222
+              - button "অর্ডার করুন" [ref=e843] [cursor=pointer]
+          - generic [ref=e849]:
+            - generic [ref=e851]:
+              - link "Dhupian Saree + Punjabi (Couple set)" [ref=e853] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set-2
+                - img "Dhupian Saree + Punjabi (Couple set)" [ref=e854]
+              - paragraph [ref=e857]: "-94%"
+            - generic [ref=e858]:
+              - generic [ref=e859]:
+                - heading "Dhupian Saree + Punjabi (Couple set)s" [level=2] [ref=e861]:
+                  - link "Dhupian Saree + Punjabi (Couple set)s" [ref=e862] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set-2
+                - generic [ref=e863]: ৳500
+              - button "অর্ডার করুন" [ref=e865] [cursor=pointer]
+          - generic [ref=e871]:
+            - generic [ref=e873]:
+              - link "Dhupian Saree + Punjabi (Couple set)" [ref=e875] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set-1
+                - img "Dhupian Saree + Punjabi (Couple set)" [ref=e876]
+              - paragraph [ref=e879]: "-94%"
+            - generic [ref=e880]:
+              - generic [ref=e881]:
+                - heading "Dhupian Saree + Punjabi (Couple set)s" [level=2] [ref=e883]:
+                  - link "Dhupian Saree + Punjabi (Couple set)s" [ref=e884] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set-1
+                - generic [ref=e885]: ৳500
+              - button "অর্ডার করুন" [ref=e887] [cursor=pointer]
+          - generic [ref=e893]:
+            - generic [ref=e895]:
+              - link "Dubai Borka for women" [ref=e897] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/dubai-borka-for-women
+                - img "Dubai Borka for women" [ref=e898]
+              - paragraph [ref=e901]: "-92%"
+            - generic [ref=e902]:
+              - generic [ref=e903]:
+                - heading "Dubai Borka for womens" [level=2] [ref=e905]:
+                  - link "Dubai Borka for womens" [ref=e906] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/dubai-borka-for-women
+                - generic [ref=e907]: ৳1100
+              - button "অর্ডার করুন" [ref=e909] [cursor=pointer]
+        - generic:
+          - button "Previous" [ref=e910] [cursor=pointer]: ‹
+          - button "Next" [ref=e911] [cursor=pointer]: ›
+    - generic [ref=e913]:
+      - generic [ref=e914]:
+        - heading "Promotional Offers" [level=4] [ref=e916]
+        - link "VIEW ALL" [ref=e917] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/promotional/products
+      - generic [ref=e919]:
+        - generic [ref=e921]:
+          - generic [ref=e927]:
+            - generic [ref=e929]:
+              - link "Dubai Borka for women" [ref=e931] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/dubai-borka-for-women
+                - img "Dubai Borka for women" [ref=e932]
+              - paragraph [ref=e935]: "-92%"
+            - generic [ref=e936]:
+              - generic [ref=e937]:
+                - heading "Dubai Borka for womens" [level=2] [ref=e939]:
+                  - link "Dubai Borka for womens" [ref=e940] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/dubai-borka-for-women
+                - generic [ref=e941]: ৳1100
+              - button "অর্ডার করুন" [ref=e943] [cursor=pointer]
+          - generic [ref=e949]:
+            - generic [ref=e951]:
+              - link "Dhupian Saree + Punjabi (Couple set)" [ref=e953] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set-1
+                - img "Dhupian Saree + Punjabi (Couple set)" [ref=e954]
+              - paragraph [ref=e957]: "-94%"
+            - generic [ref=e958]:
+              - generic [ref=e959]:
+                - heading "Dhupian Saree + Punjabi (Couple set)s" [level=2] [ref=e961]:
+                  - link "Dhupian Saree + Punjabi (Couple set)s" [ref=e962] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set-1
+                - generic [ref=e963]: ৳500
+              - button "অর্ডার করুন" [ref=e965] [cursor=pointer]
+          - generic [ref=e971]:
+            - generic [ref=e973]:
+              - link "Dhupian Saree + Punjabi (Couple set)" [ref=e975] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set-2
+                - img "Dhupian Saree + Punjabi (Couple set)" [ref=e976]
+              - paragraph [ref=e979]: "-94%"
+            - generic [ref=e980]:
+              - generic [ref=e981]:
+                - heading "Dhupian Saree + Punjabi (Couple set)s" [level=2] [ref=e983]:
+                  - link "Dhupian Saree + Punjabi (Couple set)s" [ref=e984] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set-2
+                - generic [ref=e985]: ৳500
+              - button "অর্ডার করুন" [ref=e987] [cursor=pointer]
+          - generic [ref=e993]:
+            - generic [ref=e995]:
+              - link "Casual Polo S hirt F or Men Best Quality" [ref=e997] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/casual-polo-s-hirt-f-or-men-best-quality
+                - img "Casual Polo S hirt F or Men Best Quality" [ref=e998]
+              - paragraph [ref=e1001]: "-98%"
+            - generic [ref=e1002]:
+              - generic [ref=e1003]:
+                - heading "Casual Polo S hirt F or Men Best Qualitys" [level=2] [ref=e1005]:
+                  - link "Casual Polo S hirt F or Men Best Qualitys" [ref=e1006] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/casual-polo-s-hirt-f-or-men-best-quality
+                - generic [ref=e1007]: ৳222
+              - button "অর্ডার করুন" [ref=e1009] [cursor=pointer]
+          - generic [ref=e1015]:
+            - generic [ref=e1017]:
+              - link "Exclusive Ful l Sleeve Check Formal and Casual Shirt for Men" [ref=e1019] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/exclusive-ful-l-sleeve-check-formal-and-casual-shirt-for-men
+                - img "Exclusive Ful l Sleeve Check Formal and Casual Shirt for Men" [ref=e1020]
+              - paragraph [ref=e1023]: "-95%"
+            - generic [ref=e1024]:
+              - generic [ref=e1025]:
+                - heading "Exclusive Ful l Sleeve Check Formal and Casual Shirt for Mens" [level=2] [ref=e1027]:
+                  - link "Exclusive Ful l Sleeve Check Formal and Casual Shirt for Mens" [ref=e1028] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/exclusive-ful-l-sleeve-check-formal-and-casual-shirt-for-men
+                - generic [ref=e1029]: ৳400
+              - button "অর্ডার করুন" [ref=e1031] [cursor=pointer]
+          - generic [ref=e1037]:
+            - generic [ref=e1039]:
+              - link "Exclusive Full Sle ev e Check Formal and Casual Shirt for Men" [ref=e1041] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/exclusive-full-sle-ev-e-check-formal-and-casual-shirt-for-men
+                - img "Exclusive Full Sle ev e Check Formal and Casual Shirt for Men" [ref=e1042]
+              - paragraph [ref=e1045]: "-95%"
+            - generic [ref=e1046]:
+              - generic [ref=e1047]:
+                - heading "Exclusive Full Sle ev e Check Formal and Casual Shirt for Mens" [level=2] [ref=e1049]:
+                  - link "Exclusive Full Sle ev e Check Formal and Casual Shirt for Mens" [ref=e1050] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/exclusive-full-sle-ev-e-check-formal-and-casual-shirt-for-men
+                - generic [ref=e1051]: ৳444
+              - button "অর্ডার করুন" [ref=e1053] [cursor=pointer]
+          - generic [ref=e1059]:
+            - generic [ref=e1061]:
+              - link "Maruf" [ref=e1063] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/maruf
+                - img "Maruf" [ref=e1064]
+              - paragraph [ref=e1067]: "-33%"
+            - generic [ref=e1068]:
+              - generic [ref=e1069]:
+                - heading "Marufs" [level=2] [ref=e1071]:
+                  - link "Marufs" [ref=e1072] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/maruf
+                - generic [ref=e1073]: ৳1200
+              - button "অর্ডার করুন" [ref=e1075] [cursor=pointer]
+          - generic [ref=e1081]:
+            - generic [ref=e1083]:
+              - link "Premium Half Sleeve polo Shirt for Men" [ref=e1085] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/premium-half-sleeve-polo-shirt-for-men
+                - img "Premium Half Sleeve polo Shirt for Men" [ref=e1086]
+              - paragraph [ref=e1089]: "-55%"
+            - generic [ref=e1090]:
+              - generic [ref=e1091]:
+                - heading "Premium Half Sleeve polo Shirt for Mens" [level=2] [ref=e1093]:
+                  - link "Premium Half Sleeve polo Shirt for Mens" [ref=e1094] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/premium-half-sleeve-polo-shirt-for-men
+                - generic [ref=e1095]: ৳450
+              - button "অর্ডার করুন" [ref=e1097] [cursor=pointer]
+          - generic [ref=e1103]:
+            - generic [ref=e1105]:
+              - link "Premium Half Sleeve p olo Shirt for Men" [ref=e1107] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/premium-half-sleeve-p-olo-shirt-for-men
+                - img "Premium Half Sleeve p olo Shirt for Men" [ref=e1108]
+              - paragraph [ref=e1111]: "-70%"
+            - generic [ref=e1112]:
+              - generic [ref=e1113]:
+                - heading "Premium Half Sleeve p olo Shirt for Mens" [level=2] [ref=e1115]:
+                  - link "Premium Half Sleeve p olo Shirt for Mens" [ref=e1116] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/premium-half-sleeve-p-olo-shirt-for-men
+                - generic [ref=e1117]: ৳300
+              - button "অর্ডার করুন" [ref=e1119] [cursor=pointer]
+          - generic [ref=e1125]:
+            - generic [ref=e1127]:
+              - link "Premium Half Sleeve p olo Shirt for Men" [ref=e1129] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/premium-half-sleeve-p-olo-shirt-for-men-1
+                - img "Premium Half Sleeve p olo Shirt for Men" [ref=e1130]
+              - paragraph [ref=e1133]: "-60%"
+            - generic [ref=e1134]:
+              - generic [ref=e1135]:
+                - heading "Premium Half Sleeve p olo Shirt for Mens" [level=2] [ref=e1137]:
+                  - link "Premium Half Sleeve p olo Shirt for Mens" [ref=e1138] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/premium-half-sleeve-p-olo-shirt-for-men-1
+                - generic [ref=e1139]: ৳400
+              - button "অর্ডার করুন" [ref=e1141] [cursor=pointer]
+          - generic [ref=e1147]:
+            - generic [ref=e1149]:
+              - link "Dhupian Saree + Punjabi (Couple set)" [ref=e1151] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set
+                - img "Dhupian Saree + Punjabi (Couple set)" [ref=e1152]
+              - paragraph [ref=e1155]: "-50%"
+            - generic [ref=e1156]:
+              - generic [ref=e1157]:
+                - heading "Dhupian Saree + Punjabi (Couple set)s" [level=2] [ref=e1159]:
+                  - link "Dhupian Saree + Punjabi (Couple set)s" [ref=e1160] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set
+                - generic [ref=e1161]: ৳500
+              - button "অর্ডার করুন" [ref=e1163] [cursor=pointer]
+          - generic [ref=e1169]:
+            - generic [ref=e1171]:
+              - link "Readymade Nayra Cut 3 Pcs" [ref=e1173] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/readymade-nayra-cut-3-pcs
+                - img "Readymade Nayra Cut 3 Pcs" [ref=e1174]
+              - paragraph [ref=e1177]: "--100%"
+            - generic [ref=e1178]:
+              - generic [ref=e1179]:
+                - heading "Readymade Nayra Cut 3 Pcss" [level=2] [ref=e1181]:
+                  - link "Readymade Nayra Cut 3 Pcss" [ref=e1182] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/readymade-nayra-cut-3-pcs
+                - generic [ref=e1183]: ৳1000
+              - button "অর্ডার করুন" [ref=e1185] [cursor=pointer]
+          - generic [ref=e1191]:
+            - generic [ref=e1193]:
+              - link "China Print Gown 3 PCS" [ref=e1195] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/china-print-gown-3-pcs
+                - img "China Print Gown 3 PCS" [ref=e1196]
+              - paragraph [ref=e1199]: "-90%"
+            - generic [ref=e1200]:
+              - generic [ref=e1201]:
+                - heading "China Print Gown 3 PCSs" [level=2] [ref=e1203]:
+                  - link "China Print Gown 3 PCSs" [ref=e1204] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/china-print-gown-3-pcs
+                - generic [ref=e1205]: ৳100
+              - button "অর্ডার করুন" [ref=e1207] [cursor=pointer]
+          - generic [ref=e1213]:
+            - generic [ref=e1215]:
+              - link "Dubai Borka for women" [ref=e1217] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/dubai-borka-for-women
+                - img "Dubai Borka for women" [ref=e1218]
+              - paragraph [ref=e1221]: "-92%"
+            - generic [ref=e1222]:
+              - generic [ref=e1223]:
+                - heading "Dubai Borka for womens" [level=2] [ref=e1225]:
+                  - link "Dubai Borka for womens" [ref=e1226] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/dubai-borka-for-women
+                - generic [ref=e1227]: ৳1100
+              - button "অর্ডার করুন" [ref=e1229] [cursor=pointer]
+          - generic [ref=e1235]:
+            - generic [ref=e1237]:
+              - link "Dhupian Saree + Punjabi (Couple set)" [ref=e1239] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set-1
+                - img "Dhupian Saree + Punjabi (Couple set)" [ref=e1240]
+              - paragraph [ref=e1243]: "-94%"
+            - generic [ref=e1244]:
+              - generic [ref=e1245]:
+                - heading "Dhupian Saree + Punjabi (Couple set)s" [level=2] [ref=e1247]:
+                  - link "Dhupian Saree + Punjabi (Couple set)s" [ref=e1248] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set-1
+                - generic [ref=e1249]: ৳500
+              - button "অর্ডার করুন" [ref=e1251] [cursor=pointer]
+          - generic [ref=e1257]:
+            - generic [ref=e1259]:
+              - link "Dhupian Saree + Punjabi (Couple set)" [ref=e1261] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set-2
+                - img "Dhupian Saree + Punjabi (Couple set)" [ref=e1262]
+              - paragraph [ref=e1265]: "-94%"
+            - generic [ref=e1266]:
+              - generic [ref=e1267]:
+                - heading "Dhupian Saree + Punjabi (Couple set)s" [level=2] [ref=e1269]:
+                  - link "Dhupian Saree + Punjabi (Couple set)s" [ref=e1270] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set-2
+                - generic [ref=e1271]: ৳500
+              - button "অর্ডার করুন" [ref=e1273] [cursor=pointer]
+          - generic [ref=e1279]:
+            - generic [ref=e1281]:
+              - link "Casual Polo S hirt F or Men Best Quality" [ref=e1283] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/casual-polo-s-hirt-f-or-men-best-quality
+                - img "Casual Polo S hirt F or Men Best Quality" [ref=e1284]
+              - paragraph [ref=e1287]: "-98%"
+            - generic [ref=e1288]:
+              - generic [ref=e1289]:
+                - heading "Casual Polo S hirt F or Men Best Qualitys" [level=2] [ref=e1291]:
+                  - link "Casual Polo S hirt F or Men Best Qualitys" [ref=e1292] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/casual-polo-s-hirt-f-or-men-best-quality
+                - generic [ref=e1293]: ৳222
+              - button "অর্ডার করুন" [ref=e1295] [cursor=pointer]
+          - generic [ref=e1301]:
+            - generic [ref=e1303]:
+              - link "Exclusive Ful l Sleeve Check Formal and Casual Shirt for Men" [ref=e1305] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/exclusive-ful-l-sleeve-check-formal-and-casual-shirt-for-men
+                - img "Exclusive Ful l Sleeve Check Formal and Casual Shirt for Men" [ref=e1306]
+              - paragraph [ref=e1309]: "-95%"
+            - generic [ref=e1310]:
+              - generic [ref=e1311]:
+                - heading "Exclusive Ful l Sleeve Check Formal and Casual Shirt for Mens" [level=2] [ref=e1313]:
+                  - link "Exclusive Ful l Sleeve Check Formal and Casual Shirt for Mens" [ref=e1314] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/exclusive-ful-l-sleeve-check-formal-and-casual-shirt-for-men
+                - generic [ref=e1315]: ৳400
+              - button "অর্ডার করুন" [ref=e1317] [cursor=pointer]
+          - generic [ref=e1323]:
+            - generic [ref=e1325]:
+              - link "Exclusive Full Sle ev e Check Formal and Casual Shirt for Men" [ref=e1327] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/exclusive-full-sle-ev-e-check-formal-and-casual-shirt-for-men
+                - img "Exclusive Full Sle ev e Check Formal and Casual Shirt for Men" [ref=e1328]
+              - paragraph [ref=e1331]: "-95%"
+            - generic [ref=e1332]:
+              - generic [ref=e1333]:
+                - heading "Exclusive Full Sle ev e Check Formal and Casual Shirt for Mens" [level=2] [ref=e1335]:
+                  - link "Exclusive Full Sle ev e Check Formal and Casual Shirt for Mens" [ref=e1336] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/exclusive-full-sle-ev-e-check-formal-and-casual-shirt-for-men
+                - generic [ref=e1337]: ৳444
+              - button "অর্ডার করুন" [ref=e1339] [cursor=pointer]
+          - generic [ref=e1345]:
+            - generic [ref=e1347]:
+              - link "Maruf" [ref=e1349] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/maruf
+                - img "Maruf" [ref=e1350]
+              - paragraph [ref=e1353]: "-33%"
+            - generic [ref=e1354]:
+              - generic [ref=e1355]:
+                - heading "Marufs" [level=2] [ref=e1357]:
+                  - link "Marufs" [ref=e1358] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/maruf
+                - generic [ref=e1359]: ৳1200
+              - button "অর্ডার করুন" [ref=e1361] [cursor=pointer]
+          - generic [ref=e1367]:
+            - generic [ref=e1369]:
+              - link "Premium Half Sleeve polo Shirt for Men" [ref=e1371] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/premium-half-sleeve-polo-shirt-for-men
+                - img "Premium Half Sleeve polo Shirt for Men" [ref=e1372]
+              - paragraph [ref=e1375]: "-55%"
+            - generic [ref=e1376]:
+              - generic [ref=e1377]:
+                - heading "Premium Half Sleeve polo Shirt for Mens" [level=2] [ref=e1379]:
+                  - link "Premium Half Sleeve polo Shirt for Mens" [ref=e1380] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/premium-half-sleeve-polo-shirt-for-men
+                - generic [ref=e1381]: ৳450
+              - button "অর্ডার করুন" [ref=e1383] [cursor=pointer]
+          - generic [ref=e1389]:
+            - generic [ref=e1391]:
+              - link "Premium Half Sleeve p olo Shirt for Men" [ref=e1393] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/premium-half-sleeve-p-olo-shirt-for-men
+                - img "Premium Half Sleeve p olo Shirt for Men" [ref=e1394]
+              - paragraph [ref=e1397]: "-70%"
+            - generic [ref=e1398]:
+              - generic [ref=e1399]:
+                - heading "Premium Half Sleeve p olo Shirt for Mens" [level=2] [ref=e1401]:
+                  - link "Premium Half Sleeve p olo Shirt for Mens" [ref=e1402] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/premium-half-sleeve-p-olo-shirt-for-men
+                - generic [ref=e1403]: ৳300
+              - button "অর্ডার করুন" [ref=e1405] [cursor=pointer]
+          - generic [ref=e1411]:
+            - generic [ref=e1413]:
+              - link "Premium Half Sleeve p olo Shirt for Men" [ref=e1415] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/premium-half-sleeve-p-olo-shirt-for-men-1
+                - img "Premium Half Sleeve p olo Shirt for Men" [ref=e1416]
+              - paragraph [ref=e1419]: "-60%"
+            - generic [ref=e1420]:
+              - generic [ref=e1421]:
+                - heading "Premium Half Sleeve p olo Shirt for Mens" [level=2] [ref=e1423]:
+                  - link "Premium Half Sleeve p olo Shirt for Mens" [ref=e1424] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/premium-half-sleeve-p-olo-shirt-for-men-1
+                - generic [ref=e1425]: ৳400
+              - button "অর্ডার করুন" [ref=e1427] [cursor=pointer]
+          - generic [ref=e1433]:
+            - generic [ref=e1435]:
+              - link "Dhupian Saree + Punjabi (Couple set)" [ref=e1437] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set
+                - img "Dhupian Saree + Punjabi (Couple set)" [ref=e1438]
+              - paragraph [ref=e1441]: "-50%"
+            - generic [ref=e1442]:
+              - generic [ref=e1443]:
+                - heading "Dhupian Saree + Punjabi (Couple set)s" [level=2] [ref=e1445]:
+                  - link "Dhupian Saree + Punjabi (Couple set)s" [ref=e1446] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set
+                - generic [ref=e1447]: ৳500
+              - button "অর্ডার করুন" [ref=e1449] [cursor=pointer]
+          - generic [ref=e1455]:
+            - generic [ref=e1457]:
+              - link "Readymade Nayra Cut 3 Pcs" [ref=e1459] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/readymade-nayra-cut-3-pcs
+                - img "Readymade Nayra Cut 3 Pcs" [ref=e1460]
+              - paragraph [ref=e1463]: "--100%"
+            - generic [ref=e1464]:
+              - generic [ref=e1465]:
+                - heading "Readymade Nayra Cut 3 Pcss" [level=2] [ref=e1467]:
+                  - link "Readymade Nayra Cut 3 Pcss" [ref=e1468] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/readymade-nayra-cut-3-pcs
+                - generic [ref=e1469]: ৳1000
+              - button "অর্ডার করুন" [ref=e1471] [cursor=pointer]
+          - generic [ref=e1477]:
+            - generic [ref=e1479]:
+              - link "China Print Gown 3 PCS" [ref=e1481] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/china-print-gown-3-pcs
+                - img "China Print Gown 3 PCS" [ref=e1482]
+              - paragraph [ref=e1485]: "-90%"
+            - generic [ref=e1486]:
+              - generic [ref=e1487]:
+                - heading "China Print Gown 3 PCSs" [level=2] [ref=e1489]:
+                  - link "China Print Gown 3 PCSs" [ref=e1490] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/china-print-gown-3-pcs
+                - generic [ref=e1491]: ৳100
+              - button "অর্ডার করুন" [ref=e1493] [cursor=pointer]
+          - generic [ref=e1499]:
+            - generic [ref=e1501]:
+              - link "Dubai Borka for women" [ref=e1503] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/dubai-borka-for-women
+                - img "Dubai Borka for women" [ref=e1504]
+              - paragraph [ref=e1507]: "-92%"
+            - generic [ref=e1508]:
+              - generic [ref=e1509]:
+                - heading "Dubai Borka for womens" [level=2] [ref=e1511]:
+                  - link "Dubai Borka for womens" [ref=e1512] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/product/dubai-borka-for-women
+                - generic [ref=e1513]: ৳1100
+              - button "অর্ডার করুন" [ref=e1515] [cursor=pointer]
+        - generic:
+          - button "Previous" [ref=e1516] [cursor=pointer]: ‹
+          - button "Next" [ref=e1517] [cursor=pointer]: ›
+    - generic [ref=e1519]:
+      - generic [ref=e1520]:
+        - heading "Women's Clothing & Fashion." [level=4] [ref=e1522]
+        - link "VIEW ALL" [ref=e1523] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/category/womens-clothing-fashion
+      - generic [ref=e1527]:
+        - generic [ref=e1529]:
+          - link "Dhupian Saree + Punjabi (Couple set)" [ref=e1531] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set
+            - img "Dhupian Saree + Punjabi (Couple set)" [ref=e1532]
+          - paragraph [ref=e1535]: "-50%"
+        - generic [ref=e1536]:
+          - generic [ref=e1537]:
+            - heading "Dhupian Saree + Punjabi (Couple set)" [level=2] [ref=e1539]:
+              - link "Dhupian Saree + Punjabi (Couple set)" [ref=e1540] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set
+            - generic [ref=e1541]:
+              - deletion [ref=e1542]: ৳ 1000
+              - text: ৳ 500
+          - button "অর্ডার করুন" [ref=e1544] [cursor=pointer]
+      - generic [ref=e1548]:
+        - generic [ref=e1550]:
+          - link "Readymade Nayra Cut 3 Pcs" [ref=e1552] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/product/readymade-nayra-cut-3-pcs
+            - img "Readymade Nayra Cut 3 Pcs" [ref=e1553]
+          - paragraph [ref=e1556]: "--100%"
+        - generic [ref=e1557]:
+          - generic [ref=e1558]:
+            - heading "Readymade Nayra Cut 3 Pcs" [level=2] [ref=e1560]:
+              - link "Readymade Nayra Cut 3 Pcs" [ref=e1561] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/readymade-nayra-cut-3-pcs
+            - generic [ref=e1562]:
+              - deletion [ref=e1563]: ৳ 500
+              - text: ৳ 1000
+          - button "অর্ডার করুন" [ref=e1565] [cursor=pointer]
+      - generic [ref=e1569]:
+        - generic [ref=e1571]:
+          - link "China Print Gown 3 PCS" [ref=e1573] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/product/china-print-gown-3-pcs
+            - img "China Print Gown 3 PCS" [ref=e1574]
+          - paragraph [ref=e1577]: "-90%"
+        - generic [ref=e1578]:
+          - generic [ref=e1579]:
+            - heading "China Print Gown 3 PCS" [level=2] [ref=e1581]:
+              - link "China Print Gown 3 PCS" [ref=e1582] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/china-print-gown-3-pcs
+            - generic [ref=e1583]:
+              - deletion [ref=e1584]: ৳ 1000
+              - text: ৳ 100
+          - button "অর্ডার করুন" [ref=e1586] [cursor=pointer]
+      - generic [ref=e1590]:
+        - generic [ref=e1592]:
+          - link "Dubai Borka for women" [ref=e1594] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/product/dubai-borka-for-women
+            - img "Dubai Borka for women" [ref=e1595]
+          - paragraph [ref=e1598]: "-92%"
+        - generic [ref=e1599]:
+          - generic [ref=e1600]:
+            - heading "Dubai Borka for women" [level=2] [ref=e1602]:
+              - link "Dubai Borka for women" [ref=e1603] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/dubai-borka-for-women
+            - generic [ref=e1604]:
+              - deletion [ref=e1605]: ৳ 8888
+              - text: ৳ 1100
+          - button "অর্ডার করুন" [ref=e1607] [cursor=pointer]
+      - generic [ref=e1611]:
+        - generic [ref=e1613]:
+          - link "Dhupian Saree + Punjabi (Couple set)" [ref=e1615] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set-1
+            - img "Dhupian Saree + Punjabi (Couple set)" [ref=e1616]
+          - paragraph [ref=e1619]: "-94%"
+        - generic [ref=e1620]:
+          - generic [ref=e1621]:
+            - heading "Dhupian Saree + Punjabi (Couple set)" [level=2] [ref=e1623]:
+              - link "Dhupian Saree + Punjabi (Couple set)" [ref=e1624] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set-1
+            - generic [ref=e1625]:
+              - deletion [ref=e1626]: ৳ 8888
+              - text: ৳ 500
+          - button "অর্ডার করুন" [ref=e1628] [cursor=pointer]
+      - generic [ref=e1632]:
+        - generic [ref=e1634]:
+          - link "Dhupian Saree + Punjabi (Couple set)" [ref=e1636] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set-2
+            - img "Dhupian Saree + Punjabi (Couple set)" [ref=e1637]
+          - paragraph [ref=e1640]: "-94%"
+        - generic [ref=e1641]:
+          - generic [ref=e1642]:
+            - heading "Dhupian Saree + Punjabi (Couple set)" [level=2] [ref=e1644]:
+              - link "Dhupian Saree + Punjabi (Couple set)" [ref=e1645] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/dhupian-saree-punjabi-couple-set-2
+            - generic [ref=e1646]:
+              - deletion [ref=e1647]: ৳ 8888
+              - text: ৳ 500
+          - button "অর্ডার করুন" [ref=e1649] [cursor=pointer]
+  - contentinfo [ref=e1650]:
+    - generic [ref=e1652]:
+      - generic [ref=e1653]:
+        - generic [ref=e1654]:
+          - heading "Contact Us" [level=4] [ref=e1656]
+          - list [ref=e1658]:
+            - listitem [ref=e1659]:
+              - text: "Address:"
+              - generic [ref=e1660]: "House: Munshi Bari, Beside Nayar Hat High School,Borobari, Lalmonir Hat"
+        - generic [ref=e1661]:
+          - heading "Informations" [level=4] [ref=e1663]
+          - list [ref=e1665]:
+            - listitem [ref=e1666]:
+              - link "About us" [ref=e1667] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/about_us
+            - listitem [ref=e1668]:
+              - link "Contact Us" [ref=e1669] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/contact_us
+            - listitem [ref=e1670]:
+              - link "Terms & Conditions" [ref=e1671] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/terms_codition
+            - listitem [ref=e1672]:
+              - link "FAQ" [ref=e1673] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/faq
+        - generic [ref=e1674]:
+          - heading "My Account" [level=4] [ref=e1676]
+          - list [ref=e1678]:
+            - listitem [ref=e1679]:
+              - link "Login" [ref=e1680] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1681]:
+              - link "Order History" [ref=e1682] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/track-order
+            - listitem [ref=e1683]:
+              - link "Company" [ref=e1684] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/company
+        - generic [ref=e1685]:
+          - heading "Why Choose Us" [level=4] [ref=e1687]
+          - list [ref=e1689]:
+            - listitem [ref=e1690]:
+              - link "Help Center" [ref=e1691] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/help_center
+            - listitem [ref=e1692]:
+              - link "Customer Service" [ref=e1693] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/customer_service
+            - listitem [ref=e1694]:
+              - link "Shopping Guide" [ref=e1695] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/shipping_guide
+      - paragraph [ref=e1698]:
+        - text: © All rights reserved by Daraz |
+        - 'link "Website Designed by: TIC Limited" [ref=e1699] [cursor=pointer]':
+          - /url: https://tic.com.bd
+  - text:    
+  - link [ref=e1700] [cursor=pointer]:
+    - /url: https://wa.me/+8809648156710?text=I%20am%20interested
+    - img [ref=e1701]
+  - text: 

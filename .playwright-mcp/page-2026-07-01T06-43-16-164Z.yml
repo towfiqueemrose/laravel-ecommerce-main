@@ -1,0 +1,767 @@
+- generic [active] [ref=f7e1]:
+  - banner [ref=f7e2]:
+    - generic [ref=f7e5]:
+      - list [ref=f7e7]:
+        - listitem [ref=f7e8]:
+          - link "Sign In" [ref=f7e9] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/login
+        - listitem [ref=f7e10]:
+          - link "|" [ref=f7e11] [cursor=pointer]:
+            - /url: javascript:void(0);
+        - listitem [ref=f7e12]:
+          - link "Sign Up" [ref=f7e13] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/register
+      - list [ref=f7e15]:
+        - listitem [ref=f7e16]:
+          - link "Have any question? Call Us +88+8809648156710" [ref=f7e17] [cursor=pointer]:
+            - /url: tel:+88+8809648156710
+            - img [ref=f7e18]: 
+            - text: Have any question? Call Us +88+8809648156710
+    - generic [ref=f7e24]:
+      - link [ref=f7e27] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000
+      - generic [ref=f7e28]:
+        - generic:
+          - generic:
+            - generic:
+              - textbox "Search here..." [ref=f7e29]
+              - button "" [ref=f7e30] [cursor=pointer]
+      - generic [ref=f7e31]:
+        - link "Cart 0" [ref=f7e33] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f7e34]:
+            - generic [ref=f7e35]:
+              - img [ref=f7e36]: 
+              - generic [ref=f7e38]: Cart
+            - generic [ref=f7e39]: "0"
+        - link [ref=f7e42] [cursor=pointer]:
+          - /url: tel:+8809648156710
+          - img [ref=f7e43]: 
+        - text: 
+    - text:  + + + +
+  - text: 
+  - generic [ref=f7e45]:
+    - generic [ref=f7e48]:
+      - generic [ref=f7e51]:
+        - img [ref=f7e52]: 
+        - text: Categories
+      - list [ref=f7e57]:
+        - listitem [ref=f7e58]:
+          - link "Home" [ref=f7e59] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000
+        - listitem [ref=f7e60]:
+          - link "Combo Offer" [ref=f7e61] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/combo-offer
+        - listitem [ref=f7e62]:
+          - link "News Feed" [ref=f7e63] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000
+        - listitem [ref=f7e64]:
+          - link "Order Track" [ref=f7e65] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/track-order
+    - generic [ref=f7e67]:
+      - navigation [ref=f7e70]:
+        - list [ref=f7e71]:
+          - listitem [ref=f7e72]:
+            - link "Beauty & Health Beauty & Health" [ref=f7e73] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/products/category/beauty-health
+              - img "Beauty & Health" [ref=f7e74]
+              - text: Beauty & Health
+          - listitem [ref=f7e75]:
+            - link "Home & Kitchen Home & Kitchen" [ref=f7e76] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/products/category/home-kitchen
+              - img "Home & Kitchen" [ref=f7e77]
+              - text: Home & Kitchen
+          - listitem [ref=f7e78]:
+            - link "Fashion Fashion" [ref=f7e79] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/products/category/fashion
+              - img "Fashion" [ref=f7e80]
+              - text: Fashion
+          - listitem [ref=f7e81]:
+            - link "Electronics Electronics" [ref=f7e82] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/products/category/electronics
+              - img "Electronics" [ref=f7e83]
+              - text: Electronics
+      - generic [ref=f7e88]:
+        - img "iPhone 15 Pro Max" [ref=f7e91]
+        - img "Summer Fashion Sale" [ref=f7e94]
+        - img "iPhone 15 Pro Max" [ref=f7e97]
+        - img "Summer Fashion Sale" [ref=f7e100]
+        - img "iPhone 15 Pro Max" [ref=f7e103]
+        - img "Summer Fashion Sale" [ref=f7e106]
+    - generic [ref=f7e112]:
+      - link "Beauty & Health" [ref=f7e115] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products/category/beauty-health
+        - generic [ref=f7e116]:
+          - img [ref=f7e118]
+          - paragraph [ref=f7e119]: Beauty & Health
+      - link "Home & Kitchen" [ref=f7e122] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products/category/home-kitchen
+        - generic [ref=f7e123]:
+          - img [ref=f7e125]
+          - paragraph [ref=f7e126]: Home & Kitchen
+      - link "Fashion" [ref=f7e129] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products/category/fashion
+        - generic [ref=f7e130]:
+          - img [ref=f7e132]
+          - paragraph [ref=f7e133]: Fashion
+      - link "Electronics" [ref=f7e136] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products/category/electronics
+        - generic [ref=f7e137]:
+          - img [ref=f7e139]
+          - paragraph [ref=f7e140]: Electronics
+      - link "Beauty & Health" [ref=f7e143] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products/category/beauty-health
+        - generic [ref=f7e144]:
+          - img [ref=f7e146]
+          - paragraph [ref=f7e147]: Beauty & Health
+      - link "Home & Kitchen" [ref=f7e150] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products/category/home-kitchen
+        - generic [ref=f7e151]:
+          - img [ref=f7e153]
+          - paragraph [ref=f7e154]: Home & Kitchen
+      - link "Fashion" [ref=f7e157] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products/category/fashion
+        - generic [ref=f7e158]:
+          - img [ref=f7e160]
+          - paragraph [ref=f7e161]: Fashion
+      - link "Electronics" [ref=f7e164] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products/category/electronics
+        - generic [ref=f7e165]:
+          - img [ref=f7e167]
+          - paragraph [ref=f7e168]: Electronics
+      - link "Beauty & Health" [ref=f7e171] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products/category/beauty-health
+        - generic [ref=f7e172]:
+          - img [ref=f7e174]
+          - paragraph [ref=f7e175]: Beauty & Health
+      - link "Home & Kitchen" [ref=f7e178] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products/category/home-kitchen
+        - generic [ref=f7e179]:
+          - img [ref=f7e181]
+          - paragraph [ref=f7e182]: Home & Kitchen
+      - link "Fashion" [ref=f7e185] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products/category/fashion
+        - generic [ref=f7e186]:
+          - img [ref=f7e188]
+          - paragraph [ref=f7e189]: Fashion
+      - link "Electronics" [ref=f7e192] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products/category/electronics
+        - generic [ref=f7e193]:
+          - img [ref=f7e195]
+          - paragraph [ref=f7e196]: Electronics
+      - link "Beauty & Health" [ref=f7e199] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products/category/beauty-health
+        - generic [ref=f7e200]:
+          - img [ref=f7e202]
+          - paragraph [ref=f7e203]: Beauty & Health
+      - link "Home & Kitchen" [ref=f7e206] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products/category/home-kitchen
+        - generic [ref=f7e207]:
+          - img [ref=f7e209]
+          - paragraph [ref=f7e210]: Home & Kitchen
+      - link "Fashion" [ref=f7e213] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products/category/fashion
+        - generic [ref=f7e214]:
+          - img [ref=f7e216]
+          - paragraph [ref=f7e217]: Fashion
+      - link "Electronics" [ref=f7e220] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products/category/electronics
+        - generic [ref=f7e221]:
+          - img [ref=f7e223]
+          - paragraph [ref=f7e224]: Electronics
+      - link "Beauty & Health" [ref=f7e227] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products/category/beauty-health
+        - generic [ref=f7e228]:
+          - img [ref=f7e230]
+          - paragraph [ref=f7e231]: Beauty & Health
+      - link "Home & Kitchen" [ref=f7e234] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products/category/home-kitchen
+        - generic [ref=f7e235]:
+          - img [ref=f7e237]
+          - paragraph [ref=f7e238]: Home & Kitchen
+      - link "Fashion" [ref=f7e241] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products/category/fashion
+        - generic [ref=f7e242]:
+          - img [ref=f7e244]
+          - paragraph [ref=f7e245]: Fashion
+      - link "Electronics" [ref=f7e248] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products/category/electronics
+        - generic [ref=f7e249]:
+          - img [ref=f7e251]
+          - paragraph [ref=f7e252]: Electronics
+    - generic [ref=f7e254]:
+      - generic [ref=f7e255]:
+        - heading "Featured Products" [level=4] [ref=f7e257]
+        - link "VIEW ALL" [ref=f7e258] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/featured/products
+      - generic [ref=f7e262]:
+        - generic [ref=f7e268]:
+          - generic [ref=f7e270]:
+            - link "Modern Wooden Bookshelf" [ref=f7e272] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/modern-wooden-bookshelf
+              - img "Modern Wooden Bookshelf" [ref=f7e273]
+            - paragraph [ref=f7e276]: "-20%"
+          - generic [ref=f7e277]:
+            - generic [ref=f7e278]:
+              - heading "Modern Wooden Bookshelfs" [level=2] [ref=f7e280]:
+                - link "Modern Wooden Bookshelfs" [ref=f7e281] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/modern-wooden-bookshelf
+              - generic [ref=f7e282]: ৳19999
+            - button "অর্ডার করুন" [ref=f7e284] [cursor=pointer]
+        - generic [ref=f7e290]:
+          - generic [ref=f7e292]:
+            - link "Nike Air Max Casual Shoe" [ref=f7e294] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/nike-air-max-casual-shoe
+              - img "Nike Air Max Casual Shoe" [ref=f7e295]
+            - paragraph [ref=f7e298]: "-23%"
+          - generic [ref=f7e299]:
+            - generic [ref=f7e300]:
+              - heading "Nike Air Max Casual Shoes" [level=2] [ref=f7e302]:
+                - link "Nike Air Max Casual Shoes" [ref=f7e303] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/nike-air-max-casual-shoe
+              - generic [ref=f7e304]: ৳9999
+            - button "অর্ডার করুন" [ref=f7e306] [cursor=pointer]
+        - generic [ref=f7e312]:
+          - generic [ref=f7e314]:
+            - link "Samsung Galaxy S24 Ultra" [ref=f7e316] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/samsung-galaxy-s24-ultra
+              - img "Samsung Galaxy S24 Ultra" [ref=f7e317]
+            - paragraph [ref=f7e320]: "-7%"
+          - generic [ref=f7e321]:
+            - generic [ref=f7e322]:
+              - heading "Samsung Galaxy S24 Ultras" [level=2] [ref=f7e324]:
+                - link "Samsung Galaxy S24 Ultras" [ref=f7e325] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/samsung-galaxy-s24-ultra
+              - generic [ref=f7e326]: ৳129999
+            - button "অর্ডার করুন" [ref=f7e328] [cursor=pointer]
+        - generic [ref=f7e334]:
+          - generic [ref=f7e336]:
+            - link "Modern Wooden Bookshelf" [ref=f7e338] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/modern-wooden-bookshelf
+              - img "Modern Wooden Bookshelf" [ref=f7e339]
+            - paragraph [ref=f7e342]: "-20%"
+          - generic [ref=f7e343]:
+            - generic [ref=f7e344]:
+              - heading "Modern Wooden Bookshelfs" [level=2] [ref=f7e346]:
+                - link "Modern Wooden Bookshelfs" [ref=f7e347] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/modern-wooden-bookshelf
+              - generic [ref=f7e348]: ৳19999
+            - button "অর্ডার করুন" [ref=f7e350] [cursor=pointer]
+        - generic [ref=f7e356]:
+          - generic [ref=f7e358]:
+            - link "Nike Air Max Casual Shoe" [ref=f7e360] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/nike-air-max-casual-shoe
+              - img "Nike Air Max Casual Shoe" [ref=f7e361]
+            - paragraph [ref=f7e364]: "-23%"
+          - generic [ref=f7e365]:
+            - generic [ref=f7e366]:
+              - heading "Nike Air Max Casual Shoes" [level=2] [ref=f7e368]:
+                - link "Nike Air Max Casual Shoes" [ref=f7e369] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/nike-air-max-casual-shoe
+              - generic [ref=f7e370]: ৳9999
+            - button "অর্ডার করুন" [ref=f7e372] [cursor=pointer]
+        - generic [ref=f7e378]:
+          - generic [ref=f7e380]:
+            - link "Samsung Galaxy S24 Ultra" [ref=f7e382] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/samsung-galaxy-s24-ultra
+              - img "Samsung Galaxy S24 Ultra" [ref=f7e383]
+            - paragraph [ref=f7e386]: "-7%"
+          - generic [ref=f7e387]:
+            - generic [ref=f7e388]:
+              - heading "Samsung Galaxy S24 Ultras" [level=2] [ref=f7e390]:
+                - link "Samsung Galaxy S24 Ultras" [ref=f7e391] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/samsung-galaxy-s24-ultra
+              - generic [ref=f7e392]: ৳129999
+            - button "অর্ডার করুন" [ref=f7e394] [cursor=pointer]
+        - generic [ref=f7e400]:
+          - generic [ref=f7e402]:
+            - link "Modern Wooden Bookshelf" [ref=f7e404] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/modern-wooden-bookshelf
+              - img "Modern Wooden Bookshelf" [ref=f7e405]
+            - paragraph [ref=f7e408]: "-20%"
+          - generic [ref=f7e409]:
+            - generic [ref=f7e410]:
+              - heading "Modern Wooden Bookshelfs" [level=2] [ref=f7e412]:
+                - link "Modern Wooden Bookshelfs" [ref=f7e413] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/modern-wooden-bookshelf
+              - generic [ref=f7e414]: ৳19999
+            - button "অর্ডার করুন" [ref=f7e416] [cursor=pointer]
+        - generic [ref=f7e422]:
+          - generic [ref=f7e424]:
+            - link "Nike Air Max Casual Shoe" [ref=f7e426] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/nike-air-max-casual-shoe
+              - img "Nike Air Max Casual Shoe" [ref=f7e427]
+            - paragraph [ref=f7e430]: "-23%"
+          - generic [ref=f7e431]:
+            - generic [ref=f7e432]:
+              - heading "Nike Air Max Casual Shoes" [level=2] [ref=f7e434]:
+                - link "Nike Air Max Casual Shoes" [ref=f7e435] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/nike-air-max-casual-shoe
+              - generic [ref=f7e436]: ৳9999
+            - button "অর্ডার করুন" [ref=f7e438] [cursor=pointer]
+        - generic [ref=f7e444]:
+          - generic [ref=f7e446]:
+            - link "Samsung Galaxy S24 Ultra" [ref=f7e448] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/samsung-galaxy-s24-ultra
+              - img "Samsung Galaxy S24 Ultra" [ref=f7e449]
+            - paragraph [ref=f7e452]: "-7%"
+          - generic [ref=f7e453]:
+            - generic [ref=f7e454]:
+              - heading "Samsung Galaxy S24 Ultras" [level=2] [ref=f7e456]:
+                - link "Samsung Galaxy S24 Ultras" [ref=f7e457] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/samsung-galaxy-s24-ultra
+              - generic [ref=f7e458]: ৳129999
+            - button "অর্ডার করুন" [ref=f7e460] [cursor=pointer]
+        - generic [ref=f7e466]:
+          - generic [ref=f7e468]:
+            - link "Modern Wooden Bookshelf" [ref=f7e470] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/modern-wooden-bookshelf
+              - img "Modern Wooden Bookshelf" [ref=f7e471]
+            - paragraph [ref=f7e474]: "-20%"
+          - generic [ref=f7e475]:
+            - generic [ref=f7e476]:
+              - heading "Modern Wooden Bookshelfs" [level=2] [ref=f7e478]:
+                - link "Modern Wooden Bookshelfs" [ref=f7e479] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/modern-wooden-bookshelf
+              - generic [ref=f7e480]: ৳19999
+            - button "অর্ডার করুন" [ref=f7e482] [cursor=pointer]
+        - generic [ref=f7e488]:
+          - generic [ref=f7e490]:
+            - link "Nike Air Max Casual Shoe" [ref=f7e492] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/nike-air-max-casual-shoe
+              - img "Nike Air Max Casual Shoe" [ref=f7e493]
+            - paragraph [ref=f7e496]: "-23%"
+          - generic [ref=f7e497]:
+            - generic [ref=f7e498]:
+              - heading "Nike Air Max Casual Shoes" [level=2] [ref=f7e500]:
+                - link "Nike Air Max Casual Shoes" [ref=f7e501] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/nike-air-max-casual-shoe
+              - generic [ref=f7e502]: ৳9999
+            - button "অর্ডার করুন" [ref=f7e504] [cursor=pointer]
+        - generic [ref=f7e510]:
+          - generic [ref=f7e512]:
+            - link "Samsung Galaxy S24 Ultra" [ref=f7e514] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/samsung-galaxy-s24-ultra
+              - img "Samsung Galaxy S24 Ultra" [ref=f7e515]
+            - paragraph [ref=f7e518]: "-7%"
+          - generic [ref=f7e519]:
+            - generic [ref=f7e520]:
+              - heading "Samsung Galaxy S24 Ultras" [level=2] [ref=f7e522]:
+                - link "Samsung Galaxy S24 Ultras" [ref=f7e523] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/samsung-galaxy-s24-ultra
+              - generic [ref=f7e524]: ৳129999
+            - button "অর্ডার করুন" [ref=f7e526] [cursor=pointer]
+        - generic [ref=f7e532]:
+          - generic [ref=f7e534]:
+            - link "Modern Wooden Bookshelf" [ref=f7e536] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/modern-wooden-bookshelf
+              - img "Modern Wooden Bookshelf" [ref=f7e537]
+            - paragraph [ref=f7e540]: "-20%"
+          - generic [ref=f7e541]:
+            - generic [ref=f7e542]:
+              - heading "Modern Wooden Bookshelfs" [level=2] [ref=f7e544]:
+                - link "Modern Wooden Bookshelfs" [ref=f7e545] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/modern-wooden-bookshelf
+              - generic [ref=f7e546]: ৳19999
+            - button "অর্ডার করুন" [ref=f7e548] [cursor=pointer]
+        - generic [ref=f7e554]:
+          - generic [ref=f7e556]:
+            - link "Nike Air Max Casual Shoe" [ref=f7e558] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/nike-air-max-casual-shoe
+              - img "Nike Air Max Casual Shoe" [ref=f7e559]
+            - paragraph [ref=f7e562]: "-23%"
+          - generic [ref=f7e563]:
+            - generic [ref=f7e564]:
+              - heading "Nike Air Max Casual Shoes" [level=2] [ref=f7e566]:
+                - link "Nike Air Max Casual Shoes" [ref=f7e567] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/nike-air-max-casual-shoe
+              - generic [ref=f7e568]: ৳9999
+            - button "অর্ডার করুন" [ref=f7e570] [cursor=pointer]
+        - generic [ref=f7e576]:
+          - generic [ref=f7e578]:
+            - link "Samsung Galaxy S24 Ultra" [ref=f7e580] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/samsung-galaxy-s24-ultra
+              - img "Samsung Galaxy S24 Ultra" [ref=f7e581]
+            - paragraph [ref=f7e584]: "-7%"
+          - generic [ref=f7e585]:
+            - generic [ref=f7e586]:
+              - heading "Samsung Galaxy S24 Ultras" [level=2] [ref=f7e588]:
+                - link "Samsung Galaxy S24 Ultras" [ref=f7e589] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/samsung-galaxy-s24-ultra
+              - generic [ref=f7e590]: ৳129999
+            - button "অর্ডার করুন" [ref=f7e592] [cursor=pointer]
+    - generic [ref=f7e594]:
+      - link "Bagdoom" [ref=f7e597] [cursor=pointer]:
+        - /url: /products/category/electronics
+        - img "Bagdoom" [ref=f7e598]
+      - link "Bagdoom" [ref=f7e601] [cursor=pointer]:
+        - /url: /products/category/fashion
+        - img "Bagdoom" [ref=f7e602]
+    - generic [ref=f7e604]:
+      - generic [ref=f7e605]:
+        - heading "Promotional Offers" [level=4] [ref=f7e607]
+        - link "VIEW ALL" [ref=f7e608] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/promotional/products
+      - generic [ref=f7e612]:
+        - generic [ref=f7e618]:
+          - generic [ref=f7e620]:
+            - link "iPhone 15 Pro Max" [ref=f7e622] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/iphone-15-pro-max
+              - img "iPhone 15 Pro Max" [ref=f7e623]
+            - paragraph [ref=f7e626]: "-6%"
+          - generic [ref=f7e627]:
+            - generic [ref=f7e628]:
+              - heading "iPhone 15 Pro Maxs" [level=2] [ref=f7e630]:
+                - link "iPhone 15 Pro Maxs" [ref=f7e631] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/iphone-15-pro-max
+              - generic [ref=f7e632]: ৳149999
+            - button "অর্ডার করুন" [ref=f7e634] [cursor=pointer]
+        - generic [ref=f7e640]:
+          - generic [ref=f7e642]:
+            - link "Samsung Galaxy S24 Ultra" [ref=f7e644] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/samsung-galaxy-s24-ultra
+              - img "Samsung Galaxy S24 Ultra" [ref=f7e645]
+            - paragraph [ref=f7e648]: "-7%"
+          - generic [ref=f7e649]:
+            - generic [ref=f7e650]:
+              - heading "Samsung Galaxy S24 Ultras" [level=2] [ref=f7e652]:
+                - link "Samsung Galaxy S24 Ultras" [ref=f7e653] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/samsung-galaxy-s24-ultra
+              - generic [ref=f7e654]: ৳129999
+            - button "অর্ডার করুন" [ref=f7e656] [cursor=pointer]
+        - generic [ref=f7e662]:
+          - generic [ref=f7e664]:
+            - link "Nike Air Max Casual Shoe" [ref=f7e666] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/nike-air-max-casual-shoe
+              - img "Nike Air Max Casual Shoe" [ref=f7e667]
+            - paragraph [ref=f7e670]: "-23%"
+          - generic [ref=f7e671]:
+            - generic [ref=f7e672]:
+              - heading "Nike Air Max Casual Shoes" [level=2] [ref=f7e674]:
+                - link "Nike Air Max Casual Shoes" [ref=f7e675] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/nike-air-max-casual-shoe
+              - generic [ref=f7e676]: ৳9999
+            - button "অর্ডার করুন" [ref=f7e678] [cursor=pointer]
+        - generic [ref=f7e684]:
+          - generic [ref=f7e686]:
+            - link "iPhone 15 Pro Max" [ref=f7e688] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/iphone-15-pro-max
+              - img "iPhone 15 Pro Max" [ref=f7e689]
+            - paragraph [ref=f7e692]: "-6%"
+          - generic [ref=f7e693]:
+            - generic [ref=f7e694]:
+              - heading "iPhone 15 Pro Maxs" [level=2] [ref=f7e696]:
+                - link "iPhone 15 Pro Maxs" [ref=f7e697] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/iphone-15-pro-max
+              - generic [ref=f7e698]: ৳149999
+            - button "অর্ডার করুন" [ref=f7e700] [cursor=pointer]
+        - generic [ref=f7e706]:
+          - generic [ref=f7e708]:
+            - link "Samsung Galaxy S24 Ultra" [ref=f7e710] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/samsung-galaxy-s24-ultra
+              - img "Samsung Galaxy S24 Ultra" [ref=f7e711]
+            - paragraph [ref=f7e714]: "-7%"
+          - generic [ref=f7e715]:
+            - generic [ref=f7e716]:
+              - heading "Samsung Galaxy S24 Ultras" [level=2] [ref=f7e718]:
+                - link "Samsung Galaxy S24 Ultras" [ref=f7e719] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/samsung-galaxy-s24-ultra
+              - generic [ref=f7e720]: ৳129999
+            - button "অর্ডার করুন" [ref=f7e722] [cursor=pointer]
+        - generic [ref=f7e728]:
+          - generic [ref=f7e730]:
+            - link "Nike Air Max Casual Shoe" [ref=f7e732] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/nike-air-max-casual-shoe
+              - img "Nike Air Max Casual Shoe" [ref=f7e733]
+            - paragraph [ref=f7e736]: "-23%"
+          - generic [ref=f7e737]:
+            - generic [ref=f7e738]:
+              - heading "Nike Air Max Casual Shoes" [level=2] [ref=f7e740]:
+                - link "Nike Air Max Casual Shoes" [ref=f7e741] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/nike-air-max-casual-shoe
+              - generic [ref=f7e742]: ৳9999
+            - button "অর্ডার করুন" [ref=f7e744] [cursor=pointer]
+        - generic [ref=f7e750]:
+          - generic [ref=f7e752]:
+            - link "iPhone 15 Pro Max" [ref=f7e754] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/iphone-15-pro-max
+              - img "iPhone 15 Pro Max" [ref=f7e755]
+            - paragraph [ref=f7e758]: "-6%"
+          - generic [ref=f7e759]:
+            - generic [ref=f7e760]:
+              - heading "iPhone 15 Pro Maxs" [level=2] [ref=f7e762]:
+                - link "iPhone 15 Pro Maxs" [ref=f7e763] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/iphone-15-pro-max
+              - generic [ref=f7e764]: ৳149999
+            - button "অর্ডার করুন" [ref=f7e766] [cursor=pointer]
+        - generic [ref=f7e772]:
+          - generic [ref=f7e774]:
+            - link "Samsung Galaxy S24 Ultra" [ref=f7e776] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/samsung-galaxy-s24-ultra
+              - img "Samsung Galaxy S24 Ultra" [ref=f7e777]
+            - paragraph [ref=f7e780]: "-7%"
+          - generic [ref=f7e781]:
+            - generic [ref=f7e782]:
+              - heading "Samsung Galaxy S24 Ultras" [level=2] [ref=f7e784]:
+                - link "Samsung Galaxy S24 Ultras" [ref=f7e785] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/samsung-galaxy-s24-ultra
+              - generic [ref=f7e786]: ৳129999
+            - button "অর্ডার করুন" [ref=f7e788] [cursor=pointer]
+        - generic [ref=f7e794]:
+          - generic [ref=f7e796]:
+            - link "Nike Air Max Casual Shoe" [ref=f7e798] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/nike-air-max-casual-shoe
+              - img "Nike Air Max Casual Shoe" [ref=f7e799]
+            - paragraph [ref=f7e802]: "-23%"
+          - generic [ref=f7e803]:
+            - generic [ref=f7e804]:
+              - heading "Nike Air Max Casual Shoes" [level=2] [ref=f7e806]:
+                - link "Nike Air Max Casual Shoes" [ref=f7e807] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/nike-air-max-casual-shoe
+              - generic [ref=f7e808]: ৳9999
+            - button "অর্ডার করুন" [ref=f7e810] [cursor=pointer]
+        - generic [ref=f7e816]:
+          - generic [ref=f7e818]:
+            - link "iPhone 15 Pro Max" [ref=f7e820] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/iphone-15-pro-max
+              - img "iPhone 15 Pro Max" [ref=f7e821]
+            - paragraph [ref=f7e824]: "-6%"
+          - generic [ref=f7e825]:
+            - generic [ref=f7e826]:
+              - heading "iPhone 15 Pro Maxs" [level=2] [ref=f7e828]:
+                - link "iPhone 15 Pro Maxs" [ref=f7e829] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/iphone-15-pro-max
+              - generic [ref=f7e830]: ৳149999
+            - button "অর্ডার করুন" [ref=f7e832] [cursor=pointer]
+        - generic [ref=f7e838]:
+          - generic [ref=f7e840]:
+            - link "Samsung Galaxy S24 Ultra" [ref=f7e842] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/samsung-galaxy-s24-ultra
+              - img "Samsung Galaxy S24 Ultra" [ref=f7e843]
+            - paragraph [ref=f7e846]: "-7%"
+          - generic [ref=f7e847]:
+            - generic [ref=f7e848]:
+              - heading "Samsung Galaxy S24 Ultras" [level=2] [ref=f7e850]:
+                - link "Samsung Galaxy S24 Ultras" [ref=f7e851] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/samsung-galaxy-s24-ultra
+              - generic [ref=f7e852]: ৳129999
+            - button "অর্ডার করুন" [ref=f7e854] [cursor=pointer]
+        - generic [ref=f7e860]:
+          - generic [ref=f7e862]:
+            - link "Nike Air Max Casual Shoe" [ref=f7e864] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/nike-air-max-casual-shoe
+              - img "Nike Air Max Casual Shoe" [ref=f7e865]
+            - paragraph [ref=f7e868]: "-23%"
+          - generic [ref=f7e869]:
+            - generic [ref=f7e870]:
+              - heading "Nike Air Max Casual Shoes" [level=2] [ref=f7e872]:
+                - link "Nike Air Max Casual Shoes" [ref=f7e873] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/nike-air-max-casual-shoe
+              - generic [ref=f7e874]: ৳9999
+            - button "অর্ডার করুন" [ref=f7e876] [cursor=pointer]
+        - generic [ref=f7e882]:
+          - generic [ref=f7e884]:
+            - link "iPhone 15 Pro Max" [ref=f7e886] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/iphone-15-pro-max
+              - img "iPhone 15 Pro Max" [ref=f7e887]
+            - paragraph [ref=f7e890]: "-6%"
+          - generic [ref=f7e891]:
+            - generic [ref=f7e892]:
+              - heading "iPhone 15 Pro Maxs" [level=2] [ref=f7e894]:
+                - link "iPhone 15 Pro Maxs" [ref=f7e895] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/iphone-15-pro-max
+              - generic [ref=f7e896]: ৳149999
+            - button "অর্ডার করুন" [ref=f7e898] [cursor=pointer]
+        - generic [ref=f7e904]:
+          - generic [ref=f7e906]:
+            - link "Samsung Galaxy S24 Ultra" [ref=f7e908] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/samsung-galaxy-s24-ultra
+              - img "Samsung Galaxy S24 Ultra" [ref=f7e909]
+            - paragraph [ref=f7e912]: "-7%"
+          - generic [ref=f7e913]:
+            - generic [ref=f7e914]:
+              - heading "Samsung Galaxy S24 Ultras" [level=2] [ref=f7e916]:
+                - link "Samsung Galaxy S24 Ultras" [ref=f7e917] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/samsung-galaxy-s24-ultra
+              - generic [ref=f7e918]: ৳129999
+            - button "অর্ডার করুন" [ref=f7e920] [cursor=pointer]
+        - generic [ref=f7e926]:
+          - generic [ref=f7e928]:
+            - link "Nike Air Max Casual Shoe" [ref=f7e930] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/nike-air-max-casual-shoe
+              - img "Nike Air Max Casual Shoe" [ref=f7e931]
+            - paragraph [ref=f7e934]: "-23%"
+          - generic [ref=f7e935]:
+            - generic [ref=f7e936]:
+              - heading "Nike Air Max Casual Shoes" [level=2] [ref=f7e938]:
+                - link "Nike Air Max Casual Shoes" [ref=f7e939] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/product/nike-air-max-casual-shoe
+              - generic [ref=f7e940]: ৳9999
+            - button "অর্ডার করুন" [ref=f7e942] [cursor=pointer]
+    - generic [ref=f7e944]:
+      - generic [ref=f7e945]:
+        - heading "Electronics" [level=4] [ref=f7e947]
+        - link "VIEW ALL" [ref=f7e948] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/category/electronics
+      - generic [ref=f7e952]:
+        - generic [ref=f7e954]:
+          - link "iPhone 15 Pro Max" [ref=f7e956] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/product/iphone-15-pro-max
+            - img "iPhone 15 Pro Max" [ref=f7e957]
+          - paragraph [ref=f7e960]: "-6%"
+        - generic [ref=f7e961]:
+          - generic [ref=f7e962]:
+            - heading "iPhone 15 Pro Max" [level=2] [ref=f7e964]:
+              - link "iPhone 15 Pro Max" [ref=f7e965] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/iphone-15-pro-max
+            - generic [ref=f7e966]:
+              - deletion [ref=f7e967]: ৳ 159999
+              - text: ৳ 149999
+          - button "অর্ডার করুন" [ref=f7e969] [cursor=pointer]
+      - generic [ref=f7e973]:
+        - generic [ref=f7e975]:
+          - link "Samsung Galaxy S24 Ultra" [ref=f7e977] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/product/samsung-galaxy-s24-ultra
+            - img "Samsung Galaxy S24 Ultra" [ref=f7e978]
+          - paragraph [ref=f7e981]: "-7%"
+        - generic [ref=f7e982]:
+          - generic [ref=f7e983]:
+            - heading "Samsung Galaxy S24 Ultra" [level=2] [ref=f7e985]:
+              - link "Samsung Galaxy S24 Ultra" [ref=f7e986] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/samsung-galaxy-s24-ultra
+            - generic [ref=f7e987]:
+              - deletion [ref=f7e988]: ৳ 139999
+              - text: ৳ 129999
+          - button "অর্ডার করুন" [ref=f7e990] [cursor=pointer]
+      - generic [ref=f7e994]:
+        - generic [ref=f7e996]:
+          - link "MacBook Pro 16 M3 Pro" [ref=f7e998] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/product/macbook-pro-16-m3-pro
+            - img "MacBook Pro 16 M3 Pro" [ref=f7e999]
+          - paragraph [ref=f7e1002]: "-3%"
+        - generic [ref=f7e1003]:
+          - generic [ref=f7e1004]:
+            - heading "MacBook Pro 16 M3 Pro" [level=2] [ref=f7e1006]:
+              - link "MacBook Pro 16 M3 Pro" [ref=f7e1007] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/product/macbook-pro-16-m3-pro
+            - generic [ref=f7e1008]:
+              - deletion [ref=f7e1009]: ৳ 289999
+              - text: ৳ 279999
+          - button "অর্ডার করুন" [ref=f7e1011] [cursor=pointer]
+  - generic [ref=f7e1013]:
+    - generic [ref=f7e1014]:
+      - heading "Fashion" [level=4] [ref=f7e1016]
+      - link "VIEW ALL" [ref=f7e1017] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products/category/fashion
+    - generic [ref=f7e1021]:
+      - generic [ref=f7e1023]:
+        - link "Nike Air Max Casual Shoe" [ref=f7e1025] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/product/nike-air-max-casual-shoe
+          - img "Nike Air Max Casual Shoe" [ref=f7e1026]
+        - paragraph [ref=f7e1029]: "-23%"
+      - generic [ref=f7e1030]:
+        - generic [ref=f7e1031]:
+          - heading "Nike Air Max Casual Shoe" [level=2] [ref=f7e1033]:
+            - link "Nike Air Max Casual Shoe" [ref=f7e1034] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/nike-air-max-casual-shoe
+          - generic [ref=f7e1035]:
+            - deletion [ref=f7e1036]: ৳ 12999
+            - text: ৳ 9999
+        - button "অর্ডার করুন" [ref=f7e1038] [cursor=pointer]
+  - generic [ref=f7e1040]:
+    - generic [ref=f7e1041]:
+      - heading "Home & Kitchen" [level=4] [ref=f7e1043]
+      - link "VIEW ALL" [ref=f7e1044] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products/category/home-kitchen
+    - generic [ref=f7e1048]:
+      - generic [ref=f7e1050]:
+        - link "Modern Wooden Bookshelf" [ref=f7e1052] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/product/modern-wooden-bookshelf
+          - img "Modern Wooden Bookshelf" [ref=f7e1053]
+        - paragraph [ref=f7e1056]: "-20%"
+      - generic [ref=f7e1057]:
+        - generic [ref=f7e1058]:
+          - heading "Modern Wooden Bookshelf" [level=2] [ref=f7e1060]:
+            - link "Modern Wooden Bookshelf" [ref=f7e1061] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/modern-wooden-bookshelf
+          - generic [ref=f7e1062]:
+            - deletion [ref=f7e1063]: ৳ 24999
+            - text: ৳ 19999
+        - button "অর্ডার করুন" [ref=f7e1065] [cursor=pointer]
+  - generic [ref=f7e1067]:
+    - generic [ref=f7e1068]:
+      - heading "Beauty & Health" [level=4] [ref=f7e1070]
+      - link "VIEW ALL" [ref=f7e1071] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products/category/beauty-health
+    - generic [ref=f7e1075]:
+      - generic [ref=f7e1077]:
+        - link "Vitamin C Brightening Serum" [ref=f7e1079] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/product/vitamin-c-brightening-serum
+          - img "Vitamin C Brightening Serum" [ref=f7e1080]
+        - paragraph [ref=f7e1083]: "-40%"
+      - generic [ref=f7e1084]:
+        - generic [ref=f7e1085]:
+          - heading "Vitamin C Brightening Serum" [level=2] [ref=f7e1087]:
+            - link "Vitamin C Brightening Serum" [ref=f7e1088] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/product/vitamin-c-brightening-serum
+          - generic [ref=f7e1089]:
+            - deletion [ref=f7e1090]: ৳ 1499
+            - text: ৳ 899
+        - button "অর্ডার করুন" [ref=f7e1092] [cursor=pointer]
+  - contentinfo [ref=f7e1093]:
+    - generic [ref=f7e1095]:
+      - generic [ref=f7e1096]:
+        - generic [ref=f7e1097]:
+          - heading "Contact Us" [level=4] [ref=f7e1099]
+          - list [ref=f7e1101]:
+            - listitem [ref=f7e1102]:
+              - text: "Address:"
+              - generic [ref=f7e1103]: A.H. Tower (5th Floor), H# G-71, Alokar Mor, Ghoramara Rajshahi, 6100
+        - generic [ref=f7e1104]:
+          - heading "Informations" [level=4] [ref=f7e1106]
+          - list [ref=f7e1108]:
+            - listitem [ref=f7e1109]:
+              - link "About us" [ref=f7e1110] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/about_us
+            - listitem [ref=f7e1111]:
+              - link "Contact Us" [ref=f7e1112] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/contact_us
+            - listitem [ref=f7e1113]:
+              - link "Terms & Conditions" [ref=f7e1114] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/terms_codition
+            - listitem [ref=f7e1115]:
+              - link "FAQ" [ref=f7e1116] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/faq
+        - generic [ref=f7e1117]:
+          - heading "My Account" [level=4] [ref=f7e1119]
+          - list [ref=f7e1121]:
+            - listitem [ref=f7e1122]:
+              - link "Login" [ref=f7e1123] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f7e1124]:
+              - link "Order History" [ref=f7e1125] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/track-order
+            - listitem [ref=f7e1126]:
+              - link "Company" [ref=f7e1127] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/company
+        - generic [ref=f7e1128]:
+          - heading "Why Choose Us" [level=4] [ref=f7e1130]
+          - list [ref=f7e1132]:
+            - listitem [ref=f7e1133]:
+              - link "Help Center" [ref=f7e1134] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/help_center
+            - listitem [ref=f7e1135]:
+              - link "Customer Service" [ref=f7e1136] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/customer_service
+            - listitem [ref=f7e1137]:
+              - link "Shopping Guide" [ref=f7e1138] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/venture/shipping_guide
+      - paragraph [ref=f7e1141]:
+        - text: © All rights reserved |
+        - 'link "Website Designed by: TIC Limited" [ref=f7e1142] [cursor=pointer]':
+          - /url: https://tic.com.bd
+  - text:    
+  - link [ref=f7e1143] [cursor=pointer]:
+    - /url: https://wa.me/+8809648156710?text=I%20am%20interested
+    - img [ref=f7e1144]
+  - text: 

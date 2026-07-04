@@ -1,0 +1,217 @@
+- generic [ref=f11e2]:
+  - status [ref=f11e4]:
+    - generic [ref=f11e5]: Loading...
+  - navigation [ref=f11e7]:
+    - link "logo" [ref=f11e8] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000/admin/dashboard
+      - heading "logo" [level=3] [ref=f11e9]:
+        - img "logo" [ref=f11e10]
+    - generic [ref=f11e14]:
+      - heading "Elite design (Super Admin)" [level=6] [ref=f11e15]
+      - text: Admin
+    - generic [ref=f11e16]:
+      - link " Dashboard" [ref=f11e17] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/admin/dashboard
+        - generic [ref=f11e18]: 
+        - text: Dashboard
+      - link " Admins " [ref=f11e20] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f11e21]: 
+        - text: Admins 
+      - link " Users " [ref=f11e23] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f11e24]: 
+        - text: Users 
+      - link " Menu & Brand " [ref=f11e26] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f11e27]: 
+        - text: Menu & Brand 
+      - link " Slider & Banner " [ref=f11e29] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f11e30]: 
+        - text: Slider & Banner 
+      - link " Attributes " [ref=f11e32] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f11e33]: 
+        - text: Attributes 
+      - link " Products" [ref=f11e34] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/admin/products
+        - generic [ref=f11e35]: 
+        - text: Products
+      - link " Order Panel" [ref=f11e36] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/order/dashboard
+        - generic [ref=f11e37]: 
+        - text: Order Panel
+      - link " Pages " [ref=f11e39] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f11e40]: 
+        - text: Pages 
+      - link " Menu Pages " [ref=f11e42] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f11e43]: 
+        - text: Menu Pages 
+      - link " Web Settings " [ref=f11e45] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f11e46]: 
+        - text: Web Settings 
+      - link " Get Support" [ref=f11e47] [cursor=pointer]:
+        - /url: https://m.me/official.elitedesign
+        - generic [ref=f11e48]: 
+        - text: Get Support
+  - generic [ref=f11e49]:
+    - navigation [ref=f11e50]:
+      - text: 
+      - link "" [ref=f11e51] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f11e52]: 
+      - searchbox "Search" [ref=f11e54]
+      - generic [ref=f11e55]:
+        - link " Message " [ref=f11e57] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f11e58]: 
+          - generic [ref=f11e59]: Message
+          - text: 
+        - link " Notificatin " [ref=f11e61] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f11e62]: 
+          - generic [ref=f11e63]: Notificatin
+          - text: 
+        - link "Elite design (Super Admin) " [ref=f11e65] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f11e66]: Elite design (Super Admin)
+          - text: 
+    - generic [ref=f11e68]:
+      - generic [ref=f11e70]:
+        - heading "Website Basic Information Update" [level=2] [ref=f11e71]
+        - generic [ref=f11e73]:
+          - generic [ref=f11e74]:
+            - generic [ref=f11e75]:
+              - textbox "Website Name Site Slogan Email address Inside Dhaka Charge Contact Info Facebook Twitter Google RSS Penterest Linkedin Youtube" [ref=f11e76]:
+                - /placeholder: Type here...
+                - text: Bagdoom
+              - generic: Website Name
+            - generic [ref=f11e77]:
+              - textbox "Type here..." [ref=f11e78]: Largest Ecommerce Website in Bangladesh
+              - generic: Site Slogan
+            - generic [ref=f11e79]:
+              - textbox "Meta Description Meta Tag Office Address Facebook Pixel Google Analytics Marquee Text Chatbox Script" [ref=f11e80]:
+                - /placeholder: Meta Description
+                - text: Bangladesh&#39;s best online shopping store with 17+ million products at resounding discounts in dhaka, ctg &amp; All across Bangladesh with cash on delivery (COD)
+              - generic: Meta Description
+            - generic [ref=f11e81]:
+              - textbox "Meta Tag" [ref=f11e82]: daraz,shop
+              - generic: Meta Tag
+            - generic [ref=f11e83]:
+              - textbox "name@example.com" [ref=f11e84]: info@elitedesign.com.bd
+              - generic: Email address
+            - generic [ref=f11e85]:
+              - textbox "Phone One Phone Two App Download link Copyright Text 1 USD TO BDT Outside Dhaka Charge Inside Dhaka Delivery Time Outside Dhaka Delivery Time Refund Rules" [ref=f11e86]:
+                - /placeholder: Phone One
+                - text: "01775457008"
+              - generic: Phone One
+            - generic [ref=f11e87]:
+              - textbox "Phone Two" [ref=f11e88]: "01954578089"
+              - generic: Phone Two
+            - generic [ref=f11e89]:
+              - textbox "Office Address" [ref=f11e90]: "House: Munshi Bari, Beside Nayar Hat High School,Borobari, Lalmonir Hat"
+              - generic: Office Address
+            - generic [ref=f11e91]:
+              - textbox "App link here" [ref=f11e92]: https://www.youtube.com/
+              - generic: App Download link
+            - generic [ref=f11e93]:
+              - textbox "Copyright Text" [ref=f11e94]: All rights reserved by Daraz
+              - generic: Copyright Text
+          - generic [ref=f11e95]:
+            - generic [ref=f11e96]:
+              - textbox "Phone Two" [ref=f11e97]
+              - generic: 1 USD TO BDT
+            - button "Choose File" [ref=f11e99]
+            - heading "LOGO :" [level=4] [ref=f11e101]
+            - button "Choose File" [ref=f11e103]
+            - heading "Favicon :" [level=4] [ref=f11e105]
+            - button "Choose File" [ref=f11e107]
+            - heading "OG Images :" [level=4] [ref=f11e109]
+            - button "Update" [ref=f11e111] [cursor=pointer]
+      - generic [ref=f11e113]:
+        - heading "Shipping Information Update" [level=2] [ref=f11e114]
+        - generic [ref=f11e116]:
+          - generic [ref=f11e117]:
+            - generic [ref=f11e118]:
+              - textbox "Inside Dhaka Charge" [ref=f11e119]: "60"
+              - generic: Inside Dhaka Charge
+            - generic [ref=f11e120]:
+              - textbox "Outside Dhaka Charge" [ref=f11e121]: "130"
+              - generic: Outside Dhaka Charge
+            - generic [ref=f11e122]:
+              - textbox "Inside Dhaka Delivery Time" [ref=f11e123]: 2-3 working days
+              - generic: Inside Dhaka Delivery Time
+            - generic [ref=f11e124]:
+              - textbox "Outside Dhaka Delivery Time" [ref=f11e125]: 3-4 working days
+              - generic: Outside Dhaka Delivery Time
+          - generic [ref=f11e126]:
+            - generic [ref=f11e127]:
+              - textbox "Contact Info" [ref=f11e128]: "01775457008"
+              - generic: Contact Info
+            - generic [ref=f11e129]:
+              - textbox "Refund Rules" [ref=f11e130]: Within 7 Days
+              - generic: Refund Rules
+            - combobox ".form-select-lg example" [ref=f11e132]:
+              - option "ON" [selected]
+              - option "OFF"
+            - button "Update" [ref=f11e134] [cursor=pointer]
+      - generic [ref=f11e136]:
+        - heading "Pixel & Analytics" [level=2] [ref=f11e137]
+        - generic [ref=f11e139]:
+          - generic [ref=f11e141]:
+            - textbox "Facebook Pixel" [ref=f11e142]
+            - generic: Facebook Pixel
+          - generic [ref=f11e144]:
+            - textbox "Google Analytics" [ref=f11e145]
+            - generic: Google Analytics
+          - generic [ref=f11e147]:
+            - textbox "Marquee Text" [ref=f11e148]: আমাদের এই ওয়েবসাইট এর ডেমো এর মধ্যে কিছু কিছু অপশন কাজ করবে না, ডেমো মুড চালু থাকার কারনে।আমাদের সাথে থাকার জন্য আপনাকে ধন্যবাদ।মনে রাখবেন এলিট ডিজাইন ছাড়া আমাদের অন্য কোন কোম্পানি নেই, এলিট ডিজাইন ছাড়া অন্য কোন পেইজ থেকে আমাদের কোন ডিজাইন কিনে প্রতারিত হলে এর জন্য আমরা কোনভাবেই দায়ি নয়।
+            - generic: Marquee Text
+          - generic [ref=f11e150]:
+            - textbox "Chatbox Script" [ref=f11e151]
+            - generic: Chatbox Script
+          - button "Update" [ref=f11e153] [cursor=pointer]
+      - generic [ref=f11e155]:
+        - heading "Social Links Update" [level=2] [ref=f11e156]
+        - generic [ref=f11e158]:
+          - generic [ref=f11e159]:
+            - generic [ref=f11e160]:
+              - textbox "https://www.facebook.com/" [ref=f11e161]: https://www.facebook.com
+              - generic: Facebook
+            - generic [ref=f11e162]:
+              - textbox "https://www.twitter.com/" [ref=f11e163]
+              - generic: Twitter
+            - generic [ref=f11e164]:
+              - textbox "https://google.com" [ref=f11e165]
+              - generic: Google
+            - generic [ref=f11e166]:
+              - textbox "https://www.rss.org/" [ref=f11e167]
+              - generic: RSS
+          - generic [ref=f11e168]:
+            - generic [ref=f11e169]:
+              - textbox "https://www.pinterest.com/" [ref=f11e170]
+              - generic: Penterest
+            - generic [ref=f11e171]:
+              - textbox "https://www.linkedin.com/" [ref=f11e172]
+              - generic: Linkedin
+            - generic [ref=f11e173]:
+              - textbox "https://www.Youtube.com/" [ref=f11e174]
+              - generic: Youtube
+            - button "Update" [ref=f11e176] [cursor=pointer]
+    - generic [ref=f11e179]:
+      - generic [ref=f11e180]:
+        - text: ©
+        - link "Bagdoom" [ref=f11e181] [cursor=pointer]:
+          - /url: "#"
+        - text: ", All Right Reserved."
+      - generic [ref=f11e182]:
+        - text: Designed By
+        - link "TIC Limited" [ref=f11e183] [cursor=pointer]:
+          - /url: https://tic.com.bd
+  - link "" [ref=f11e184] [cursor=pointer]:
+    - /url: "#"
+    - generic [ref=f11e185]: 

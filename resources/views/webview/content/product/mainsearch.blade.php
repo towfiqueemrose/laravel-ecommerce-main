@@ -36,26 +36,11 @@
                     
                         @forelse ($searchproducts as $categoryproduct)
                             <div class="col-6 col-lg-2">
-                                <div class="product-card">
-                                    <div class="product-image-wrapper">
-                                        <a href="{{ url('product/' . $categoryproduct->ProductSlug) }}">
-                                            <img src="{{ asset($categoryproduct->ProductImage) }}"
-                                                alt="{{ $categoryproduct->ProductName }}" loading="lazy">
-                                        </a>
-                                    </div>
-                                    <div class="product-info">
-                                        <h2 class="product-name text-truncate">
-                                            <a href="{{ url('product/' . $categoryproduct->ProductSlug) }}">{{ $categoryproduct->ProductName }}</a>
-                                        </h2>
-                                        <div class="price-box">
-                                            @if($categoryproduct->ProductRegularPrice > $categoryproduct->ProductSalePrice)
-                                                <del class="old-price">৳{{ round($categoryproduct->ProductRegularPrice) }}</del>
-                                            @endif
-                                            <span class="sale-price">৳{{ round($categoryproduct->ProductSalePrice) }}</span>
-                                        </div>
-                                    </div>
-                                    <button class="btn-add-cart" onclick="buynow({{ $categoryproduct->id }})">অর্ডার করুন</button>
-                                </div>
+                                @include('webview.partials.product-card', [
+                                    'product' => $categoryproduct,
+                                    'action' => 'buynow',
+                                    'buttonText' => 'Order Now'
+                                ])
                             </div>
                         @empty
                             <h2 class="p-4 text-center"><b>No Products found...</b></h2>

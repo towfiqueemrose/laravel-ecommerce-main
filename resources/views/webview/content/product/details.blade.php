@@ -423,34 +423,7 @@
                             <div class="item item-carousel">
                                 <div class="products">
 
-                                    <div class="product-card">
-                                        <div class="product-image-wrapper">
-                                            <a href="{{ url('product/' . $relatedproduct->ProductSlug) }}">
-                                                <img src="{{ asset($relatedproduct->ViewProductImage) }}"
-                                                    alt="{{ $relatedproduct->ProductName }}" loading="lazy">
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h2 class="product-name text-truncate">
-                                                <a href="{{ url('product/' . $relatedproduct->ProductSlug) }}">{{ $relatedproduct->ProductName }}</a>
-                                            </h2>
-                                            <div class="price-box">
-                                                @if($relatedproduct->ProductRegularPrice > $relatedproduct->ProductSalePrice)
-                                                    <del class="old-price">৳{{ round($relatedproduct->ProductRegularPrice) }}</del>
-                                                @endif
-                                                <span class="sale-price">৳{{ round($relatedproduct->ProductSalePrice) }}</span>
-                                            </div>
-                                        </div>
-                                        <form name="form" action="{{url('add-to-cart')}}" method="POST">
-                                            @method('POST')
-                                            @csrf
-                                            <input type="text" name="color" id="product_colorold" hidden>
-                                            <input type="text" name="size" id="product_sizeold" hidden>
-                                            <input type="text" name="product_id" value="{{ $relatedproduct->id }}" hidden>
-                                            <input type="text" name="qty" value="1" id="qtyor" hidden>
-                                            <button class="btn-add-cart" type="submit">অর্ডার করুন</button>
-                                        </form>
-                                    </div>
+                                    @include('webview.partials.product-card', ['product' => $relatedproduct])
                                     <!-- /.product -->
 
                                 </div>
@@ -485,34 +458,7 @@
                 <div class="owl-carousel " id="promotionalofferSlide">
                     @forelse ($topproducts as $promotional)
                         <div class="item">
-                            <div class="product-card">
-                                <div class="product-image-wrapper">
-                                    <a href="{{ url('product/' . $promotional->ProductSlug) }}">
-                                        <img src="{{ asset($promotional->ProductImage) }}"
-                                            alt="{{ $promotional->ProductName }}" loading="lazy">
-                                    </a>
-                                </div>
-                                <div class="product-info">
-                                    <h2 class="product-name text-truncate">
-                                        <a href="{{ url('product/' . $promotional->ProductSlug) }}">{{ $promotional->ProductName }}</a>
-                                    </h2>
-                                    <div class="price-box">
-                                        @if($promotional->ProductRegularPrice > $promotional->ProductSalePrice)
-                                            <del class="old-price">৳{{ round($promotional->ProductRegularPrice) }}</del>
-                                        @endif
-                                        <span class="sale-price">৳{{ round($promotional->ProductSalePrice) }}</span>
-                                    </div>
-                                </div>
-                                <form name="form" action="{{url('add-to-cart')}}" method="POST">
-                                    @method('POST')
-                                    @csrf
-                                    <input type="text" name="color" id="product_colorold" hidden>
-                                    <input type="text" name="size" id="product_sizeold" hidden>
-                                    <input type="text" name="product_id" value="{{ $promotional->id }}" hidden>
-                                    <input type="text" name="qty" value="1" id="qtyor" hidden>
-                                    <button class="btn-add-cart" type="submit">অর্ডার করুন</button>
-                                </form>
-                            </div>
+                            @include('webview.partials.product-card', ['product' => $promotional])
                         </div>
                     @empty
                     @endforelse

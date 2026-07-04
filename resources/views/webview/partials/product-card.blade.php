@@ -1,7 +1,7 @@
 <div class="product-card">
     <div class="product-card__image">
         <a href="{{ url('product/' . $product->ProductSlug) }}">
-            <img src="{{ asset($product->ViewProductImage ?? $product->ProductImage) }}"
+            <img src="{{ asset(str_replace('public/', '', $product->ViewProductImage ?? $product->ProductImage)) }}"
                  alt="{{ $product->ProductName }}" loading="lazy">
         </a>
         @if($product->Discount > 0)

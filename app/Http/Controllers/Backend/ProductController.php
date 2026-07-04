@@ -112,21 +112,20 @@ class ProductController extends Controller
         $productImg = $request->file('ProductImage');
         if($productImg){
             $imgname = $time . $productImg->getClientOriginalName();
-            $imguploadPath = ('public/images/product/image/');
-            $productImg->move($imguploadPath, $imgname);
+            $imguploadPath = 'images/product/image/';
+            $productImg->move(public_path($imguploadPath), $imgname);
             $productImgUrl = $imguploadPath . $imgname;
             $product->ProductImage = $productImgUrl;
-            $webp = $productImgUrl;
-            $im = imagecreatefromstring(file_get_contents($webp));
-            $new_webp = preg_replace('"\.(jpg|jpeg|png|webp)$"', '.webp', $webp);
-            imagewebp($im, $new_webp, 50);
-            $product->ViewProductImage = $new_webp;
+            $webpRelative = preg_replace('/\.(jpg|jpeg|png|webp)$/', '.webp', $productImgUrl);
+            $im = imagecreatefromstring(file_get_contents(public_path($productImgUrl)));
+            imagewebp($im, public_path($webpRelative), 50);
+            $product->ViewProductImage = $webpRelative;
         }
 
         if ($request->hasFile('PostImage')) {
             foreach ($request->file('PostImage') as $imgfiles) {
                 $name = time() . "_" . $imgfiles->getClientOriginalName();
-                $imgfiles->move(public_path() . '/images/product/slider/', $name);
+                $imgfiles->move(public_path('images/product/slider/'), $name);
                 $imageData[] = $name;
             }
             $product->PostImage = json_encode($imageData);
@@ -231,29 +230,31 @@ class ProductController extends Controller
         $productImg = $request->file('ProductImage');
 
         if($productImg){
-             unlink($product->ProductImage);
-             unlink($product->ViewProductImage);
+             $oldImage = str_replace('public/', '', $product->ProductImage);
+             $oldViewImage = str_replace('public/', '', $product->ViewProductImage);
+             if (file_exists(public_path($oldImage))) unlink(public_path($oldImage));
+             if (file_exists(public_path($oldViewImage))) unlink(public_path($oldViewImage));
             $imgname = $time . $productImg->getClientOriginalName();
-            $imguploadPath = ('public/images/product/image/');
-            $productImg->move($imguploadPath, $imgname);
+            $imguploadPath = 'images/product/image/';
+            $productImg->move(public_path($imguploadPath), $imgname);
             $productImgUrl = $imguploadPath . $imgname;
             $product->ProductImage = $productImgUrl;
-            $webp = $productImgUrl;
-            $im = imagecreatefromstring(file_get_contents($webp));
-            $new_webp = preg_replace('"\.(jpg|jpeg|png|webp)$"', '.webp', $webp);
-            imagewebp($im, $new_webp, 50);
-            $product->ViewProductImage = $new_webp;
+            $webpRelative = preg_replace('/\.(jpg|jpeg|png|webp)$/', '.webp', $productImgUrl);
+            $im = imagecreatefromstring(file_get_contents(public_path($productImgUrl)));
+            imagewebp($im, public_path($webpRelative), 50);
+            $product->ViewProductImage = $webpRelative;
         }
 
         if ($request->hasFile('PostImage')) {
             if($product->PostImage){
                 foreach (json_decode($product->PostImage) as $postimg) {
-                    unlink('public/images/product/slider/' . $postimg);
+                    $sliderPath = public_path('images/product/slider/' . $postimg);
+                    if (file_exists($sliderPath)) unlink($sliderPath);
                 }
             }
             foreach ($request->file('PostImage') as $imgfiles) {
                 $name = time() . "_" . $imgfiles->getClientOriginalName();
-                $imgfiles->move(public_path() . '/images/product/slider/', $name);
+                $imgfiles->move(public_path('images/product/slider/'), $name);
                 $imageData[] = $name;
             }
             $product->PostImage = json_encode($imageData);

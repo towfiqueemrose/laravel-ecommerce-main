@@ -1890,6 +1890,7 @@ button.owl-prev {
 
 .product-card__add-cart:hover {
     background: #f5f5f5;
+    color: var(--theme-color);
 }
 
 .product-card__add-cart:active {

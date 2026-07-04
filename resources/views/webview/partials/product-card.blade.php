@@ -11,7 +11,7 @@
             <button class="product-card__add-cart"
                     onclick="{{ $action ?? 'addtocart' }}({{ $product->id }})"
                     type="button">
-                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i>
                 {{ $buttonText ?? 'Add to Cart' }}
             </button>
         </div>

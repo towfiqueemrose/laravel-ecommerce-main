@@ -15,6 +15,10 @@
     @include('webview.partials.links.header')
     @yield('subhead')
     <style>
+        :root {
+            --theme-color: {{ App\Models\Basicinfo::first()->theme_color ?? '#24a86c' }};
+            --secondary-color: {{ App\Models\Basicinfo::first()->secondary_color ?? '#ff0000' }};
+        }
         body {
             font-family: 'Roboto', sans-serif;
         }

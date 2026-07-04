@@ -17,14 +17,14 @@
                     @csrf
                     <div class="row">
                         <div class="col-lg-6">
-						
-						
+
+
 						                            <div class="form-floating mb-3">
                                 <input type="meta_tittle" class="form-control" name="meta_tittle" value="{{ $webinfo->meta_tittle }}"
                                     id="floatingInput" placeholder="Type here...">
                                 <label for="floatingInput">Website Name</label>
                             </div>
-							
+
 													                            <div class="form-floating mb-3">
                                 <input type="site_sologan" class="form-control" name="site_sologan" value="{{ $webinfo->site_sologan }}"
                                     id="floatingInput" placeholder="Type here...">
@@ -34,22 +34,22 @@
                                 <textarea class="form-control" placeholder="Meta Description" name="meta_description" id="floatingTextarea" style="height: 100px;">{{ $webinfo->meta_description }}</textarea>
                                 <label for="floatingTextarea">Meta Description</label>
                             </div>
-							
+
 							                            <div class="form-floating mb-3">
                                 <textarea class="form-control" placeholder="Meta Tag" name="meta_keyword" id="floatingTextarea" style="height: 100px;">{{ $webinfo->meta_keyword }}</textarea>
                                 <label for="floatingTextarea">Meta Tag</label>
                             </div>
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
+
+
+
+
+
+
+
+
+
+
+
                             <div class="form-floating mb-3">
                                 <input type="email" class="form-control" name="email" value="{{ $webinfo->email }}"
                                     id="floatingInput" placeholder="name@example.com">
@@ -74,13 +74,13 @@
                                     value="{{ $webinfo->app }}" id="floatingPassword" placeholder="App link here">
                                 <label for="floatingPassword">App Download link</label>
                             </div>
-							
+
 														                            <div class="form-floating mb-3">
                                 <input type="text" class="form-control" name="copyright"
                                     value="{{ $webinfo->copyright }}" id="floatingPassword" placeholder="Copyright Text">
                                 <label for="floatingPassword">Copyright Text</label>
                             </div>
-							
+
                         </div>
                         <div class="col-lg-6">
                             <div class="form-floating mb-3">
@@ -97,10 +97,10 @@
                                 <img src="{{ asset($webinfo->logo) }}" alt="" srcset=""
                                     style="max-height: 100px;">
                             </div>
-							
-							
-							
-							
+
+
+
+
 							                            <div class="mb-3">
                                 <input class="form-control form-control-lg bg-dark" name="favicon" id="formFileLg"
                                     type="file">
@@ -110,8 +110,8 @@
                                 <img src="{{ asset($webinfo->favicon) }}" alt="" srcset=""
                                     style="max-height: 100px;">
                             </div>
-							
-							
+
+
 														                            <div class="mb-3">
                                 <input class="form-control form-control-lg bg-dark" name="og_images" id="formFileLg"
                                     type="file">
@@ -122,19 +122,19 @@
                                     style="max-height: 100px;">
                             </div>
 
-							
-							
-							
+
+
+
                             <div class="mt-3">
                                 <button type="submit" class="btn btn-primary btn-lg w-100">Update</button>
                             </div>
                         </div>
-						
-						
-						
-						
-						
-						
+
+
+
+
+
+
 
                     </div>
                 </form>
@@ -241,6 +241,22 @@
                                 <textarea class="form-control" placeholder="Chatbox Script" name="chat_box" id="chat_box"
                                     style="height: 100px;">{{ $webinfo->chat_box }}</textarea>
                                 <label for="floatingTextarea">Chatbox Script</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-floating mb-3">
+                                <input type="color" class="form-control form-control-lg" name="theme_color"
+                                    value="{{ $webinfo->theme_color ?? '#24a86c' }}" id="theme_color"
+                                    placeholder="Theme Color">
+                                <label for="floatingInput">Theme Color</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-floating mb-3">
+                                <input type="color" class="form-control form-control-lg" name="secondary_color"
+                                    value="{{ $webinfo->secondary_color ?? '#ff0000' }}" id="secondary_color"
+                                    placeholder="Secondary Color">
+                                <label for="floatingInput">Secondary Color</label>
                             </div>
                         </div>
                         <div class="mt-3">

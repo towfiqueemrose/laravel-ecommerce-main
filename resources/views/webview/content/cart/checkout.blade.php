@@ -205,7 +205,7 @@
         }
 
         #orderConfirm {
-            background: #00b09b;
+            background: var(--theme-color);
             color: #fff;
             font-size: 20px;
             font-weight: 600;
@@ -221,7 +221,8 @@
         }
 
         #orderConfirm:hover {
-            background: #009688;
+            background: var(--theme-color);
+            filter: brightness(0.9);
             box-shadow: 0 6px 20px rgba(0, 176, 155, 0.45);
             transform: translateY(-2px);
         }
@@ -258,7 +259,7 @@
         }
 
         .form-control:focus {
-            border-color: #00b09b;
+            border-color: var(--theme-color);
             box-shadow: 0 0 0 3px rgba(0, 176, 155, 0.2);
         }
 

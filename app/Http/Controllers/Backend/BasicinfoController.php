@@ -53,7 +53,7 @@ class BasicinfoController extends Controller
             $webinfo->logo = $logoImgUrl;
         }
           $webinfo->save();
-		  
+
 		          if($request->favicon){
             if($webinfo->favicon && $webinfo->favicon != 'public/webview/assets/images/favicon.png' && file_exists($webinfo->favicon)){
                 unlink($webinfo->favicon);
@@ -66,8 +66,8 @@ class BasicinfoController extends Controller
             $webinfo->favicon = $faviconImgUrl;
         }
           $webinfo->save();
-		  
-		  
+
+
 		  		          if($request->og_images){
             if($webinfo->og_images && $webinfo->og_images != 'public/webview/assets/images/ogimages.png' && file_exists($webinfo->og_images)){
                 unlink($webinfo->og_images);
@@ -80,9 +80,9 @@ class BasicinfoController extends Controller
             $webinfo->og_images = $og_imagesImgUrl;
         }
           $webinfo->save();
-		  
-		  
-		  
+
+
+
         return redirect()->back()->with('message','Info updated successfully');
     }
 
@@ -108,6 +108,16 @@ class BasicinfoController extends Controller
             $webinfo->chat_box=$request->chat_box;
         }else{
             $webinfo->chat_box='';
+        }
+        if($request->theme_color){
+            $webinfo->theme_color=$request->theme_color;
+        }else{
+            $webinfo->theme_color='#24a86c';
+        }
+        if($request->secondary_color){
+            $webinfo->secondary_color=$request->secondary_color;
+        }else{
+            $webinfo->secondary_color='#ff0000';
         }
         $webinfo->update();
         return redirect()->back()->with('message','Pixel & Analytics updated successfully');

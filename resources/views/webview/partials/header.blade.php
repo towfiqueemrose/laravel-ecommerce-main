@@ -1,12 +1,12 @@
 <header class="header-style-1">
 
-  
+
     <!-- ============================================== TOP MENU ============================================== -->
     <div class="top-barhead animate-dropdown" id="d-sm-none">
         <div class="container">
             <div class="header-top-inner">
                 <div class="cnt-account">
-                    <ul class="list-unstyled">  
+                    <ul class="list-unstyled">
                         @if (Auth::id())
                             <li><a href="{{ url('user/dashboard') }}"><i class="icon fas fa-user"></i>Dashboard</a></li>
                         @else
@@ -15,10 +15,10 @@
                             <li><a href="{{ url('register') }}">Sign Up</a></li>
                         @endif
                     </ul>
-                </div> 
+                </div>
                 <div class="cnt-account" style="float: left;">
-                    <ul class="list-unstyled">   
-                        <li><a href="tel:+88{{$basicinfo->phone_one}}"><i class="icon fas fa-phone"></i>Have any question? Call Us +88{{$basicinfo->phone_one}}</a></li> 
+                    <ul class="list-unstyled">
+                        <li><a href="tel:+88{{$basicinfo->phone_one}}"><i class="icon fas fa-phone"></i>Have any question? Call Us +88{{$basicinfo->phone_one}}</a></li>
                     </ul>
                 </div>
                 <!-- /.cnt-cart -->
@@ -33,7 +33,7 @@
     <div class="col-12" id="">
         <marquee behavior="" direction="" style="color:#818a91"> {{ $basicinfo->marquee_text }}</marquee>
     </div>
-    
+
     <div class="main-header" id="myHeader" style="background: #fff;border-bottom: 1px solid #e9e9e9;">
         <div class="container">
             <div class="row align-items-center" style="margin: 0">
@@ -82,7 +82,7 @@
                             id="smcarticon">
                             <div class="items-cart-inner">
                                 <div class="basket" style="padding: 0;padding-top: 2px;display:flex;">
-                                    <i class="fa-solid fa-basket-shopping" style="color: #24a86c;font-size: 28px;"></i>
+                                    <i class="fa-solid fa-cart-shopping" style="color: var(--theme-color);font-size: 28px;"></i>
                                     <span class="d-none d-lg-block lbl"
                                         style="color: black;font-size: 13px;margin-top:13px">Cart</span>
                                 </div>
@@ -97,11 +97,11 @@
                         <!-- /.dropdown-menu-->
                     </div>
                     <!-- /.dropdown-cart -->
- 
+
                     <div class="d-none d-lg-inline-block" id="d-sm-none" style="float:right;padding-right: 15px;">
                         <div class="nav-wishlist-box" id="wishlist" style="    float: right;">
                             <a href="tel:+8809648156710" class="nav-box-link">
-                                <i class="fa-solid fa-heart" id="bookmarkicon" style="color:#24a86c"></i>  
+                                <i class="fa-solid fa-heart" id="bookmarkicon" style="color:var(--theme-color)"></i>
                             </a>
                         </div>
                     </div>
@@ -109,7 +109,7 @@
                     <a type="button" class="search-button d-lg-none" data-bs-toggle="modal"
                         data-bs-target="#searchPopup" style="float: right;font-size: 23px; color: #b9b9b9;"
                         href="#" id="smsericon"> <i class="fas fa-search"
-                            style="margin-top: 6px;margin-left: 7px;color:#24a86c"></i></a>
+                            style="margin-top: 6px;margin-left: 7px;color:var(--theme-color)"></i></a>
                     <!-- ============================================================= SHOPPING CART DROPDOWN : END============================================================= -->
                 </div>
                 <!-- /.top-cart-row -->

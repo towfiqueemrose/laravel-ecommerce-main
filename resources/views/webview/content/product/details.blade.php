@@ -98,7 +98,7 @@
                                         <div class="col-9 col-sm-9">
                                             <div class="product-price strong-700" id="productPriceAmount">
                                                 <del style="font-size: 20px;color: red;">৳{{intval($productdetails->ProductRegularPrice)}}</del> &nbsp;&nbsp;
-                                                ৳ {{ $productdetails->ProductSalePrice }} 
+                                                ৳ {{ $productdetails->ProductSalePrice }}
                                             </div>
                                         </div>
                                     </div>
@@ -178,7 +178,7 @@
                                             hidden>
                                         <input type="text" name="qty" value="1" id="qtyor" hidden>
                                         <button type="submit"
-                                            class=" mb-0  ml-2 btn btn-styled btn-base-1 btn-icon-left strong-700 hov-bounce hov-shaddow buy-now" style="background:#24a86c;color:white;width: 95%;font-size: 17px;">
+                                            class=" mb-0  ml-2 btn btn-styled btn-base-1 btn-icon-left strong-700 hov-bounce hov-shaddow buy-now" style="background:var(--theme-color);color:white;width: 95%;font-size: 17px;">
                                             কার্টে যোগ করুন
                                         </button>
                                     </form>
@@ -192,7 +192,7 @@
                                             hidden>
                                         <input type="text" name="qty" value="1" id="qtyor" hidden>
                                         <button type="submit"
-                                            class=" mb-0  ml-2 btn btn-styled btn-base-1 btn-icon-left strong-700 hov-bounce hov-shaddow buy-now" style="background:green;color:white;width: 95%;font-size: 17px;">
+                                            class=" mb-0  ml-2 btn btn-styled btn-base-1 btn-icon-left strong-700 hov-bounce hov-shaddow buy-now" style="background:var(--theme-color);color:white;width: 95%;font-size: 17px;">
                                             অর্ডার করুন
                                         </button>
                                     </form>
@@ -227,13 +227,13 @@
                                         <div class="col-12 col-md-12 mb-2">
                                             <a class="btn btn-success" id="formText" href="tel:{{App\Models\Basicinfo::first()->phone_one}}" style="width: 85%;font-size: 22px; "> কল করুন {{App\Models\Basicinfo::first()->phone_one}}</a>
                                         </div>
-                                         
+
                                     </div>
                                 </div>
 
                             </div>
                             <!-- /.product-info -->
-                        </div> 
+                        </div>
                         <!-- /.col-sm-7 -->
                     </div>
                     <!-- /.row -->
@@ -480,7 +480,7 @@
                     <div class="px-2 p-md-3 pt-0 d-flex justify-content-between" style="padding-bottom:4px !important;padding-top: 8px !important;">
                         <h4 class="m-0"><b>Promotional Offers</b></h4>
                     </div>
-                    <a href="{{ url('promotional/products') }}" class="btn btn-danger btn-sm mb-0" style="padding: 2px;height: 26px;color: white;font-weight: bold;margin-top:9px;">VIEW ALL</a>
+                    <a href="{{ url('promotional/products') }}" class="btn btn-danger btn-sm mb-0" style="padding: 2px 15px;height: 26px;color: white;font-weight: bold;margin-top:9px;background:var(--secondary-color);border:1px solid var(--secondary-color)">VIEW ALL</a>
                 </div>
                 <div class="owl-carousel " id="promotionalofferSlide">
                     @forelse ($topproducts as $promotional)
@@ -770,7 +770,7 @@
         $('#product_color').val(color);
 
         $('#product_colorOr').val(color);
-        
+
         $('.colortext').css('color','#000');
         $('.colortext').css('background','#fff');
         $('#colortext'+color).css('color','#fff');
@@ -780,7 +780,7 @@
     function getsize(size) {
         $('#product_size').val(size);
         $('#product_sizeOr').val(size);
-        
+
         $('.sizetext').css('color','#000');
         $('.sizetext').css('background','#fff');
         $('#sizetext'+size).css('color','#fff');

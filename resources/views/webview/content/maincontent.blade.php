@@ -36,16 +36,16 @@
         max-height:200px;
     }
 </style>
-<div class="container-fluid" style="padding:0;background:#24a86c">
+<div class="container-fluid" style="padding:0;background:var(--theme-color)">
     <div class="container">
-    <div class="row" style="background:#24a86c">
+    <div class="row" style="background:var(--theme-color) px-2">
         <div class="col-lg-3 d-none d-lg-block sidebar pe-0 ps-0">
             <div class="side-menu animate-dropdown">
                 <div class="head"><i class="icon fas fa-align-justify fa-fw"></i> Categories</div>
             </div>
         </div>
         <div class="col-lg-9 col-12 ps-0 pe-0" id="mainslider">
-            <div class="col-lg-12 position-static order-2 order-lg-0 d-none d-lg-block" style="background: #24a86c;">
+            <div class="col-lg-12 position-static order-2 order-lg-0 d-none d-lg-block" style="background: var(--theme-color);">
                 <div id="menu">
                     <ul>
                         <li><a href="{{ url('/') }}">Home</a></li>
@@ -151,7 +151,7 @@
         </div>
     </div>
 </div>
- 
+
 
 @if(count($featuredproducts)>0)
 <!-- Promotional Products -->
@@ -161,7 +161,7 @@
             <div class="px-2 p-md-3 pt-0 d-flex justify-content-between" style="padding-bottom:4px !important;padding-top: 8px !important;">
                 <h4 class="m-0"><b>Featured Products</b></h4>
             </div>
-            <a href="{{ url('featured/products') }}" class="btn btn-danger btn-sm mb-0" style="padding: 2px;height: 26px;color: white;font-weight: bold;margin-top:9px;background:#24a86c;border:1px solid #24a86c">VIEW ALL</a>
+            <a href="{{ url('featured/products') }}" class="btn btn-danger btn-sm mb-0" style="padding: 2px 15px;height: 26px;color: white;font-weight: bold;margin-top:9px;background:var(--secondary-color);border:1px solid var(--secondary-color)">VIEW ALL</a>
         </div>
         <div class="col-12">
             <div class="owl-carousel" id="featuredProductSlide">
@@ -248,7 +248,7 @@
             <div class="px-2 p-md-3 pt-0 d-flex justify-content-between" style="padding-bottom:4px !important;padding-top: 8px !important;">
                 <h4 class="m-0"><b>Promotional Offers</b></h4>
             </div>
-            <a href="{{ url('promotional/products') }}" class="btn btn-danger btn-sm mb-0" style="padding: 2px;height: 26px;color: white;font-weight: bold;margin-top:9px;">VIEW ALL</a>
+            <a href="{{ url('promotional/products') }}" class="btn btn-danger btn-sm mb-0" style="padding: 2px 15px;height: 26px;color: white;font-weight: bold;margin-top:9px;background:var(--secondary-color);border:1px solid var(--secondary-color)">VIEW ALL</a>
         </div>
         <div class="col-12">
             <div class="owl-carousel" id="promotionalofferSlide">
@@ -305,7 +305,7 @@
                     <div class="px-2 p-md-3 pt-0 d-flex justify-content-between" style="padding-bottom:4px !important;padding-top: 8px !important;">
                         <h4 class="m-0"><b>{{ $categoryproduct->category_name }}</b></h4>
                     </div>
-                    <a href="{{url('products/category/'.$categoryproduct->slug)}}" class="btn btn-danger btn-sm mb-0" style="padding: 2px;height: 26px;color: white;font-weight: bold;margin-top:9px;background: #24a86c;border: 1px solid #24a86c;">VIEW ALL</a>
+                    <a href="{{url('products/category/'.$categoryproduct->slug)}}" class="btn btn-danger btn-sm mb-0" style="padding: 2px 15px;height: 26px;color: white;font-weight: bold;margin-top:9px;background: var(--secondary-color);border: 1px solid var(--secondary-color);">VIEW ALL</a>
                 </div>
 
 

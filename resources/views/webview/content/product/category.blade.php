@@ -27,61 +27,7 @@
         </div>
         <!-- /.container -->
     </div>
-      <section class="mt-1 mb-3">
-        <div class="container">
-            <div class="px-2 py-1 p-md-3 bg-white shadow-sm">
-                <div class="owl-carousel best-category" id="categorySlide">
-                    @forelse ($subcategories as $ctlist)
-                        <div class="item">
-                            <div class="products best-product">
-                                <div class="product" id="categoryslider">
-                                    <div class="product-micro">
-                                        <div class="row product-micro-row">
-                                            <div class="col-12">
-                                                <div class="product-image">
-                                                    <div class="image text-center">
-                                                        <a onclick="viewsubcategoryproduct('{{ $ctlist->slug }}')"
-                                                            type="button">
-                                                            @if (isset($ctlist->subcategory_icon))
-                                                                <img src="{{ asset($ctlist->subcategory_icon) }}"
-                                                                    alt="{{ $ctlist->sub_category_name }}"
-                                                                    id="categoryimage">
-                                                            @else
-                                                                <img src="{{ asset('public/webview/assets/images/categoryimage.jpg') }}"
-                                                                    alt="{{ $ctlist->sub_category_name }}"
-                                                                    id="categoryimage">
-                                                            @endif
-                                                        </a>
-                                                    </div>
-                                                    <!-- /.image -->
-                                                </div>
-                                                <!-- /.product-image -->
-                                            </div>
-                                            <!-- /.col -->
-                                            <div class="col-12 text-center" style="padding-top: 8px;">
-                                                <div class="product-info">
-                                                    <h3 class="name" id="categoryNameinfo"><a
-                                                            onclick="viewsubcategoryproduct('{{ $ctlist->slug }}')"
-                                                            type="button"
-                                                            id="category_name">{{ $ctlist->sub_category_name }}</a>
-                                                    </h3>
-                                                </div>
-                                            </div>
-                                            <!-- /.col -->
-                                        </div>
-                                        <!-- /.product-micro-row -->
-                                    </div>
-                                    <!-- /.product-micro -->
 
-                                </div>
-                            </div>
-                        </div>
-                    @empty
-                    @endforelse
-                </div>
-            </div>
-        </div>
-    </section>
     
     <div class='container'>
         <div class='row'> 

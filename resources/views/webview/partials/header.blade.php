@@ -1,43 +1,12 @@
 <header class="header-style-1">
 
 
-    <!-- ============================================== TOP MENU ============================================== -->
-    <div class="top-barhead animate-dropdown" id="d-sm-none">
-        <div class="container">
-            <div class="header-top-inner">
-                <div class="cnt-account">
-                    <ul class="list-unstyled">
-                        @if (Auth::id())
-                            <li><a href="{{ url('user/dashboard') }}"><i class="icon fas fa-user"></i>Dashboard</a></li>
-                        @else
-                            <li><a href="{{ url('login') }}">Sign In</a></li>
-                            <li><a href="javascript:void(0);">|</a></li>
-                            <li><a href="{{ url('register') }}">Sign Up</a></li>
-                        @endif
-                    </ul>
-                </div>
-                <div class="cnt-account" style="float: left;">
-                    <ul class="list-unstyled">
-                        <li><a href="tel:+88{{$basicinfo->phone_one}}"><i class="icon fas fa-phone"></i>Have any question? Call Us +88{{$basicinfo->phone_one}}</a></li>
-                    </ul>
-                </div>
-                <!-- /.cnt-cart -->
-                <div class="clearfix"></div>
-            </div>
-            <!-- /.header-top-inner -->
-        </div>
-        <!-- /.container -->
-    </div>
-    <!-- /.header-top -->
-    <!-- ============================================== TOP MENU : END ============================================== -->
-    <div class="col-12" id="">
-        <marquee behavior="" direction="" style="color:#818a91"> {{ $basicinfo->marquee_text }}</marquee>
-    </div>
+
 
     <div class="main-header" id="myHeader" style="background: #fff;border-bottom: 1px solid #e9e9e9;">
         <div class="container">
             <div class="row align-items-center" style="margin: 0">
-                <div class="col-9 col-sm-9 col-md-9 col-lg-3 logo-holder ps-0">
+                <div class="col-9 col-sm-9 col-md-9 col-lg-2 logo-holder ps-0">
                     <!-- ============================================================= LOGO ============================================================= -->
                     <div class="logo">
                         <button type="button" onclick="openNav()" id="menubutton" class="d-lg-none">
@@ -73,44 +42,35 @@
                 </div>
                 <!-- /.top-search-holder -->
 
-                <div class="col-3 col-sm-3 col-md-3  col-lg-3 animate-dropdown top-cart-row p-0">
-                    <!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
+                <div class="col-3 col-sm-3 col-md-3 col-lg-4 top-cart-row p-0">
+                    <div class="d-flex align-items-center justify-content-end gap-3" style="height:100%;">
 
+                        @auth
+                            <a href="{{ url('user/dashboard') }}" class="d-none d-lg-inline-block" style="font-size:13px;color:#333;text-decoration:none;font-weight:500;white-space:nowrap;">Dashboard</a>
+                        @else
+                            <a href="{{ url('login') }}" class="d-none d-lg-inline-block" style="font-size:13px;color:#333;text-decoration:none;font-weight:500;white-space:nowrap;">Login</a>
+                            <span class="d-none d-lg-inline-block" style="color:#ddd;font-size:13px;">|</span>
+                            <a href="{{ url('register') }}" class="d-none d-lg-inline-block" style="font-size:13px;color:#333;text-decoration:none;font-weight:500;white-space:nowrap;">Sign Up</a>
+                        @endauth
 
-                    <div class=" dropdown-cart" style="padding-left: 14px;">
-                        <a href="#" class="dropdown" onclick="checkcart(this)" data-bs-toggle="dropdown"
-                            id="smcarticon">
-                            <div class="items-cart-inner">
-                                <div class="basket" style="padding: 0;padding-top: 2px;display:flex;">
-                                    <i class="fa-solid fa-cart-shopping" style="color: var(--theme-color);font-size: 28px;"></i>
-                                    <span class="d-none d-lg-block lbl"
-                                        style="color: black;font-size: 13px;margin-top:13px">Cart</span>
-                                </div>
-                                <div class="nav-box-number" id="d-sm-none"><span
-                                        class="count">{{ count(Cart::content()) }}</span></div>
-                            </div>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li id="checkcartview">
-                            </li>
-                        </ul>
-                        <!-- /.dropdown-menu-->
-                    </div>
-                    <!-- /.dropdown-cart -->
-
-                    <div class="d-none d-lg-inline-block" id="d-sm-none" style="float:right;padding-right: 15px;">
-                        <div class="nav-wishlist-box" id="wishlist" style="    float: right;">
-                            <a href="tel:+8809648156710" class="nav-box-link">
-                                <i class="fa-solid fa-heart" id="bookmarkicon" style="color:var(--theme-color)"></i>
+                        <div class="dropdown-cart position-relative" style="padding-left:0;">
+                            <a href="#" class="dropdown" onclick="checkcart(this)" data-bs-toggle="dropdown" id="smcarticon">
+                                <i class="fa-solid fa-cart-shopping" style="color:var(--theme-color);font-size:24px;"></i>
+                                <span class="count" style="position:absolute;top:-8px;right:-12px;background:var(--theme-color);color:#fff;font-size:10px;width:18px;height:18px;display:flex;align-items:center;justify-content:center;">{{ count(Cart::content()) }}</span>
                             </a>
+                            <ul class="dropdown-menu">
+                                <li id="checkcartview"></li>
+                            </ul>
                         </div>
-                    </div>
 
-                    <a type="button" class="search-button d-lg-none" data-bs-toggle="modal"
-                        data-bs-target="#searchPopup" style="float: right;font-size: 23px; color: #b9b9b9;"
-                        href="#" id="smsericon"> <i class="fas fa-search"
-                            style="margin-top: 6px;margin-left: 7px;color:var(--theme-color)"></i></a>
-                    <!-- ============================================================= SHOPPING CART DROPDOWN : END============================================================= -->
+                        <a href="tel:+8809648156710" class="d-none d-lg-inline-block">
+                            <i class="fa-solid fa-heart" style="color:var(--theme-color);font-size:22px;"></i>
+                        </a>
+
+                        <a class="d-lg-none" data-bs-toggle="modal" data-bs-target="#searchPopup" href="#">
+                            <i class="fas fa-search" style="color:var(--theme-color);font-size:20px;"></i>
+                        </a>
+                    </div>
                 </div>
                 <!-- /.top-cart-row -->
             </div>

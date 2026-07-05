@@ -35,94 +35,54 @@
         padding-top: 0;
         max-height:200px;
     }
+    .section {
+        padding-bottom: 28px;
+    }
+    .section-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid #eee;
+        padding: 10px 0 12px;
+        margin-bottom: 16px;
+    }
+    .section-title {
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0;
+        color: #111;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+    }
+    .btn-view-all {
+        font-size: 12px;
+        font-weight: 600;
+        color: #fff;
+        background: var(--theme-color);
+        padding: 5px 16px;
+        text-decoration: none;
+        transition: opacity 0.2s;
+        line-height: 1.5;
+        display: inline-block;
+        border: none;
+    }
+    .btn-view-all:hover {
+        opacity: 0.85;
+        color: #fff;
+    }
 </style>
-<div class="container-fluid" style="padding:0;background:var(--theme-color)">
-    <div class="container">
-    <div class="row" style="background:var(--theme-color) px-2">
-        <div class="col-lg-3 d-none d-lg-block sidebar pe-0 ps-0">
-            <div class="side-menu animate-dropdown">
-                <div class="head"><i class="icon fas fa-align-justify fa-fw"></i> Categories</div>
-            </div>
-        </div>
-        <div class="col-lg-9 col-12 ps-0 pe-0" id="mainslider">
-            <div class="col-lg-12 position-static order-2 order-lg-0 d-none d-lg-block" style="background: var(--theme-color);">
-                <div id="menu">
-                    <ul>
-                        <li><a href="{{ url('/') }}">Home</a></li>
-                        <li><a href="{{ url('/combo-offer') }}">Combo Offer</a></li>
-                        <li><a href="{{ url('/') }}">News Feed</a></li>
-                        <li><a href="{{ url('/track-order') }}">Order Track</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
 
-<div class="container">
-    <div class="row bg-white">
-        <div class="col-lg-3 d-none d-lg-block sidebar pe-0 ps-0">
-            <div class="side-menu animate-dropdown outer-bottom-xs">
-                <nav class="yamm megamenu-horizontal" role="navigation" style="padding-top: 6px;">
-                    <ul class="nav m-0">
-                        @forelse ($categories as $maincategory)
-                            @if (count($maincategory->subcategories) > 0)
-                                <li class="dropdown menu-item">
-                                    <a href="{{ url('products/category/' . $maincategory->slug) }}"
-                                        class="dropdown-toggle" data-bs-hover="dropdown"> <img
-                                            src="{{ asset($maincategory->category_icon) }}"
-                                            alt="{{ $maincategory->category_name }}"
-                                            style="width: 22px !important;margin-top: -5px;">
-                                        <span style="margin-left:6px">{{ $maincategory->category_name }}</span></a>
-                                    <ul class="dropdown-menu mega-menu">
-                                        <li class="yamm-content" style="padding-bottom: 5px;padding-top: 5px;">
-                                            <ul class="links list-unstyled">
-                                                <div class="row">
-                                                    @foreach ($maincategory->subcategories as $subcategory)
-                                                        <div class="col-sm-12 col-md-4 pt-1 pb-1" id="subcategoryhover" style="width: 100%;">
-                                                            <li><a href="{{ url('products/sub/category/' . $subcategory->slug) }}"
-                                                                    style="color:#666666">{{ $subcategory->sub_category_name }}</a>
-                                                            </li>
-                                                        </div>
-                                                    @endforeach
-                                                </div>
-                                            </ul>
-                                            <!-- /.row -->
-                                        </li>
-                                        <!-- /.yamm-content -->
-                                    </ul>
-                                    <!-- /.dropdown-menu -->
-                                </li>
-                            @else
-                                <li class="dropdown menu-item">
-                                    <a href="{{ url('products/category/' . $maincategory->slug) }}"
-                                        class="dropdown-toggle text-truncate" data-bs-hover="dropdown"><img
-                                            src="{{ asset($maincategory->category_icon) }}"
-                                            alt="{{ $maincategory->category_name }}"
-                                            style="width: 22px !important;margin-top: -5px;"><span style="margin-left:6px">{{ $maincategory->category_name }}</span></a>
-                                    <!-- /.dropdown-menu -->
-                                </li>
-                            @endif
-                        @empty
-                        @endforelse
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div class="col-lg-9 col-12 ps-0 pe-0" id="mainslider">
-
-            <div class="col-12">
-                <div class="owl-carousel owl-theme" id="slider">
-                    @forelse ($sliders as $slider)
-                        <div class="item" style="margin:0 !important;">
-                            <img  src="{{ asset($slider->slider_image) }}"
-                                alt="{{ $slider->slider_title }}">
-                        </div>
-                    @empty
-                    @endforelse
-                </div>
-
+<div class="container px-0">
+    <div class="row g-0">
+        <div class="col-12">
+            <div class="owl-carousel owl-theme" id="slider">
+                @forelse ($sliders as $slider)
+                    <div class="item" style="margin:0 !important;">
+                        <img src="{{ asset($slider->slider_image) }}"
+                            alt="{{ $slider->slider_title }}">
+                    </div>
+                @empty
+                @endforelse
             </div>
         </div>
     </div>
@@ -154,25 +114,18 @@
 
 
 @if(count($featuredproducts)>0)
-<!-- Promotional Products -->
-<div class="container pt-0 pb-4">
-    <div class="row bg-white pb-4">
-            <div class="col-12" style="padding-left: 0;display: flex;justify-content: space-between;">
-            <div class="px-2 p-md-3 pt-0 d-flex justify-content-between" style="padding-bottom:4px !important;padding-top: 8px !important;">
-                <h4 class="m-0"><b>Featured Products</b></h4>
+<div class="container section">
+    <div class="section-header">
+        <h4 class="section-title">Featured Products</h4>
+        <a href="{{ url('featured/products') }}" class="btn-view-all">VIEW ALL</a>
+    </div>
+    <div class="owl-carousel" id="featuredProductSlide">
+        @forelse ($featuredproducts as $promotional)
+            <div class="item">
+                @include('webview.partials.product-card', ['product' => $promotional])
             </div>
-            <a href="{{ url('featured/products') }}" class="btn btn-danger btn-sm mb-0" style="padding: 2px 15px;height: 26px;color: white;font-weight: bold;margin-top:9px;background:var(--secondary-color);border:1px solid var(--secondary-color)">VIEW ALL</a>
-        </div>
-        <div class="col-12">
-            <div class="owl-carousel" id="featuredProductSlide">
-                @forelse ($featuredproducts as $promotional)
-                    <div class="item">
-                        @include('webview.partials.product-card', ['product' => $promotional])
-                    </div>
-                @empty
-                @endforelse
-            </div>
-        </div>
+        @empty
+        @endforelse
     </div>
 </div>
 @else
@@ -211,25 +164,18 @@
 </div>
 
 @if(count($topproducts)>0)
-<!-- Promotional Products -->
-<div class="container pt-0 pb-4">
-    <div class="row bg-white pb-4">
-        <div class="col-12" style="padding-left: 0;display: flex;justify-content: space-between;">
-            <div class="px-2 p-md-3 pt-0 d-flex justify-content-between" style="padding-bottom:4px !important;padding-top: 8px !important;">
-                <h4 class="m-0"><b>Promotional Offers</b></h4>
+<div class="container section">
+    <div class="section-header">
+        <h4 class="section-title">Promotional Offers</h4>
+        <a href="{{ url('promotional/products') }}" class="btn-view-all">VIEW ALL</a>
+    </div>
+    <div class="owl-carousel" id="promotionalofferSlide">
+        @forelse ($topproducts as $promotional)
+            <div class="item">
+                @include('webview.partials.product-card', ['product' => $promotional])
             </div>
-            <a href="{{ url('promotional/products') }}" class="btn btn-danger btn-sm mb-0" style="padding: 2px 15px;height: 26px;color: white;font-weight: bold;margin-top:9px;background:var(--secondary-color);border:1px solid var(--secondary-color)">VIEW ALL</a>
-        </div>
-        <div class="col-12">
-            <div class="owl-carousel" id="promotionalofferSlide">
-                @forelse ($topproducts as $promotional)
-                    <div class="item">
-                        @include('webview.partials.product-card', ['product' => $promotional])
-                    </div>
-                @empty
-                @endforelse
-            </div>
-        </div>
+        @empty
+        @endforelse
     </div>
 </div>
 @else
@@ -238,32 +184,20 @@
 
 @forelse ($categoryproducts as $key=>$categoryproduct)
     @if (count($categoryproduct->products) > 0)
-        <!-- Category Products -->
-        <div class="container pt-0 pb-4">
-            <div class="row bg-white pb-0">
-                <div class="col-12" style="padding-left: 0;display: flex;justify-content: space-between;">
-                    <div class="px-2 p-md-3 pt-0 d-flex justify-content-between" style="padding-bottom:4px !important;padding-top: 8px !important;">
-                        <h4 class="m-0"><b>{{ rtrim($categoryproduct->category_name, '.') }}</b></h4>
+        <div class="container section">
+            <div class="section-header">
+                <h4 class="section-title">{{ rtrim($categoryproduct->category_name, '.') }}</h4>
+                <a href="{{url('products/category/'.$categoryproduct->slug)}}" class="btn-view-all">VIEW ALL</a>
+            </div>
+            <div class="owl-carousel" id="CategoryProductSlide{{ $key }}">
+                @forelse ($categoryproduct->products->take(12) as $product)
+                    <div class="item">
+                        @include('webview.partials.product-card', ['product' => $product])
                     </div>
-                    <a href="{{url('products/category/'.$categoryproduct->slug)}}" class="btn btn-danger btn-sm mb-0" style="padding: 2px 15px;height: 26px;color: white;font-weight: bold;margin-top:9px;background: var(--secondary-color);border: 1px solid var(--secondary-color);">VIEW ALL</a>
-                </div>
-
-
-                <div class="col-12">
-                    <div class="owl-carousel" id="CategoryProductSlide{{ $key }}">
-                        @forelse ($categoryproduct->products->take(12) as $product)
-                            <div class="item">
-                                @include('webview.partials.product-card', ['product' => $product])
-                            </div>
-                        @empty
-                        @endforelse
-                    </div>
-                </div>
-
-                </div>
+                @empty
+                @endforelse
             </div>
         </div>
-    @else
     @endif
 
 @empty

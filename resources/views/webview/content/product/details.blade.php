@@ -27,13 +27,118 @@
     <meta name="twitter:image" content="{{ url('/') }}/{{ $productdetails->ProductImage }}">
 @endsection
 <style>
-    .sizetext {
-        color: 000;
-        background: #fff;
+    .product-info .name {
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 15px;
+        letter-spacing: -0.5px;
     }
-    .colortext {
+    .product-price {
+        font-size: 24px;
+        font-weight: 800;
+        color: var(--theme-color);
+    }
+    .product-price del {
+        font-size: 18px;
+        color: #999;
+        margin-right: 10px;
+        font-weight: 400;
+    }
+    .selection-label {
+        font-size: 14px;
+        font-weight: 600;
+        color: #666;
+        margin-bottom: 8px;
+        display: block;
+    }
+    .sizetext, .colortext {
+        cursor: pointer;
+        border: 1px solid #ddd;
+        padding: 6px 16px;
+        border-radius: 50px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        display: inline-block;
+        transition: all 0.3s ease;
+        font-size: 14px;
+        background: #fff;
+        color: #333;
+    }
+    .sizetext:hover, .colortext:hover {
+        border-color: var(--theme-color);
+        color: var(--theme-color);
+    }
+    .sizetext.selected, .colortext.selected {
+        background-color: var(--theme-color);
+        border-color: var(--theme-color);
+        color: #fff;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .btn-action {
+        border-radius: 8px;
+        padding: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        transition: all 0.3s ease;
+        border: none;
+    }
+    .btn-add-cart {
+        background-color: #fff;
+        border: 2px solid var(--theme-color);
+        color: var(--theme-color);
+    }
+    .btn-add-cart:hover {
+        background-color: var(--theme-color);
+        color: #fff;
+    }
+    .btn-order-now {
+        background-color: var(--theme-color);
+        color: #fff;
+    }
+    .btn-order-now:hover {
+        background-color: var(--secondary-color);
+        color: #fff;
+    }
+    .delivery-info-card {
+        background: #f8f9fa;
+        border-radius: 10px;
+        padding: 15px;
+        margin-top: 20px;
+    }
+    .delivery-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 10px;
+        font-size: 13px;
+        color: #555;
+    }
+    .delivery-item i {
+        color: var(--theme-color);
+        margin-top: 3px;
+        margin-right: 10px;
+    }
+    #sync2 .items img {
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: 0.3s;
+    }
+    #sync2 .current .items img {
+        border-color: var(--theme-color);
+    }
+
+    .product-tabs .nav-link {
         color: #000;
         background: #fff;
+        border-color: #ddd;
+    }
+    .product-tabs .nav-link:hover {
+        border-color: var(--theme-color);
+    }
+    .product-tabs .nav-link.active {
+        background-color: var(--theme-color) !important;
+        color: #fff !important;
+        border-color: var(--theme-color) !important;
     }
 </style>
 <!-- Body -->
@@ -42,29 +147,27 @@
     <div class='container'>
         <div class='row single-product'>
             <div class='col-md-12 p-0'>
-                <div class="detail-block">
-                    <div class="row  wow fadeInUp">
-
+                <div class="detail-block bg-white shadow-sm p-3 p-md-4">
+                    <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-6 gallery-holder">
                             <div class="product-item-holder size-big single-product-gallery small-gallery">
-
                                 @if (isset($productdetails->PostImage))
                                     <div id="sync1" class="owl-carousel owl-theme">
                                         <div class="items">
-                                            <img class="w-100 h-100" src="{{ asset($productdetails->ProductImage) }}" alt="" style="border-radius: 4px;">
+                                            <img class="w-100 h-100" src="{{ asset($productdetails->ProductImage) }}" alt="" style="border-radius: 8px;">
                                         </div>
                                         @forelse (json_decode($productdetails->PostImage) as $productImage)
                                             <div class="items">
                                                 <img class="w-100 h-100"
-                                                    src="{{ asset('public/images/product/slider/') }}/{{ $productImage }}" alt="" style="border-radius: 4px;">
+                                                    src="{{ asset('public/images/product/slider/') }}/{{ $productImage }}" alt="" style="border-radius: 8px;">
                                             </div>
                                         @empty
                                         @endforelse
                                     </div>
-                                    <div id="sync2" class="owl-carousel owl-theme" style="padding-top: 10px;">
+                                    <div id="sync2" class="owl-carousel owl-theme" style="padding-top: 15px;">
                                         @forelse (json_decode($productdetails->PostImage) as $productImage)
                                             <div class="items">
-                                                <img class="w-100 h-100" style="padding:10px;border:1px solid;border-radius: 4px;"
+                                                <img class="w-100 h-100" style="border-radius: 6px;"
                                                     src="{{ asset('public/images/product/slider/') }}/{{ $productImage }}" alt="">
                                             </div>
                                         @empty
@@ -72,7 +175,7 @@
                                     </div>
                                 @else
                                     <div class="items">
-                                        <img class="w-100 h-100" src="{{ asset($productdetails->ProductImage) }}" alt="" style="border-radius: 4px;">
+                                        <img class="w-100 h-100" src="{{ asset($productdetails->ProductImage) }}" alt="" style="border-radius: 8px;">
                                     </div>
                                 @endif
 
@@ -81,156 +184,97 @@
                         </div>
                         <!-- /.gallery-holder -->
                         <div class="col-sm-12 col-md-6 product-info-block" id="paddingnone">
-                            <div class="product-info">
-                                <h1 class="name"
-                                    style="margin-top:16px !important;padding-bottom: 6px;border-bottom: 1px solid #dfd6d6;font-size: 20px !important; line-height: 22px;">
+                            <div class="product-info ps-md-4">
+                                <h1 class="name" style="font-size: 24px; line-height: 1.3;">
                                     {{ $productdetails->ProductName }}</h1>
 
-
-                                <!-- /.rating-reviews -->
-
-                                <div class="stock-container info-container m-t-10"
-                                    style="margin-top:10px;border-bottom: 1px solid #dfd6d6;">
-                                    <div class="row" style="margin-bottom:10px;">
-                                        <div class="col-2 col-sm-2">
-                                            <div class="product-description-label" id="productPricetitle">Price:</div>
-                                        </div>
-                                        <div class="col-9 col-sm-9">
-                                            <div class="product-price strong-700" id="productPriceAmount">
-                                                <del style="font-size: 20px;color: red;">৳{{intval($productdetails->ProductRegularPrice)}}</del> &nbsp;&nbsp;
-                                                ৳ {{ $productdetails->ProductSalePrice }}
-                                            </div>
-                                        </div>
+                                <div class="price-container my-3">
+                                    <div class="product-price">
+                                        @if($productdetails->ProductRegularPrice > $productdetails->ProductSalePrice)
+                                            <del>৳{{intval($productdetails->ProductRegularPrice)}}</del>
+                                        @endif
+                                        ৳ {{ $productdetails->ProductSalePrice }}
                                     </div>
-                                    <!-- /.row -->
                                 </div>
-                                <!-- /.stock-container -->
-                                <div class="quantity-container info-container"
-                                    style="border-bottom: 1px solid #dfd6d6;">
-                                    <div class="row">
 
-                                        <div class="col-3 col-sm-3">
-                                            <span class="label bg-none">Quantity :</span>
-                                        </div>
-
-                                        <div class="col-3 col-sm-3">
-                                            <div class="cart-quantity">
-                                                <div class="quant-input">
-
-                                                    <input type="number" value="1">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-6 col-sm-6">
-
-                                        </div>
-
-
-                                    </div>
-                                    <!-- /.row -->
-                                </div>
-                                <div class="row mb-2 mt-2">
-                                    @if (empty($productdetails->color))
-                                    @else
-                                        <div class="col-12 col-md-12 colorpart mb-2">
-                                            <div class="d-flex">
-                                                <h4 id="resellerprice" class="m-0"><b style="font-size:20px">কালার:&nbsp;&nbsp;&nbsp;</b></h4>
-                                                <div class="colorinfo">
-                                                    @forelse (json_decode($productdetails->color) as $color)
-                                                        <input type="radio" class="m-0" id="color{{ $color }}" hidden name="color" onclick="getcolor('{{ $color }}')">
-                                                        <label class="colortext ms-0" id="colortext{{ $color }}" for="color{{ $color }}" style="border: 1px solid #613EEA;font-size:20px;font-weight:bold;padding: 0px 12px;border-radius: 4px;" onclick="getcolor('{{ $color }}')">{{ $color }}</label>
-                                                    @empty
-                                                    @endforelse
-                                                </div>
+                                <div class="options-container my-4">
+                                    @if (!empty($productdetails->color))
+                                        <div class="mb-3">
+                                            <span class="selection-label">Select Color</span>
+                                            <div class="colorinfo d-flex flex-wrap">
+                                                @forelse (json_decode($productdetails->color) as $color)
+                                                    <input type="radio" hidden id="color{{ $color }}" name="color_radio">
+                                                    <label class="colortext" id="colortext{{ $color }}" for="color{{ $color }}" onclick="getcolor('{{ $color }}')">{{ $color }}</label>
+                                                @empty
+                                                @endforelse
                                             </div>
                                         </div>
                                     @endif
-                                    @if (empty($productdetails->size))
-                                    @else
-                                        <div class="col-12 col-md-12 colorpart">
-                                            <div class="d-flex">
-                                                <h4 id="resellerprice" class="m-0"><b style="font-size:20px">সাইজ: &nbsp;&nbsp;&nbsp;</b></h4>
-                                                <div class="sizeinfo">
-                                                    @forelse (json_decode($productdetails->size) as $size)
-                                                        <input type="radio" class="m-0" hidden id="size{{ $size }}" name="size" onclick="getsize('{{ $size }}')">
-                                                        <label class="sizetext ms-0" id="sizetext{{ $size }}" for="size{{ $size }}" style="border: 1px solid #613EEA;font-size:20px;font-weight:bold;padding: 0px 12px;border-radius: 4px;" onclick="getsize('{{ $size }}')">{{ $size }}</label>
-                                                    @empty
-                                                    @endforelse
-                                                </div>
+
+                                    @if (!empty($productdetails->size))
+                                        <div class="mb-3">
+                                            <span class="selection-label">Select Size</span>
+                                            <div class="sizeinfo d-flex flex-wrap">
+                                                @forelse (json_decode($productdetails->size) as $size)
+                                                    <input type="radio" hidden id="size{{ $size }}" name="size_radio">
+                                                    <label class="sizetext" id="sizetext{{ $size }}" for="size{{ $size }}" onclick="getsize('{{ $size }}')">{{ $size }}</label>
+                                                @empty
+                                                @endforelse
                                             </div>
                                         </div>
                                     @endif
                                 </div>
-                                <!-- /.stock-container -->
-                                <div class="quantity-container info-container text-center"
-                                    style="width: 100%;border-bottom: 1px solid #dfd6d6; float: left;">
 
-
-
-                                    <form name="form" id="AddToCartForm" method="POST" enctype="multipart/form-data"
-                                        style="width: 50%;float: left;text-align: center;">
-                                        @method('POST')
-                                        @csrf
-                                        <input type="text" name="color" id="product_color" hidden>
-                                        <input type="text" name="size" id="product_size" hidden>
-                                        <input type="text" name="product_id" value=" {{ $productdetails->id }}"
-                                            hidden>
-                                        <input type="text" name="qty" value="1" id="qtyor" hidden>
-                                        <button type="submit"
-                                            class=" mb-0  ml-2 btn btn-styled btn-base-1 btn-icon-left strong-700 hov-bounce hov-shaddow buy-now" style="background:var(--theme-color);color:white;width: 95%;font-size: 17px;">
-                                            কার্টে যোগ করুন
-                                        </button>
-                                    </form>
-                                    <form name="form" action="{{url('add-to-cart')}}" method="POST" enctype="multipart/form-data"
-                                        style="width: 50%;float: left;text-align: center;">
-                                        @method('POST')
-                                        @csrf
-                                        <input type="text" name="color" id="product_colorOr" hidden>
-                                        <input type="text" name="size" id="product_sizeOr" hidden>
-                                        <input type="text" name="product_id" value=" {{ $productdetails->id }}"
-                                            hidden>
-                                        <input type="text" name="qty" value="1" id="qtyor" hidden>
-                                        <button type="submit"
-                                            class=" mb-0  ml-2 btn btn-styled btn-base-1 btn-icon-left strong-700 hov-bounce hov-shaddow buy-now" style="background:var(--theme-color);color:white;width: 95%;font-size: 17px;">
-                                            অর্ডার করুন
-                                        </button>
-                                    </form>
-
-                                    <!-- /.row -->
-                                </div>
-
-                                <div class="quantity-container info-container text-center"
-                                    style="border-bottom: 1px solid #dfd6d6;">
-                                    <div class="row no-gutters pt-2">
-                                        <div class="col-2 col-sm-2" style="margin-top: -2px;">
-                                            <div class="product-description-label mt-2">Charge:</div>
-                                        </div>
-                                        <div class="col-10 col-sm-10">
-                                            <div class="product-description-label"
-                                                style="font-size: 13px;text-align: left;color: gray;">
-                                                <i class="fas fa-dot-circle " style="padding-right: 4px;"></i>ঢাকা
-                                                সিটির মধ্যে ডেলিভারি চার্জ
-                                                {{ $numto->bnNum($shipping->inside_dhaka_charge) }}
-                                                টাকা<br>
-                                                <i class="fas fa-dot-circle" style="padding-right: 4px;"></i>ঢাকা
-                                                সিটির বাইরে ডেলিভারি চার্জ
-                                                {{ $numto->bnNum($shipping->outside_dhaka_charge) }} টাকা
-                                            </div>
-                                        </div>
+                                <div class="quantity-container mb-4 d-flex align-items-center">
+                                    <span class="selection-label mb-0 me-3">Quantity:</span>
+                                    <div class="quant-input d-flex align-items-center border rounded" style="width: 120px;">
+                                        <button type="button" class="btn btn-sm px-3" onclick="downQuantity()">-</button>
+                                        <input type="number" id="proQuantity" value="1" class="form-control border-0 text-center bg-transparent p-0" readonly style="box-shadow: none;">
+                                        <button type="button" class="btn btn-sm px-3" onclick="upQuantity()">+</button>
                                     </div>
                                 </div>
 
-                                 <div class="quantity-container info-container text-center"
-                                    style="border-bottom: 1px solid #dfd6d6;">
-                                    <div class="row no-gutters pt-2">
-                                        <div class="col-12 col-md-12 mb-2">
-                                            <a class="btn btn-success" id="formText" href="tel:{{App\Models\Basicinfo::first()->phone_one}}" style="width: 85%;font-size: 22px; "> কল করুন {{App\Models\Basicinfo::first()->phone_one}}</a>
-                                        </div>
-
+                                <div class="action-buttons row g-2">
+                                    <div class="col-6">
+                                        <form name="form" id="AddToCartForm" method="POST" enctype="multipart/form-data">
+                                            @csrf
+                                            <input type="hidden" name="color" id="product_color">
+                                            <input type="hidden" name="size" id="product_size">
+                                            <input type="hidden" name="product_id" value="{{ $productdetails->id }}">
+                                            <input type="hidden" name="qty" value="1" id="qty">
+                                            <button type="submit" class="btn btn-action btn-add-cart w-100">
+                                                <i class="fas fa-shopping-cart me-2"></i> Add to Cart
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <div class="col-6">
+                                        <form name="form" action="{{url('add-to-cart')}}" method="POST" enctype="multipart/form-data">
+                                            @csrf
+                                            <input type="hidden" name="color" id="product_colorOr">
+                                            <input type="hidden" name="size" id="product_sizeOr">
+                                            <input type="hidden" name="product_id" value="{{ $productdetails->id }}">
+                                            <input type="hidden" name="qty" value="1" id="qtyor">
+                                            <button type="submit" class="btn btn-action btn-order-now w-100">
+                                                Order Now
+                                            </button>
+                                        </form>
                                     </div>
                                 </div>
 
+                                <div class="delivery-info-card shadow-sm border-0">
+                                    <div class="delivery-item">
+                                        <i class="fas fa-truck"></i>
+                                        <span>Delivery inside Dhaka: <b>৳{{ $shipping->inside_dhaka_charge }}</b></span>
+                                    </div>
+                                    <div class="delivery-item">
+                                        <i class="fas fa-shipping-fast"></i>
+                                        <span>Delivery outside Dhaka: <b>৳{{ $shipping->outside_dhaka_charge }}</b></span>
+                                    </div>
+                                    <div class="delivery-item mb-0">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <span>100% Authentic Product</span>
+                                    </div>
+                                </div>
                             </div>
                             <!-- /.product-info -->
                         </div>
@@ -242,199 +286,62 @@
             <!-- /.col -->
             <div class="clearfix"></div>
         </div>
-        <div class="row single-product">
+        <div class="row single-product mt-1">
             <div class="col-md-12 p-0">
-                <div class="product-tabs inner-bottom-xs  wow fadeInUp">
+                <div class="product-tabs inner-bottom-xs">
                     <div class="row">
-                        <div class="col-sm-12">
-                            <ul id="product-tabs" class="nav nav-tabs nav-tab-cell" style="display: inline-flex;">
-                                <li class="active"><a data-bs-toggle="tab" id="istteb"
-                                        href="#description">DESCRIPTION</a></li>
-                                <li><a data-bs-toggle="tab" href="#review">REVIEW</a></li>
-                                <li class="d-lg-none"><a data-bs-toggle="tab" href="#shipping-info">SHIPPING INFO</a>
+                        <div class="col-sm-12 mt-4">
+                            <ul id="product-tabs" class="nav nav-tabs border-bottom-0 mb-3" style="gap: 10px;">
+                                <li class="nav-item">
+                                    <a class="nav-link active rounded-pill px-4 py-2 border shadow-sm" data-bs-toggle="tab" id="istteb" href="#description" style="font-weight: 600; font-size: 14px;">DESCRIPTION</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link rounded-pill px-4 py-2 border shadow-sm" data-bs-toggle="tab" href="#review" style="font-weight: 600; font-size: 14px;">REVIEW</a>
+                                </li>
+                                <li class="nav-item d-lg-none">
+                                    <a class="nav-link rounded-pill px-4 py-2 border shadow-sm" data-bs-toggle="tab" href="#shipping-info" style="font-weight: 600; font-size: 14px;">SHIPPING INFO</a>
                                 </li>
                             </ul>
-                            <!-- /.nav-tabs #product-tabs -->
                         </div>
                         <div class="col-sm-12">
-
-                            <div class="tab-content">
-
+                            <div class="tab-content bg-white p-4 rounded shadow-sm">
                                 <div id="description" class="tab-pane active">
                                     <div class="product-tab">
-                                        <p class="text">{!! $productdetails->ProductDetails !!}</p>
+                                        <div class="text-muted" style="line-height: 1.6;">{!! $productdetails->ProductDetails !!}</div>
                                         @if (isset($productdetails->youtube_embade))
-                                            <br>
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <iframe width="100%" height="315"
-                                                        src="https://www.youtube.com/embed/{{ $productdetails->youtube_embade }}">
-                                                    </iframe>
-                                                </div>
+                                            <div class="mt-4 rounded overflow-hidden">
+                                                <iframe width="100%" height="450"
+                                                    src="https://www.youtube.com/embed/{{ $productdetails->youtube_embade }}"
+                                                    frameborder="0" allowfullscreen>
+                                                </iframe>
                                             </div>
-                                        @else
-
                                         @endif
                                     </div>
                                 </div>
-                                <!-- /.tab-pane -->
-
                                 <div id="review" class="tab-pane">
-                                    <div class="product-tab">
-
-                                        <div class="product-reviews">
-
-                                            <div class="row">
-                                                <div class="review">
-
-                                                </div>
-
-                                            </div>
-                                            <!-- /.reviews -->
-                                        </div>
-
+                                    <div class="product-tab text-center py-4">
+                                        <p class="text-muted">No reviews yet.</p>
                                     </div>
-                                    <!-- /.product-tab -->
                                 </div>
-                                <!-- /.tab-pane -->
-
-                                <div id="shipping-info" class="tab-pane">
-                                    <div class="product-tag">
-
-                                        <div class="row">
-                                            <div class='p-0 col-sm-12 col-md-3 product-info-block d-lg-none'
-                                                style="padding: 0;">
-                                                <div class="row no-gutters mt-2 ">
-                                                    <div class="col-1 col-sm-1">
-                                                        <i class="fas fa-phone" aria-hidden="true"
-                                                            style="font-size: 18px;color: #8a8686;"></i>
-                                                    </div>
-                                                    <div class="col-5 col-sm-5">
-                                                        <div class="product-description-label" id="textsize">
-                                                            Contact Us:</div>
-                                                    </div>
-                                                    <div class="col-5 col-sm-5" id="textsize">
-                                                        <a href="tel:" target="_blank" id="textsize">
-                                                            {{ $shipping->contact }}
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="row no-gutters mt-2">
-                                                    <div class="col-1 col-sm-1">
-                                                        <i class="fas fa-motorcycle" aria-hidden="true"
-                                                            style="font-size: 16px;col-smor: #8a8686;"></i>
-                                                    </div>
-                                                    <div class="col-5 col-sm-5 pe-0">
-                                                        <div class="product-description-label" id="textsize">
-
-                                                            Inside Dhaka:</div>
-                                                    </div>
-                                                    <div class="col-5 col-sm-5" id="textsize">
-                                                        {{ $shipping->insie_dhaka }}
-                                                    </div>
-                                                </div>
-                                                <div class="row no-gutters mt-2">
-                                                    <div class="col-1 col-sm-1">
-                                                        <i class="fas fa-truck" aria-hidden="true"
-                                                            style="font-size: 18px;col-smor: #8a8686;"></i>
-                                                    </div>
-                                                    <div class="col-5 col-sm-5">
-                                                        <div class="product-description-label" id="textsize">
-
-                                                            Outside Dhaka:</div>
-                                                    </div>
-                                                    <div class="col-5 col-sm-5" id="textsize">
-                                                        {{ $shipping->outside_dhaka }}
-
-                                                    </div>
-                                                </div>
-                                                <div class="row no-gutters mt-2">
-                                                    <div class="col-1 col-sm-1">
-                                                        <i class="fas fa-money-bill-alt" aria-hidden="true"
-                                                            style="font-size: 18px;col-smor: #8a8686;"></i>
-                                                    </div>
-
-                                                    <div class="col-5 col-sm-5">
-                                                        <div class="product-description-label" id="textsize"> Cash on
-                                                            Delivery :</div>
-                                                    </div>
-                                                    <div class="col-5 col-sm-5" id="textsize">
-                                                        @if ($shipping->cash_on_delivery == 'ON')
-                                                            Available
-                                                        @else
-                                                            Unavailable
-                                                        @endif
-                                                    </div>
-
-                                                </div>
-                                                <div class="row no-gutters mt-2">
-                                                    <div class="col-1 col-sm-1">
-                                                        <i class="fas fa-refresh" aria-hidden="true"
-                                                            style="font-size: 18px;col-smor: #8a8686;"></i>
-                                                    </div>
-                                                    <div class="col-5 col-sm-5">
-                                                        <div class="product-description-label" id="textsize">Refund
-                                                            Rules:</div>
-                                                    </div>
-                                                    <div class="col-5 col-sm-5" id="textsize">
-                                                        {{ $shipping->refund_rule }}<a
-                                                            href="#" class="ml-2"
-                                                            target="_blank">View Policy</a>
-                                                    </div>
-                                                </div>
-                                                <div class="row no-gutters mt-2">
-                                                    <div class="col-2 col-sm-2" id="textsize">
-                                                        <div class="product-description-label pt-2"
-                                                            style="padding-top: 14px;">Payment:</div>
-                                                    </div>
-                                                    <div class="col-10 col-sm-10">
-                                                        <ul class="inline-links">
-                                                            <li>
-                                                                <img src="{{ asset('public/webview/assets/images/Payment-Methods.gif') }}"
-                                                                    width="98%" class=" ">
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <!-- /.product-tab -->
-                                </div>
-                                <!-- /.tab-pane -->
-
                             </div>
-                            <!-- /.tab-content -->
                         </div>
-                        <!-- /.col -->
                     </div>
-                    <!-- /.row -->
                 </div>
-                <!-- /.product-tabs -->
 
-                <!-- ============================================== UPSELL PRODUCTS ============================================== -->
-                <section class="pb-2 section featured-product wow fadeInUp" style="margin-bottom:0px !important">
-                    <h3 class="section-title" style="border-bottom: 1px solid #e62e04;    padding: 8px;margin-bottom: 0;">Related
-                        products</h3>
-                    <div class="owl-carousel related-owl-carousel featured-carousel owl-theme outer-top-xs"
-                        id="relatedCarousel">
+                <section class="mt-5">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h3 class="m-0" style="font-weight: 700; font-size: 20px;">Related Products</h3>
+                        <div class="border-top flex-grow-1 mx-3 d-none d-md-block"></div>
+                    </div>
+                    <div class="owl-carousel related-owl-carousel featured-carousel owl-theme" id="relatedCarousel">
                         @forelse ($relatedproducts as $relatedproduct)
-                            <div class="item item-carousel">
-                                <div class="products">
-
-                                    @include('webview.partials.product-card', ['product' => $relatedproduct])
-                                    <!-- /.product -->
-
-                                </div>
-                                <!-- /.products -->
+                            <div class="item">
+                                @include('webview.partials.product-card', ['product' => $relatedproduct])
                             </div>
                         @empty
                         @endforelse
                     </div>
-                    <!-- /.home-owl-carousel -->
                 </section>
-                <!-- ============================================== UPSELL PRODUCTS : END ============================================== -->
 
             </div>
         </div>
@@ -444,18 +351,15 @@
 </div>
 <!-- /.body-content -->
 
-<div class="container mt-4">
-
+<div class="container mt-5 mb-5">
     <div class="row">
         <div class="col-sm-12 p-0">
-            <section class="pb-2 section featured-product wow fadeInUp">
-                <div class="col-12" style="border-bottom: 1px solid #e62e04;padding-left: 0;display: flex;justify-content: space-between;">
-                    <div class="px-2 p-md-3 pt-0 d-flex justify-content-between" style="padding-bottom:4px !important;padding-top: 8px !important;">
-                        <h4 class="m-0"><b>Promotional Offers</b></h4>
-                    </div>
-                    <a href="{{ url('promotional/products') }}" class="btn btn-danger btn-sm mb-0" style="padding: 2px 15px;height: 26px;color: white;font-weight: bold;margin-top:9px;background:var(--secondary-color);border:1px solid var(--secondary-color)">VIEW ALL</a>
+            <section>
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h3 class="m-0" style="font-weight: 700; font-size: 20px;">Promotional Offers</h3>
+                    <a href="{{ url('promotional/products') }}" class="btn btn-sm rounded-pill px-3 py-1 border shadow-sm" style="font-size: 12px; font-weight: 600; color: var(--theme-color);">VIEW ALL</a>
                 </div>
-                <div class="owl-carousel " id="promotionalofferSlide">
+                <div class="owl-carousel" id="promotionalofferSlide">
                     @forelse ($topproducts as $promotional)
                         <div class="item">
                             @include('webview.partials.product-card', ['product' => $promotional])
@@ -463,11 +367,9 @@
                     @empty
                     @endforelse
                 </div>
-                <!-- /.home-owl-carousel -->
             </section>
         </div>
     </div>
-
 </div>
 <!-- Body end -->
 
@@ -714,23 +616,18 @@
 
     function getcolor(color) {
         $('#product_color').val(color);
-
         $('#product_colorOr').val(color);
 
-        $('.colortext').css('color','#000');
-        $('.colortext').css('background','#fff');
-        $('#colortext'+color).css('color','#fff');
-        $('#colortext'+color).css('background','#613EEA');
+        $('.colortext').removeClass('selected');
+        $('#colortext' + color).addClass('selected');
     }
 
     function getsize(size) {
         $('#product_size').val(size);
         $('#product_sizeOr').val(size);
 
-        $('.sizetext').css('color','#000');
-        $('.sizetext').css('background','#fff');
-        $('#sizetext'+size).css('color','#fff');
-        $('#sizetext'+size).css('background','#613EEA');
+        $('.sizetext').removeClass('selected');
+        $('#sizetext' + size).addClass('selected');
     }
 
 </script>

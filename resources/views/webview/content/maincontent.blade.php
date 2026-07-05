@@ -157,7 +157,7 @@
 <!-- Promotional Products -->
 <div class="container pt-0 pb-4">
     <div class="row bg-white pb-4">
-        <div class="col-12" style="border-bottom: 1px solid #24a86c;padding-left: 0;display: flex;justify-content: space-between;">
+            <div class="col-12" style="padding-left: 0;display: flex;justify-content: space-between;">
             <div class="px-2 p-md-3 pt-0 d-flex justify-content-between" style="padding-bottom:4px !important;padding-top: 8px !important;">
                 <h4 class="m-0"><b>Featured Products</b></h4>
             </div>
@@ -214,7 +214,7 @@
 <!-- Promotional Products -->
 <div class="container pt-0 pb-4">
     <div class="row bg-white pb-4">
-        <div class="col-12" style="border-bottom: 1px solid #24a86c;padding-left: 0;display: flex;justify-content: space-between;">
+        <div class="col-12" style="padding-left: 0;display: flex;justify-content: space-between;">
             <div class="px-2 p-md-3 pt-0 d-flex justify-content-between" style="padding-bottom:4px !important;padding-top: 8px !important;">
                 <h4 class="m-0"><b>Promotional Offers</b></h4>
             </div>
@@ -241,20 +241,24 @@
         <!-- Category Products -->
         <div class="container pt-0 pb-4">
             <div class="row bg-white pb-0">
-                <div class="col-12" style="border-bottom: 1px solid #24a86c;padding-left: 0;display: flex;justify-content: space-between;">
+                <div class="col-12" style="padding-left: 0;display: flex;justify-content: space-between;">
                     <div class="px-2 p-md-3 pt-0 d-flex justify-content-between" style="padding-bottom:4px !important;padding-top: 8px !important;">
-                        <h4 class="m-0"><b>{{ $categoryproduct->category_name }}</b></h4>
+                        <h4 class="m-0"><b>{{ rtrim($categoryproduct->category_name, '.') }}</b></h4>
                     </div>
                     <a href="{{url('products/category/'.$categoryproduct->slug)}}" class="btn btn-danger btn-sm mb-0" style="padding: 2px 15px;height: 26px;color: white;font-weight: bold;margin-top:9px;background: var(--secondary-color);border: 1px solid var(--secondary-color);">VIEW ALL</a>
                 </div>
 
 
-                @forelse ($categoryproduct->products->take(12) as $product)
-                    <div class="col-6 col-md-4 col-lg-2 mb-4">
-                        @include('webview.partials.product-card', ['product' => $product])
+                <div class="col-12">
+                    <div class="owl-carousel" id="CategoryProductSlide{{ $key }}">
+                        @forelse ($categoryproduct->products->take(12) as $product)
+                            <div class="item">
+                                @include('webview.partials.product-card', ['product' => $product])
+                            </div>
+                        @empty
+                        @endforelse
                     </div>
-                @empty
-                @endforelse
+                </div>
 
                 </div>
             </div>
@@ -265,5 +269,6 @@
 @empty
 @endforelse
 
+<input type="hidden" id="CountSlider" value="{{ count($categoryproducts) }}">
 
 @endsection

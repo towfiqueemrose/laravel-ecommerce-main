@@ -1,3 +1,10 @@
+<style>
+    .product-card__name {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+</style>
 <div class="product-card">
     <div class="product-card__image">
         <a href="{{ url('product/' . $product->ProductSlug) }}">

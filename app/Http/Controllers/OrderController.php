@@ -116,6 +116,80 @@ class OrderController extends Controller
         Session::put('successfulor','successfulor');
         return redirect('order/complete');
     }
+
+    public function confirmCod()
+    {
+        if (!Session::has('cart') || Cart::count() == 0) {
+            return redirect('/empty-cart');
+        }
+
+        $checkoutInfo = Session::get('checkout_info');
+        if (!$checkoutInfo) {
+            return redirect('/checkout')->with('error', 'Please fill in your shipping details');
+        }
+
+        $products = Cart::content();
+
+        $admin = Admin::whereHas('roles', function ($q) {
+            $q->where('name', 'user');
+        })->where('status', 'Active')->inRandomOrder()->first();
+
+        if (!$admin) {
+            $admin = Admin::findOrFail(1);
+        }
+
+        $order = new Order();
+        $order->user_id = $checkoutInfo['user_id'] ?? null;
+        $order->store_id = 1;
+        $order->invoiceID = $this->uniqueID();
+        $order->subTotal = $checkoutInfo['subTotal'];
+        $order->deliveryCharge = $checkoutInfo['deliveryCharge'];
+        $order->orderDate = date('Y-m-d');
+        $order->Payment = 'Cash On Delivery';
+        $order->status = 'Processing';
+        $order->admin_id = $admin->id;
+        $order->save();
+
+        $customer = new Customer();
+        $customer->order_id = $order->id;
+        $customer->customerName = $checkoutInfo['customerName'];
+        $customer->customerPhone = $checkoutInfo['customerPhone'];
+        $customer->customerAddress = $checkoutInfo['customerAddress'];
+        $customer->save();
+
+        foreach ($products as $product) {
+            $orderProduct = new Orderproduct();
+            $orderProduct->order_id = $order->id;
+            $orderProduct->product_id = $product->id;
+            $orderProduct->productCode = $product->code;
+            if ($product->options['color'] !== 'undefined') {
+                $orderProduct->color = $product->options['color'];
+            }
+            if ($product->options['size'] !== 'undefined') {
+                $orderProduct->size = $product->options['size'];
+            }
+            $orderProduct->productName = $product->name;
+            $orderProduct->quantity = $product->qty;
+            $orderProduct->productPrice = $product->price;
+            $orderProduct->save();
+        }
+
+        $notification = new Comment();
+        $notification->order_id = $order->id;
+        $notification->comment = $order->invoiceID . ' Order Has Been Created for ' . $admin->name;
+        $notification->admin_id = $order->admin_id;
+        $notification->save();
+
+        Cart::destroy();
+        Session::forget('checkout_info');
+        Session::put('ordersubtotal', $checkoutInfo['subTotal']);
+        Session::put('orderdeliverycharge', $checkoutInfo['deliveryCharge']);
+        Session::put('order_id', $order->id);
+
+        toastr()->info('Order Confirmed! Pay on delivery.', 'Success', ["positionClass" => "toast-top-center"]);
+
+        return redirect('/order/complete');
+    }
     
     public function getorder(){
 		$from = date('Y-m-d' . ' 00:00:00', time()); //need a space after dates.

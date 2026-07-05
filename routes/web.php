@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WebviewController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\StripeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -48,6 +49,12 @@ Route::post('/update-cart', [CartController::class, 'updatecart']);
 Route::get('load-cart', [CartController::class, 'loadcart']);
 Route::post('press/order', [OrderController::class, 'pressorder']);
 Route::post('update/paymentmethood', [OrderController::class, 'updatepaymentmethood']);
+Route::post('checkout/store', [CartController::class, 'storeCheckout']);
+Route::get('payment', [CartController::class, 'showPayment']);
+Route::post('order/confirm-cod', [OrderController::class, 'confirmCod']);
+Route::post('stripe/checkout', [StripeController::class, 'createCheckoutSession']);
+Route::get('stripe/success', [StripeController::class, 'handleSuccess']);
+Route::get('stripe/cancel', [StripeController::class, 'handleCancel']);
 Route::get('get-search-content', [WebviewController::class, 'searchcontent']);
 Route::get('track-order', [WebviewController::class, 'orderTraking']);
 Route::post('track-now', [WebviewController::class, 'orderTrakingNow']);

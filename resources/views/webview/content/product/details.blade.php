@@ -291,7 +291,7 @@
                 <div class="product-tabs inner-bottom-xs">
                     <div class="row">
                         <div class="col-sm-12 mt-4">
-                            <ul id="product-tabs" class="nav nav-tabs border-bottom-0 mb-3" style="gap: 10px;">
+                            <ul id="product-tabs" class="nav nav-tabs border-bottom-0 mb-3 mt-4" style="gap: 10px;">
                                 <li class="nav-item">
                                     <a class="nav-link active rounded-pill px-4 py-2 border shadow-sm" data-bs-toggle="tab" id="istteb" href="#description" style="font-weight: 600; font-size: 14px;">DESCRIPTION</a>
                                 </li>

@@ -39,7 +39,7 @@
                                 <header class="mb-4">
                                     <h4 class="card-title" style="font-size: 18px; font-weight: 600; color: #333;">Fill out the form below to place your order</h4>
                                 </header>
-                                <form action="{{ url('press/order') }}" method="POST"
+                                <form action="{{ url('checkout/store') }}" method="POST"
                                     class="from-prevent-multiple-submits">
                                     @csrf
                                     <div class="row">
@@ -85,7 +85,7 @@
                                         <div class="col-12 text-center">
                                             <button type="submit" id="orderConfirm"
                                                 class="from-prevent-multiple-submits btn-block">
-                                                <i class="spinner fa fa-spinner fa-spin"></i> Confirm Order
+                                                <i class="spinner fa fa-spinner fa-spin"></i> Proceed to Payment
                                             </button>
                                         </div>
                                     </div>

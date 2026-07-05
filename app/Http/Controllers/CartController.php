@@ -89,9 +89,49 @@ class CartController extends Controller
         $cartProducts = Cart::content();
         return view('webview.content.cart.checkout')->with('cartProducts', $cartProducts);
     }
-     public function payment(){
+
+    public function storeCheckout(Request $request)
+    {
+        if (!Session::has('cart') || Cart::count() == 0) {
+            return redirect('/empty-cart');
+        }
+
+        $request->validate([
+            'customerName' => 'required|string|max:255',
+            'customerAddress' => 'required|string|max:500',
+            'customerPhone' => 'required|string|min:11|max:11',
+            'deliveryCharge' => 'required|numeric',
+        ]);
+
+        Session::put('checkout_info', [
+            'customerName' => $request->customerName,
+            'customerAddress' => $request->customerAddress,
+            'customerPhone' => $request->customerPhone,
+            'deliveryCharge' => $request->deliveryCharge,
+            'subTotal' => $request->subTotal,
+            'user_id' => $request->user_id,
+        ]);
+
+        return redirect('/payment');
+    }
+
+    public function showPayment()
+    {
+        if (!Session::has('cart') || Cart::count() == 0) {
+            return redirect('/cart')->with('error', 'Your cart is empty');
+        }
+
+        $checkoutInfo = Session::get('checkout_info');
+        if (!$checkoutInfo) {
+            return redirect('/checkout');
+        }
+
         $cartProducts = Cart::content();
-        return view('webview.content.cart.payment')->with('cartProducts', $cartProducts);
+        return view('webview.content.cart.payment', compact('cartProducts', 'checkoutInfo'));
+    }
+
+     public function payment(){
+        return redirect('/checkout');
     }
 
     public function complete(){

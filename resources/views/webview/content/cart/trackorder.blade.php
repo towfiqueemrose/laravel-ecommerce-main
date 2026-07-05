@@ -102,8 +102,10 @@
                                             <tr>
                                                 <td class="w-50 strong-600">Payment method:</td>
                                                 <td>
-                                                    @if ($orders->Payment == 'C-O-D')
+                                                    @if ($orders->Payment == 'Cash On Delivery' || $orders->Payment == 'C-O-D')
                                                         Cash On Delivery
+                                                    @elseif ($orders->Payment == 'Stripe')
+                                                        Stripe (Card)
                                                     @else
                                                         Online Payment
                                                     @endif

@@ -241,62 +241,6 @@ $users = Admin::whereHas('roles', function ($q) {
                             </div>
 
                             <div class="col-8" style="text-align: right">
-
-                                @if ($admin->hasrole('admin') || $admin->hasrole('manager') || $admin->hasrole('superadmin'))
-                                <a href="{{ url('admin/create/order') }}" class="btn btn-primary btn-sm"><span
-                                            style="font-weight: bold;">+</span> Add New Order</a>
-                                @else
-                                    <a href="{{ url('admin/create/order') }}" class="btn btn-primary btn-sm"><span
-                                            style="font-weight: bold;">+</span> Add New Order</a>
-                                @endif
-
-                                @if ($admin->hasrole('user'))
-                                @else
-                                    <!--<button type="button" class="btn btn-danger btn-sm " id="delete_selected_order"><i class="fas fa-trash mr-1"></i>  Delete Order</button>-->
-                                    <div class="btn-group dropdown">
-                                        <a href="javascript: void(0);" style="color: white"
-                                            class="table-action-btn dropdown-toggle arrow-none btn bg-success btn-sm"
-                                            data-bs-toggle="dropdown" aria-expanded="false"><i
-                                                class="fas fa-user-check mr-1"></i> Assign User</a>
-                                        <div class="dropdown-menu dropdown-menu-right">
-
-                                            @foreach ($users as $user)
-                                                <a class="dropdown-item assign-user" data-id="{{ $user->id }}"
-                                                    href="#">{{ $user->name }}</a>
-                                            @endforeach
-                                        </div>
-                                    </div>
-                                    <div class="btn-group dropdown">
-                                        <a href="javascript: void(0);" style="color: white"
-                                            class="table-action-btn dropdown-toggle arrow-none btn bg-info btn-sm"
-                                            data-bs-toggle="dropdown" aria-expanded="false"><i
-                                                class="fas fa-thumbtack mr-1"></i> Change Status</a>
-                                        <div class="dropdown-menu dropdown-menu-right">
-                                            <a class="dropdown-item btn-change-status" data-status="Processing"
-                                                href="#"><i
-                                                    class="fas fa-tag mr-2 font-18 text-muted vertical-middle"></i>Processing</a>
-                                            <a class="dropdown-item btn-change-status" data-status="On Hold"
-                                                href="#"><i
-                                                    class="far fa-stop-circle mr-2 font-18 text-muted vertical-middle"></i>On
-                                                Hold</a>
-                                            <a class="dropdown-item btn-change-status" data-status="Payment Pending"
-                                                href="#"><i
-                                                    class="fas fa-tag mr-2 font-18 text-muted vertical-middle"></i>Payment
-                                                Pending</a>
-                                            <a class="dropdown-item btn-change-status" data-status="Pending Canceled"
-                                                href="#"><i
-                                                    class="fas fa-trash mr-2 font-18 text-muted vertical-middle"></i>Pending
-                                                Canceled</a>
-                                            <a class="dropdown-item btn-change-status" data-status="Canceled"
-                                                href="#"><i
-                                                    class="fas fa-trash mr-2 font-18 text-muted vertical-middle"></i>Canceled</a>
-                                            <a class="dropdown-item btn-change-status" data-status="Completed"
-                                                href="#"><i
-                                                    class="fas fa-check-circle mr-2 font-18 text-muted vertical-middle"></i>Completed</a>
-                                        </div>
-                                    </div>
-                                @endif
-
                             </div>
                         </div>
                         @if (\Session::has('success'))
@@ -319,7 +263,6 @@ $users = Admin::whereHas('roles', function ($q) {
                                         <th>Name</th>
                                         <th>Products</th>
                                         <th>Total</th>
-                                        <th>Courier</th>
                                         <th>Order Date</th>
                                         <th>Status</th>
                                         @if ($admin->hasrole('user'))
@@ -423,11 +366,6 @@ $users = Admin::whereHas('roles', function ($q) {
                         width: "5%"
                     },
                     {
-                        data: "courier",
-                        width: "20%",
-                        searchable: false
-                    },
-                    {
                         data: "orderDate",
                         width: "20%"
                     },
@@ -501,11 +439,6 @@ $users = Admin::whereHas('roles', function ($q) {
                     {
                         data: "subTotal",
                         width: "5%"
-                    },
-                    {
-                        data: "courier",
-                        width: "20%",
-                        searchable: false
                     },
                     {
                         data: "orderDate",
@@ -689,11 +622,7 @@ $users = Admin::whereHas('roles', function ($q) {
                     );
                 }
 
-                if (title == 'Courier') {
-                    $(this).html(
-                        ' <select type="text" class="form-control courierID" id="courierID" style="width: 70px;  placeholder="Courier" ></select>'
-                    );
-                }
+
                 if (title == 'User') {
                     $(this).html(
                         ' <select type="text" style="width: 100px;" class="form-control" id="userID" placeholder="User" ></select>'

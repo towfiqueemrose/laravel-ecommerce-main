@@ -78,7 +78,7 @@
         @endif
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="{{ url('admin_order/Processing') }}">
+            <a class="nav-link collapsed" href="{{ url('admin_order/orderall') }}">
                 <i class="bi bi-cart"></i>
                 <span>Order</span>
             </a>

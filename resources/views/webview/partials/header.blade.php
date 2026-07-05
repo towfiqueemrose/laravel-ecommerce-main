@@ -55,17 +55,15 @@
 
                         <div class="dropdown-cart position-relative" style="padding-left:0;">
                             <a href="#" class="dropdown" onclick="checkcart(this)" data-bs-toggle="dropdown" id="smcarticon">
-                                <i class="fa-solid fa-cart-shopping" style="color:var(--theme-color);font-size:24px;"></i>
-                                <span class="count" style="position:absolute;top:-8px;right:-12px;background:var(--theme-color);color:#fff;font-size:10px;width:18px;height:18px;display:flex;align-items:center;justify-content:center;">{{ count(Cart::content()) }}</span>
+                                <i class="fa-solid fa-cart-plus" style="color:var(--theme-color);font-size:24px;"></i>
+                                <span class="count" style="position:absolute;top:-8px;right:-12px;background:var(--secondary-color);color:#fff;font-size:10px;width:18px;height:18px;display:flex;align-items:center;justify-content:center;border-radius:50%;">{{ count(Cart::content()) }}</span>
                             </a>
                             <ul class="dropdown-menu">
                                 <li id="checkcartview"></li>
                             </ul>
                         </div>
 
-                        <a href="tel:+8809648156710" class="d-none d-lg-inline-block">
-                            <i class="fa-solid fa-heart" style="color:var(--theme-color);font-size:22px;"></i>
-                        </a>
+
 
                         <a class="d-lg-none" data-bs-toggle="modal" data-bs-target="#searchPopup" href="#">
                             <i class="fas fa-search" style="color:var(--theme-color);font-size:20px;"></i>

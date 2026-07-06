@@ -1,102 +1,92 @@
 <section class="content">
-
-    <div class="row">
+    <div class="row g-3">
         <div class="col-md-6">
-            <div class="card">
-                <div class="card-header">
+            <div class="card h-100">
+                <div class="card-header d-flex align-items-center">
+                    <i class="bi bi-person-circle me-2"></i>
                     <strong>Customer Info</strong>
                 </div>
                 <div class="card-body">
-                    <div class="row">
+                    <div class="row g-3">
                         <div class="col-lg-6">
                             <div class="form-group" id="storenamepart">
-                                <label for="storeID">Store Name</label><br>
-                                <select id="storeID" class="form-control" disabled>
+                                <label class="form-label">Store Name</label>
+                                <select id="storeID" class="form-select" disabled>
                                     <option value="1">{{ env('APP_NAME') }}</option>
                                 </select>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <label for="invoiceID">Invoice Number</label>
-                                <input type="text" readonly class="form-control" style="cursor: not-allowed;"
-                                    id="invoiceID" value="{{ $order->invoiceID }}">
+                                <label class="form-label">Invoice Number</label>
+                                <input type="text" readonly class="form-control" id="invoiceID"
+                                    value="{{ $order->invoiceID }}">
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <label for="customerName">Customer Name</label>
+                                <label class="form-label">Customer Name</label>
                                 <input type="text" class="form-control" id="customerName"
                                     value="{{ $order->customerName }}">
                             </div>
-                        </div> 
+                        </div>
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <label for="customerPhone">Customer Phone</label>
+                                <label class="form-label">Customer Phone</label>
                                 <input type="text" class="form-control" id="customerPhone"
-                                    value="{{ $order->customerPhone }}" >
+                                    value="{{ $order->customerPhone }}">
                             </div>
-                        </div> 
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
+                        </div>
+                        <div class="col-12">
                             <div class="form-group">
-                                <label for="customerAddress">Customer Address</label>
-                                <textarea name="" class="form-control" placeholder="Customer Address" id="customerAddress" rows="2">{{ $order->customerAddress }}</textarea>
+                                <label class="form-label">Customer Address</label>
+                                <textarea class="form-control" id="customerAddress" rows="2">{{ $order->customerAddress }}</textarea>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12 mb-1">
-                            <div class="form-group" id="courierdatatbl">
-                                <label for="courierID">Courier Name</label><br>
-                                <select id="courierID" class="form-control">
-                                    <option value="{{ $order->courier_id }}">{{ $order->courierName }}</option>
-                                </select>
-                                <?php
-                                use App\Models\Courier;
-                                $couriers = Courier::all();
-
-                                ?>
-                                <script>
-                                    var couriers = <?php echo json_encode($couriers); ?>;
-                                </script>
+                        <div class="col-12">
+                            <div class="row g-3">
+                                <div class="col-lg-12">
+                                    <div class="form-group" id="courierdatatbl">
+                                        <label class="form-label">Courier Name</label>
+                                        <select id="courierID" class="form-select">
+                                            <option value="{{ $order->courier_id }}">{{ $order->courierName }}</option>
+                                        </select>
+                                        <?php
+                                        use App\Models\Courier;
+                                        $couriers = Courier::all();
+                                        ?>
+                                        <script>
+                                            var couriers = <?php echo json_encode($couriers); ?>;
+                                        </script>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 hasCity">
+                                    <div class="form-group" id="citydatatbl">
+                                        <label class="form-label">City Name</label>
+                                        <select id="cityID" class="form-select">
+                                            <option value="{{ $order->city_id }}">{{ $order->cityName }}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 hasZone">
+                                    <div class="form-group" id="xonedatatbl">
+                                        <label class="form-label">Zone Name</label>
+                                        <select id="zoneID" class="form-select">
+                                            <option value="{{ $order->zone_id }}">{{ $order->zoneName }}</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-12 hasCity mb-1">
-                            <div class="form-group" id="citydatatbl">
-                                <label for="cityID">City Name</label><br>
-                                <select id="cityID" type="text" class="form-control">
-                                    <option value="{{ $order->city_id }}">{{ $order->cityName }}</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 hasZone mb-1">
-                            <div class="form-group" id="xonedatatbl">
-                                <label for="zoneID">Zone Name</label><br>
-                                <select id="zoneID" type="text" class="form-control">
-                                    <option value="{{ $order->zone_id }}">{{ $order->zoneName }}</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12">
+                        <div class="col-12">
                             <div class="form-group">
-                                <label for="customerNote">Customer Notes</label>
-                                <textarea name="" class="form-control" placeholder="Customer Notes" id="customerNote" rows="2">{{ $order->customerNote }}</textarea>
+                                <label class="form-label">Customer Notes</label>
+                                <textarea class="form-control" id="customerNote" rows="2">{{ $order->customerNote }}</textarea>
                             </div>
                         </div>
-                        <br>
-                        <br>
-                    </div>
-
-
-                    <div class="row">
                         <div class="col-lg-4">
                             <div class="form-group">
-                                <label for="orderDate">Order Date</label>
+                                <label class="form-label">Order Date</label>
                                 <input type="text" class="form-control datepicker" value="{{ $order->orderDate }}"
                                     id="orderDate">
                             </div>
@@ -104,7 +94,7 @@
                         @if ($order->deliveryDate)
                             <div class="col-lg-4">
                                 <div class="form-group">
-                                    <label for="deliveryDate">Delivery Date</label>
+                                    <label class="form-label">Delivery Date</label>
                                     <input type="text" class="form-control datepicker" id="deliveryDate"
                                         value="{{ $order->deliveryDate }}">
                                 </div>
@@ -113,98 +103,83 @@
                         @if ($order->completeDate)
                             <div class="col-lg-4">
                                 <div class="form-group">
-                                    <label for="completeDate">Complete Date</label>
+                                    <label class="form-label">Complete Date</label>
                                     <input type="text" class="form-control datepicker" id="completeDate"
                                         value="{{ $order->completeDate }}">
                                 </div>
                             </div>
                         @endif
-
                     </div>
-                    <br>
-                    <br>
-                    <br>
                 </div>
             </div>
         </div>
 
         <div class="col-md-6">
-            <div class="card">
-                <div class="card-header">
+            <div class="card h-100">
+                <div class="card-header d-flex align-items-center">
+                    <i class="bi bi-box-seam me-2"></i>
                     <strong>Product Info</strong>
                 </div>
                 <div class="card-body">
-                    <table id="productTable" style="width: 100% !important;"
-                        class="table table-bordered table-striped">
-                        <thead>
-                            <tr>
-                                <th>Color</th>
-                                <th>Size</th>
-                                <th>Code</th>
-                                <th>Product Name</th>
-                                <th>Quantity</th>
-                                <th>Price</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach ($order->products as $product)
+                    <div class="table-responsive mb-3">
+                        <table id="productTable" class="table table-bordered table-striped mb-0">
+                            <thead class="table-light">
                                 <tr>
-                                    <td style="display: none"><input type="text" class="productID"
-                                            style="width:80px;" value="{{ $product->product_id }}"></td>
-                                    <td><span class="Color"> <input type="text" name="color" id="ProductColor"
-                                                value="{{ $product->color }}" style="    max-width: 60px;"> </span>
-                                    </td>
-                                    <td><span class="Size"><input type="text" name="size" id="ProductSize"
-                                                value="{{ $product->size }}" style="    max-width: 40px;"> </span>
-                                    </td>
-                                    <td><span class="productCode">{{ $product->productCode }}</span></td>
-                                    <td><span class="productName">{{ $product->productName }}</span></td>
-                                    <td><input type="number" class="productQuantity form-control"
-                                            style="width:80px;" value="{{ $product->quantity }}"></td>
-                                    <td><span class="productPrice">{{ $product->productPrice }}</span></td>
-                                    <td><button class="btn btn-sm btn-danger delete-btn"><i
-                                                class="fa fa-trash"></i></button></td>
+                                    <th>Color</th>
+                                    <th>Size</th>
+                                    <th>Code</th>
+                                    <th>Product Name</th>
+                                    <th>Qty</th>
+                                    <th>Price</th>
+                                    <th></th>
                                 </tr>
-                            @endforeach
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td colspan="5">
-                                    <select id="productID" type="text" style="width: 100%;" class="form-control">
-                                        <option value="">Select Product</option>
-                                    </select>
-                                </td>
-                            </tr>
-                        </tfoot>
+                            </thead>
+                            <tbody>
+                                @foreach ($order->products as $product)
+                                    <tr>
+                                        <td style="display: none"><input type="text" class="productID" value="{{ $product->product_id }}"></td>
+                                        <td><input type="text" name="color" class="form-control form-control-sm" value="{{ $product->color }}" style="max-width: 60px;"></td>
+                                        <td><input type="text" name="size" class="form-control form-control-sm" value="{{ $product->size }}" style="max-width: 40px;"></td>
+                                        <td><span class="productCode">{{ $product->productCode }}</span></td>
+                                        <td><span class="productName">{{ $product->productName }}</span></td>
+                                        <td><input type="number" class="productQuantity form-control form-control-sm" value="{{ $product->quantity }}" style="width: 70px;"></td>
+                                        <td><span class="productPrice">{{ $product->productPrice }}</span></td>
+                                        <td><button class="btn btn-sm btn-danger delete-btn"><i class="bi bi-trash"></i></button></td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="7">
+                                        <select id="productID" class="form-select">
+                                            <option value="">Select Product</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
 
-                    </table>
-                    <br>
-
-                    <br>
-
-                    <div class="row">
+                    <div class="row g-3">
                         <div class="col-md-6">
                             <div class="form-group mb-2" id="paymntidname">
-                                <label>Payment</label> <br>
-                                <select id="paymentTypeID" class="form-control select2">
-                                    <option value="{{ $order->payment_type_id }}">{{ $order->paymentTypeName }}
-                                    </option>
+                                <label class="form-label">Payment Type</label>
+                                <select id="paymentTypeID" class="form-select">
+                                    <option value="{{ $order->payment_type_id }}">{{ $order->paymentTypeName }}</option>
                                 </select>
                             </div>
-
-                            <div class="form-group paymentID mb-2" id="paymentIDname">
-                                <select id="paymentID" class="form-control mb-2" style="width: 100%;">
+                            <div class="form-group mb-2 paymentID" id="paymentIDname">
+                                <select id="paymentID" class="form-select mb-2">
                                     <option value="{{ $order->payment_id }}">{{ $order->paymentNumber }}</option>
                                 </select>
-                                <button class="btn btn-info btn-block mt-2" id="sendmessage">Send SMS</button>
+                                <button class="btn btn-info btn-sm w-100" id="sendmessage">Send SMS</button>
                             </div>
-                            <div class="form-group paymentAgentNumber">
+                            <div class="form-group mb-2 paymentAgentNumber">
                                 <input type="text" class="form-control" id="paymentAgentNumber"
                                     placeholder="Enter Bkash Agent Number" value="{{ $order->paymentAgentNumber }}">
                             </div>
-                            <div class="form-group hide">
-                                <label>Memo Number</label>
+                            <div class="form-group mb-2 hide">
+                                <label class="form-label">Memo Number</label>
                                 <input type="text" class="form-control" id="memo"
                                     placeholder="Enter Memo Number"
                                     @if ($order->memo) value="{{ $order->memo }}"
@@ -212,45 +187,36 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="form-group row mb-2">
-                                <label for="fname" class="col-sm-4 text-right control-label col-form-label">Sub
-                                    Total</label>
-                                <div class="col-sm-8">
-                                    <span class="form-control" id="subtotal"
-                                        style="cursor: not-allowed;">{{ $order->subTotal }}</span>
+                            <div class="bg-light p-3 rounded-3">
+                                <div class="mb-2 row align-items-center">
+                                    <label class="col-sm-5 col-form-label fw-medium">Sub Total</label>
+                                    <div class="col-sm-7">
+                                        <span class="form-control" id="subtotal">{{ $order->subTotal }}</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group row mb-2">
-                                <label for="fname"
-                                    class="col-sm-4 text-right control-label col-form-label">Delivery</label>
-                                <div class="col-sm-8">
-                                    <input type="text" class="form-control" value="{{ $order->deliveryCharge }}"
-                                        id="deliveryCharge">
+                                <div class="mb-2 row align-items-center">
+                                    <label class="col-sm-5 col-form-label fw-medium">Delivery</label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" value="{{ $order->deliveryCharge }}" id="deliveryCharge">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group row mb-2">
-                                <label for="fname"
-                                    class="col-sm-4 text-right control-label col-form-label">Discount</label>
-                                <div class="col-sm-8">
-                                    <input type="text" value="{{ $order->discountCharge }}" class="form-control"
-                                        id="discountCharge">
+                                <div class="mb-2 row align-items-center">
+                                    <label class="col-sm-5 col-form-label fw-medium">Discount</label>
+                                    <div class="col-sm-7">
+                                        <input type="text" value="{{ $order->discountCharge }}" class="form-control" id="discountCharge">
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="form-group row paymentAmount mb-2">
-                                <label for="fname"
-                                    class="col-sm-4 text-right control-label col-form-label">Payment</label>
-                                <div class="col-sm-8">
-                                    <input type="text" value="{{ $order->paymentAmount }}" class="form-control"
-                                        id="paymentAmount">
+                                <div class="mb-2 row align-items-center paymentAmount">
+                                    <label class="col-sm-5 col-form-label fw-medium">Payment</label>
+                                    <div class="col-sm-7">
+                                        <input type="text" value="{{ $order->paymentAmount }}" class="form-control" id="paymentAmount">
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="fname"
-                                    class="col-sm-4 text-right control-label col-form-label">Total</label>
-                                <div class="col-sm-8">
-                                    <span class="form-control" id="total" style="cursor: not-allowed;">0</span>
+                                <div class="row align-items-center">
+                                    <label class="col-sm-5 col-form-label fw-medium">Total</label>
+                                    <div class="col-sm-7">
+                                        <span class="form-control fw-bold text-primary" id="total">0</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -258,85 +224,74 @@
                 </div>
 
                 <div class="card-footer">
-
-                    <button type="button" id="btn-update" value="{{ $order->id }}"
-                        class="btn btn-block btn-primary"><i class="fa fa-save"></i> Update Order</button>
-
-                    <!--send message to user-->
-                    <div class="form-group mb-2 mt-4" id="">
-                        <input type="text" class="form-control" id="websiteLink"
-                            placeholder="Enter Website Link">
-                        <button class="btn btn-info btn-block mt-2" id="sendweblink">Send Website Link</button>
+                    <div class="row g-2 align-items-center">
+                        <div class="col-md-6">
+                            <button type="button" id="btn-update" value="{{ $order->id }}"
+                                class="btn btn-primary w-100"><i class="bi bi-save me-1"></i> Update Order</button>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="websiteLink" placeholder="Website Link">
+                                <button class="btn btn-info" id="sendweblink">Send Link</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
-    <div class="row">
+
+    <div class="row g-3 mt-2">
         <div class="col-md-5">
             <div class="card">
-                <div class="card-header">
+                <div class="card-header d-flex align-items-center">
+                    <i class="bi bi-chat-dots me-2"></i>
                     <strong>Order Status</strong>
                 </div>
                 <div class="card-body">
-                    <label for="status">Add Note</label>
-                    <div class="input-group">
+                    <div class="input-group mb-3">
                         <input type="text" id="comment" class="form-control" placeholder="Add Notes">
-                        <div class="input-group-append">
-                            <button class="btn btn-success waves-effect waves-light" id="updateComment"
-                                type="button">Update Note</button>
-                        </div>
+                        <button class="btn btn-success" id="updateComment" type="button">Update Note</button>
                     </div>
-                    <br>
-                    <table id="orderCommentTable" data-id="{{ $order->id }}" style="width: 100% !important;"
-                        class="table table-bordered table-striped">
-                        <thead>
-                            <tr>
-                                <th>Created At</th>
-                                <th>Notes</th>
-                                <th>User</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-
-                        </tbody>
-                    </table>
-
-
+                    <div class="table-responsive">
+                        <table id="orderCommentTable" data-id="{{ $order->id }}" class="table table-bordered table-striped mb-0">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Created At</th>
+                                    <th>Notes</th>
+                                    <th>User</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-md-7">
             <div class="card">
-                <div class="card-header">
-                    <strong>Old Order</strong>
+                <div class="card-header d-flex align-items-center">
+                    <i class="bi bi-clock-history me-2"></i>
+                    <strong>Old Orders</strong>
                 </div>
                 <div class="card-body">
-                    <table id="oldOrderTable" style="width: 100% !important;" data-id="{{ $order->id }}"
-                        class="table table-bordered table-striped">
-                        <thead>
-                            <tr>
-                                <th>Invoice ID</th>
-                                <th>Customer Info</th>
-                                <th>Products</th>
-                                <th>Total</th>
-                                <th>Status</th>
-                                <th>User</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-
-                        </tbody>
-                    </table>
-
-
+                    <div class="table-responsive">
+                        <table id="oldOrderTable" data-id="{{ $order->id }}" class="table table-bordered table-striped mb-0">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Invoice ID</th>
+                                    <th>Customer Info</th>
+                                    <th>Products</th>
+                                    <th>Total</th>
+                                    <th>Status</th>
+                                    <th>User</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-
-
         </div>
     </div>
-
 </section>

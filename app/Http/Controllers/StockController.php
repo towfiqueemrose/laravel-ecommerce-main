@@ -24,6 +24,9 @@ class StockController extends Controller
     {
         $stocks = Stock::with(['products'])->get();
         return Datatables::of($stocks)
+            ->addColumn('productName', function ($stocks) {
+                return $stocks->products->ProductName ?? '';
+            })
             ->make(true);
     }
     /**

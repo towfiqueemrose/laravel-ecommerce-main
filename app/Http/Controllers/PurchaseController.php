@@ -27,6 +27,12 @@ class PurchaseController extends Controller
     {
         $purchases = Purchase::with(['products', 'suppliers'])->get();
         return Datatables::of($purchases)
+            ->addColumn('productName', function ($purchases) {
+                return $purchases->products->ProductName ?? '';
+            })
+            ->addColumn('supplierName', function ($purchases) {
+                return $purchases->suppliers->supplierName ?? '';
+            })
             ->addColumn('action', function ($purchases) {
                 return '<a href="#" type="button" id="editPurchaseBtn" data-id="' . $purchases->id . '" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#editmainPurchase" ><i class="bi bi-pencil-square" ></i></a>
                 <a href="#" type="button" id="deletePurchaseBtn" data-id="' . $purchases->id . '" class="btn btn-danger btn-sm"><i class="bi bi-archive"></i></a>';

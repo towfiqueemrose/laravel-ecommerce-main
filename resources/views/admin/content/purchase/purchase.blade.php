@@ -202,8 +202,8 @@
                     { data: 'id' },
                     { data: 'date' },
                     { data: 'invoiceID' },
-                    { data: 'products.productName' },
-                    { data: 'suppliers.supplierName' },
+                    { data: 'productName' },
+                    { data: 'supplierName' },
                     { data: 'quantity' },
                     { data: 'action', name: 'action', orderable: false, searchable: false},
 

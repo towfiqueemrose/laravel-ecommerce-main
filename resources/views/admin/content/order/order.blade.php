@@ -210,8 +210,8 @@ $users = Admin::whereHas('roles', function ($q) {
     </div>
 
     {{-- //popup modal for edit user --}}
-    <div class="modal" id="editmainOrder">
-        <div class="modal-dialog" style="width: 92%;max-width: none;">
+    <div class="modal fade" id="editmainOrder" tabindex="-1">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Edit Order</h5>

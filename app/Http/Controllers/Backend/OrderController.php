@@ -293,7 +293,7 @@ class OrderController extends Controller
             })
 
             ->addColumn('action', function ($orders) {
-                return "<a href='javascript:void(0);' data-id='" . $orders->id . "' class='action-icon btn-editorder'> <i class='fas fa-1x fa-edit'></i></a> <br>
+                return "<!--<a href='javascript:void(0);' data-id='" . $orders->id . "' class='action-icon btn-editorder'> <i class='fas fa-1x fa-edit'></i></a>-->
                 <a href='javascript:void(0);' data-id='" . $orders->id . "' class='action-icon btn-delete'> <i class='fas fa-trash-alt'></i></a>";
             })
             ->escapeColumns([])->make();
@@ -508,11 +508,11 @@ class OrderController extends Controller
             }
         })
 
-        ->addColumn('action', function ($orders) {
-            return "<a href='javascript:void(0);' data-id='" . $orders->id . "' class='action-icon btn-editorder'> <i class='fas fa-1x fa-edit'></i></a>
+            ->addColumn('action', function ($orders) {
+                return "<!--<a href='javascript:void(0);' data-id='" . $orders->id . "' class='action-icon btn-editorder'> <i class='fas fa-1x fa-edit'></i></a>-->
                 <a href='javascript:void(0);' data-id='" . $orders->id . "' class='action-icon btn-delete'> <i class='fas fa-trash-alt'></i></a>";
-        })
-        ->escapeColumns([])->make();
+            })
+            ->escapeColumns([])->make();
     }
 
     //all order
@@ -702,7 +702,7 @@ class OrderController extends Controller
             })
 
             ->addColumn('action', function ($orders) {
-                return "<a href='javascript:void(0);' data-id='" . $orders->id . "' class='action-icon btn-editorder'> <i class='fas fa-1x fa-edit'></i></a> <br>
+                return "<!--<a href='javascript:void(0);' data-id='" . $orders->id . "' class='action-icon btn-editorder'> <i class='fas fa-1x fa-edit'></i></a>-->
                 <a href='javascript:void(0);' data-id='" . $orders->id . "' class='action-icon btn-delete'> <i class='fas fa-trash-alt'></i></a>";
             })
             ->escapeColumns([])->make();

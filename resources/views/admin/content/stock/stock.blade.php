@@ -192,7 +192,7 @@
                 ajax: '{!! route('stock.info') !!}',
                 columns: [
                     { data: 'id' },
-                    { data: 'products.productName' },
+                    { data: 'productName' },
                     { data: 'purchase' },
                     { data: 'stock' },
 

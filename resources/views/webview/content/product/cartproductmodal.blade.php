@@ -1,41 +1,56 @@
-<div class="text-cart" style="padding-top: 20px">
-    <i class="fa fa-check" id="checkIconCart"></i>
-    <h3 style="margin-top:0;color: green; margin-bottom: 0;"><span id="itemCount">{{ count($cartProducts) }}</span> Item
-        added to your cart!</h3>
+<div class="cart-modal-header">
+    <button type="button" class="cart-modal-close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+    <div class="cart-success-icon">
+        <svg class="cart-check-circle" viewBox="0 0 24 24" width="56" height="56">
+            <circle class="cart-check-bg" cx="12" cy="12" r="11" fill="none" stroke="#28a745" stroke-width="2"/>
+            <path class="cart-check-mark" d="M7 12l3 3 7-7" fill="none" stroke="#28a745" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <h3 class="cart-success-text"><span id="itemCount">{{ count($cartProducts) }}</span> Item(s) added to your cart!</h3>
 </div>
-<button type="button" id="closebtn" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span
-        aria-hidden="true">×</span></button>
-<h4 style="margin-top:0;text-align: center; font-weight: bold; margin-bottom: 0;">Cart Items</h4>
-<hr style="margin-top: 10px;margin-bottom: 10px">
-<div id="itemlest">
-    @forelse ($cartProducts as $item)
-        <div class="d-flex align-items-center" style="margin-bottom:10px">
-            <div class="dc-image">
-                <a href="{{asset($item->image)}}">
-                    <img src="{{ asset($item->image) }}" class="img-fluid" alt=""
-                        style="height: 70px;">
-                </a>
+
+<div class="cart-modal-body">
+    <h4 class="cart-items-heading">
+        <i class="fas fa-shopping-bag me-2"></i>Cart Items
+    </h4>
+
+    <div class="cart-items-list" id="itemlest">
+        @forelse ($cartProducts as $item)
+            <div class="cart-item">
+                <div class="cart-item-image">
+                    <img src="{{ asset($item->image) }}" alt="{{ $item->name }}">
+                </div>
+                <div class="cart-item-details">
+                    <a href="#" class="cart-item-name">{{ $item->name }}</a>
+                    <div class="cart-item-meta">
+                        <span class="cart-item-qty">Qty: {{ $item->qty }}</span>
+                        @if($item->options && $item->options->has('color'))
+                            <span class="cart-item-color">Color: {{ $item->options->get('color') }}</span>
+                        @endif
+                        @if($item->options && $item->options->has('size'))
+                            <span class="cart-item-size">Size: {{ $item->options->get('size') }}</span>
+                        @endif
+                    </div>
+                    <span class="cart-item-price">৳{{ number_format($item->qty * $item->price, 2) }}</span>
+                </div>
+                <div class="cart-item-remove">
+                    <button type="button" onClick="removeFromCartItem('{{ $item->rowId }}')" title="Remove item">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </div>
             </div>
-            <div class="dc-content">
-                <span class="d-block dc-product-name text-capitalize strong-600 mb-1">
-                    <a href="#">
-                        {{ $item->name }}
-                    </a>
-                </span>
-                <br>
-                <span class="dc-quantity">x{{ $item->qty }}</span>
-                <span class="dc-price">৳{{ $item->qty * $item->price }}</span>
-            </div>
-            <div class="dc-actions">
-                <button type="button" onClick="removeFromCartItem('{{ $item->rowId }}')" id="cartIconCloss">
-                    ×
-                </button>
-            </div>
-        </div>
-    @empty
-    @endforelse
+        @empty
+        @endforelse
+    </div>
 </div>
-<div class="dc-item py-3">
-    <span class="subtotal-text">Subtotal</span>
-    <span class="subtotal-amount">৳ <span id="totalAmountCart">{{ Cart::subtotal() }}</span></span>
+
+<div class="cart-modal-footer">
+    <div class="cart-subtotal">
+        <span class="cart-subtotal-label">Subtotal</span>
+        <span class="cart-subtotal-amount">৳ <span id="totalAmountCart">{{ Cart::subtotal() }}</span></span>
+    </div>
+    <div class="cart-actions">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+        <a href="{{ url('checkout') }}" class="btn btn-primary">Submit Order</a>
+    </div>
 </div>

@@ -112,17 +112,10 @@
     </div>
 
 
-    <div class="modal" id="cartViewModal">
-        <div class="modal-dialog">
+    <div class="modal fade cart-modal" id="cartViewModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
-                <div class="modal-body" id="AddToCartModel" style="padding-top: 0">
-
-                </div>
-                <div class="modal-footer d-flex justify-content-between">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><span
-                            aria-hidden="true">Add
-                            More Products</span></button>
-                    <a href="{{ url('checkout') }}" class="btn btn-primary">Submit Order</a>
+                <div class="modal-body p-0" id="AddToCartModel">
                 </div>
             </div>
         </div>

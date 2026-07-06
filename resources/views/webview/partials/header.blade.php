@@ -58,7 +58,7 @@
                                 <i class="fa-solid fa-cart-plus" style="color:var(--theme-color);font-size:24px;"></i>
                                 <span class="count" style="position:absolute;top:-8px;right:-12px;background:var(--secondary-color);color:#fff;font-size:10px;width:18px;height:18px;display:flex;align-items:center;justify-content:center;border-radius:50%;">{{ count(Cart::content()) }}</span>
                             </a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu dropdown-menu-end" style="min-width: 320px; padding: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.15); border: none; border-radius: 8px;">
                                 <li id="checkcartview"></li>
                             </ul>
                         </div>

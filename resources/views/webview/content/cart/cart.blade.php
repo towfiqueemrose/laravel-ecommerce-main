@@ -136,16 +136,8 @@
     }
 
     .table-cart tbody tr td.product-image a {
-        width: 45px;
-        height: 45px;
-    }
-
-    .table-cart tbody tr td.product-image a {
-        position: relative;
-        overflow: hidden;
-        display: block;
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
     }
 
     .text-right {

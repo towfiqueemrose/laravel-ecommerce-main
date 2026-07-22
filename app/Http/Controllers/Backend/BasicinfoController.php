@@ -42,42 +42,42 @@ class BasicinfoController extends Controller
 		$webinfo->meta_keyword=$request-> meta_keyword;
 		$webinfo->site_sologan=$request-> site_sologan;
         if($request->logo){
-            if($webinfo->logo && $webinfo->logo != 'public/webview/assets/images/logo.png' && file_exists($webinfo->logo)){
-                unlink($webinfo->logo);
+            $oldPath = $webinfo->logo ? public_path($webinfo->logo) : null;
+            if($oldPath && $webinfo->logo != 'images/categorybanner/logo.png' && file_exists($oldPath)){
+                unlink($oldPath);
             }
             $logo = $request->file('logo');
             $name = time() . "_" . $logo->getClientOriginalName();
-            $uploadPath = ('public/images/categorybanner/');
+            $uploadPath = public_path('images/categorybanner');
             $logo->move($uploadPath, $name);
-            $logoImgUrl = $uploadPath . $name;
-            $webinfo->logo = $logoImgUrl;
+            $webinfo->logo = 'images/categorybanner/' . $name;
         }
           $webinfo->save();
 
 		          if($request->favicon){
-            if($webinfo->favicon && $webinfo->favicon != 'public/webview/assets/images/favicon.png' && file_exists($webinfo->favicon)){
-                unlink($webinfo->favicon);
+            $oldPath = $webinfo->favicon ? public_path($webinfo->favicon) : null;
+            if($oldPath && $webinfo->favicon != 'images/categorybanner/favicon.png' && file_exists($oldPath)){
+                unlink($oldPath);
             }
             $favicon = $request->file('favicon');
             $name = time() . "_" . $favicon->getClientOriginalName();
-            $uploadPath = ('public/images/categorybanner/');
+            $uploadPath = public_path('images/categorybanner');
             $favicon->move($uploadPath, $name);
-            $faviconImgUrl = $uploadPath . $name;
-            $webinfo->favicon = $faviconImgUrl;
+            $webinfo->favicon = 'images/categorybanner/' . $name;
         }
           $webinfo->save();
 
 
 		  		          if($request->og_images){
-            if($webinfo->og_images && $webinfo->og_images != 'public/webview/assets/images/ogimages.png' && file_exists($webinfo->og_images)){
-                unlink($webinfo->og_images);
+            $oldPath = $webinfo->og_images ? public_path($webinfo->og_images) : null;
+            if($oldPath && $webinfo->og_images != 'images/categorybanner/ogimages.png' && file_exists($oldPath)){
+                unlink($oldPath);
             }
             $og_images = $request->file('og_images');
             $name = time() . "_" . $og_images->getClientOriginalName();
-            $uploadPath = ('public/images/categorybanner/');
+            $uploadPath = public_path('images/categorybanner');
             $og_images->move($uploadPath, $name);
-            $og_imagesImgUrl = $uploadPath . $name;
-            $webinfo->og_images = $og_imagesImgUrl;
+            $webinfo->og_images = 'images/categorybanner/' . $name;
         }
           $webinfo->save();
 

@@ -14,7 +14,11 @@
                         </button>
 
                         <a href="{{ url('/') }}" id="logoimage">
-                            <img src="{{ asset($basicinfo->logo) }}" alt="" id="logosm" style="max-height: 60px; width: auto; object-fit: contain;">
+                            @if ($basicinfo && $basicinfo->logo)
+                                <img src="{{ asset($basicinfo->logo) }}" alt="" id="logosm" style="max-height: 60px; width: auto; object-fit: contain;">
+                            @else
+                                <span style="font-size: 20px; font-weight: 700; color: var(--theme-color);">{{ env('APP_NAME') }}</span>
+                            @endif
                         </a>
                     </div>
                     <!-- /.logo -->
